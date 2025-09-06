@@ -1,5 +1,5 @@
 ---
-title: "Portafolio - Inicio"
+title: "Portafolio - Índice"
 date: 2025-09-06
 ---
 
