@@ -23,7 +23,6 @@ Incluye documentación de librerías y datasets analizados
 - [Iris Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/iris)  
 - [Netflix Titles (Kaggle)](https://www.kaggle.com/datasets/shivamb/netflix-shows)  
 - [NYC Taxi Trips (Kaggle)](https://www.kaggle.com/datasets/elemento/nyc-yellow-taxi-trip-data)  
-- [NYC Taxi Trip Record Data (TLC Oficial)](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)  
 
 ---
 
