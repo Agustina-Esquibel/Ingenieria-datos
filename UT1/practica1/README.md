@@ -14,12 +14,16 @@ Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de 
 - Las variables de pétalos son más **discriminatorias** que las de sépalos.  
 
 ---
-### Notebook
-📓 [Descargar notebook completo](./practica1_agustina_esquibel.ipynb?raw=1)
+## Notebook
+
+📥 **Descargar notebook completo**:  
+[practica1_agustina_esquibel.ipynb](https://github.com/Agustina-Esquibel/Ingenieria-datos/raw/main/UT1/practica1/practica1_agustina_esquibel.ipynb)
+
+▶️ **Abrir directamente en Google Colab**:  
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/practica1_agustina_esquibel.ipynb)
 
 *(El notebook contiene todo el código ejecutado en Google Colab y las visualizaciones generadas.)*
-
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/practica1_agustina_esquibel.ipynb)
+---
 ### Navegación
 - [Volver al índice general](../../docs/index.md)  
 - [Ir al portafolio completo](../../docs/portfolio/index.md)  
