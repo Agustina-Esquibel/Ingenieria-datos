@@ -86,8 +86,7 @@ Además, pude ver cómo distintas librerías ofrecen formas de cargar el dataset
 - [Iris Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/iris)  
 - [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/01-exploracion-iris/)
 ---
-### Navegación
-- [Volver al índice general](../../docs/index.md)  
-- [Ir al portafolio completo](../../docs/portfolio/index.md)  
-- [Ir a la Práctica 2](../practica2/README.md)  
-
+## Navegación
+- [Volver al índice general](../index.md)
+- [Ir al portafolio completo](index.md)
+- [Ir a la Práctica 2](ut1-practica2.md)
