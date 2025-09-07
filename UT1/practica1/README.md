@@ -19,8 +19,7 @@ Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de 
 
 *(El notebook contiene todo el código ejecutado en Google Colab y las visualizaciones generadas.)*
 
-[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/practica1_agustina_esquibel.ipynb)---
-
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/practica1_agustina_esquibel.ipynb)
 ### Navegación
 - [Volver al índice general](../../docs/index.md)  
 - [Ir al portafolio completo](../../docs/portfolio/index.md)  
