@@ -51,11 +51,17 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ## Heatmap
 ![Heatmap de correlaciones](heatmap.png)
 
+*El heatmap confirma una correlación muy fuerte entre el largo y el ancho de los pétalos.* 
+
 ### Pairplot
 ![Pairplot](../assets/Pairplot.png)
 
+*El gráfico muestra cómo Setosa se separa claramente de las demás especies, mientras que Versicolor y Virginica presentan mayor solapamiento.*
+
 ### Boxplot
 ![Boxplot de Petal Length](../assets/Box_petal_length.png)
+
+*El boxplot refleja que Setosa tiene pétalos más pequeños, mientras que Virginica concentra los valores más altos.*
 
 ---
 ## Insights clave
@@ -80,4 +86,8 @@ Además, pude ver cómo distintas librerías ofrecen formas de cargar el dataset
 - [Iris Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/iris)  
 - [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/01-exploracion-iris/)
 ---
+### Navegación
+- [Volver al índice general](../../docs/index.md)  
+- [Ir al portafolio completo](../../docs/portfolio/index.md)  
+- [Ir a la Práctica 2](../practica2/README.md)  
 
