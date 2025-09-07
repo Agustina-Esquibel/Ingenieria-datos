@@ -48,14 +48,9 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ---
 ### Evidencias
 
-### Pairplot
-<img src="../assets/Pairplot.png" alt="Pairplot" width="800"/>
-
 ### Heatmap
-![Heatmap](../assets/corr.png)
 
-### Boxplots
-<img src="../assets/Box_petal_length.png" alt="Boxplot petal_length" width="800"/>
+![Heatmap de correlaciones](heatmap.png)
 
 ---
 ## Insights clave
