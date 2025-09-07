@@ -24,6 +24,7 @@ Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de 
 
 *El notebook contiene todo el código ejecutado en Google Colab y las visualizaciones generadas.*
 
+[Ver README original en GitHub](https://github.com/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/README.md)
 ### Navegación
 - [Volver al índice general](../../docs/index.md)  
 - [Ir al portafolio completo](../../docs/portfolio/index.md)  
