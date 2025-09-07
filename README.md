@@ -17,4 +17,4 @@ Universidad Católica del Uruguay · 2025
 
 ## Autor
 **Agustina Esquibel**  
-Estudiante de Ingeniería en Electrónica y Ciencia de Datos
+Estudiante de Ingeniería en Inteligencia Artificial y Ciencia de Datos
