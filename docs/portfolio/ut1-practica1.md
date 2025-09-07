@@ -48,9 +48,6 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ---
 ### Evidencias
 
-### Heatmap
-
-![Heatmap de correlaciones](heatmap.png)
 
 ---
 ## Insights clave
