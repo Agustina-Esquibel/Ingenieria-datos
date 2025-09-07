@@ -52,7 +52,8 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 <img src="../assets/Pairplot.png" alt="Pairplot" width="800"/>
 
 ### Heatmap
-![Matriz de correlaciones](docs/assets/corr.png)
+![Heatmap](assets/corr.png)
+
 ### Boxplots
 <img src="../assets/Box_petal_length.png" alt="Boxplot petal_length" width="800"/>
 
