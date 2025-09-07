@@ -51,6 +51,12 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ## Heatmap
 ![Heatmap de correlaciones](heatmap.png)
 
+### Pairplot
+![Pairplot](../assets/Pairplot.png)
+
+### Boxplot
+![Boxplot de Petal Length](../assets/Box_petal_length.png)
+
 ---
 ## Insights clave
 1. **Setosa** se diferencia netamente de las otras dos especies en las medidas de pétalos.  
