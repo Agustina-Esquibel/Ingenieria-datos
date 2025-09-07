@@ -1,25 +1,20 @@
-# Portfolio Template
+# Portafolio – Ingeniería de Datos
 
-Este repositorio es un **template** para documentar el **portafolio** del curso usando **MkDocs + Material** con despliegue automático a GitHub Pages.
+Este repositorio contiene mis prácticas de la materia **Ingeniería de Datos**  
+Universidad Católica del Uruguay · 2025
 
-## Cómo usar
-1. Escribe únicamente en `docs/`.
-2. Crea entradas en `docs/portfolio/` siguiendo `plantilla.md`.
-3. Mantén el **frontmatter** en cada `.md`:
-   ```yaml
-   ---
-   title: "Título de la página"
-   date: YYYY-MM-DD
-   ---
-   ```
-4. Usa nombres de archivo con orden: `01-titulo.md`, `02-otro.md`.
-5. Enlaza recursos con rutas relativas.
+## Contenido
+- **docs/** → Carpeta base del sitio web (GitHub Pages).
+  - **index.md** → Página inicial del portafolio online.
+  - **portfolio/** → Prácticas documentadas (`ut1-practica1.md`, `ut1-practica2.md`, …).
+  - **assets/** → Imágenes y visualizaciones usadas en las prácticas.
+- **UT1/** → Carpeta con notebooks originales y `README.md` breve para cada práctica.
 
-## Ejecutar localmente
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
 
-## Despliegue
-Cada `push` a `main` ejecuta el build con `--strict` y publica en GitHub Pages.
+## Acceso al portafolio
+👉 Sitio web con todas las prácticas:  
+[https://agustina-esquibel.github.io/Ingenieria-datos/](https://agustina-esquibel.github.io/Ingenieria-datos/)
+
+## Autor
+**Agustina Esquibel**  
+Estudiante de Ingeniería en Electrónica y Ciencia de Datos
