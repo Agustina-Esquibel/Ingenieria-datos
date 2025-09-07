@@ -76,4 +76,3 @@ Además, pude ver cómo distintas librerías ofrecen formas de cargar el dataset
 - [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/01-exploracion-iris/)
 ---
 
-📌 *El notebook completo con todo el código y las visualizaciones se encuentra disponible en el [README.md de esta práctica](../../UT1/practica1/README.md).*
