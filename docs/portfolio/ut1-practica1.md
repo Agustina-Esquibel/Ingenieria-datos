@@ -49,13 +49,13 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ### Evidencias
 
 ### Pairplot
-![Pairplot](/Ingenieria-datos/assets/Pairplot.png)
+<img src="../assets/Pairplot.png" alt="Pairplot" width="800"/>
 
 ### Heatmap
-![Heatmap de correlaciones](/Ingenieria-datos/assets/corr.png)
+<img src="../assets/corr.png" alt="Heatmap de correlaciones" width="800"/>
 
 ### Boxplots
-![Boxplot petal_length](/Ingenieria-datos/assets/Box_petal_length.png)
+<img src="../assets/Box_petal_length.png" alt="Boxplot petal_length" width="800"/>
 
 ---
 ## Insights clave
