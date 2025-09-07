@@ -1,12 +1,12 @@
-# UT1 · Práctica 1 — Exploración del dataset Iris
+# UT1 – Práctica 1 — Exploración del dataset Iris
 
-## Resumen
-Análisis exploratorio del clásico dataset **Iris**, que contiene 150 registros con medidas de sépalos y pétalos de tres especies (*Setosa*, *Versicolor*, *Virginica*).  
-Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de calidad de datos.
+### Resumen
+Esta práctica consistió en un análisis exploratorio del clásico dataset *Iris*, que contiene 150 registros con medidas de sépalos y pétalos de tres especies (*Setosa, Versicolor, Virginica*).  
+Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de calidad de datos, con el fin de comprender la estructura del dataset y extraer insights iniciales.
 
 ---
 
-## Insights clave
+### Insights clave
 - El dataset está **balanceado**: 50 registros por especie.  
 - **Setosa** se diferencia claramente de las otras dos especies por pétalos más cortos (< 2 cm).  
 - Existe una **correlación muy fuerte (~0.96)** entre largo y ancho de pétalos.  
@@ -15,18 +15,18 @@ Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de 
 
 ---
 
-## Evidencia
-![Heatmap de correlaciones](../../UT1/practica1/graficos/heatmap.png)  
+### Notebook
+📓 [Descargar notebook completo](Práctica_1_Agustina_Esquibel.ipynb)  
+
+*(El notebook contiene todo el código ejecutado en Google Colab y las visualizaciones generadas.)*  
+
+🔗 También podés abrirlo directamente en Google Colab con este botón:  
+
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/Práctica_1_Agustina_Esquibel.ipynb)
 
 ---
 
-## Notebook
-📂 [Descargar notebook completo](Practica_1_Agustina_Esquibel.ipynb)  
-*(El notebook contiene todo el código ejecutado en Google Colab y las visualizaciones generadas.)*
-
----
-
-## Navegación
-- ⬅️ [Volver a índice general](../../docs/index.md)  
-- ⬅️ [Portafolio completo](../../docs/portfolio/index.md)  
-- ⏭️ [Ir a Práctica 2](../practica2/README.md)
+### Navegación
+- [Volver al índice general](../../docs/index.md)  
+- [Ir al portafolio completo](../../docs/portfolio/index.md)  
+- [Ir a la Práctica 2](../practica2/README.md)  
