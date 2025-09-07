@@ -48,6 +48,11 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ---
 ### Evidencias
 
+Referencias:
+- especie 0 : Setosa
+- especie 1 : Versicolor
+- especie 2 : Virginica 
+
 ## Heatmap
 ![Heatmap de correlaciones](heatmap.png)
 
