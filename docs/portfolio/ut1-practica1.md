@@ -49,15 +49,15 @@ También documenté alternativas de carga para asegurar reproducibilidad:
 ### Evidencias
 
 ## Pairplot
-![Pairplot](https://raw.githubusercontent.com/Agustina-Esquibel/Ingenieria-datos/main/docs/assets/Pairplot.png)  
+![Pairplot](../assets/Pairplot.png)  
 El gráfico muestra cómo **Setosa** se separa claramente de las demás especies, mientras que *Versicolor* y *Virginica* presentan mayor solapamiento.
 
 ## Heatmap
-![Heatmap de correlaciones](https://raw.githubusercontent.com/Agustina-Esquibel/Ingenieria-datos/main/docs/assets/corr.png)  
+![Heatmap de correlaciones](../assets/corr.png)  
 El heatmap confirma una **correlación muy fuerte (~0.96)** entre el largo y el ancho de los pétalos.
 
 ## Boxplots
-![Boxplot petal_length](https://raw.githubusercontent.com/Agustina-Esquibel/Ingenieria-datos/main/docs/assets/Box_petal_length.png)  
+![Boxplot petal_length](../assets/Box_petal_length.png)  
 Los boxplots reflejan que **Setosa** tiene pétalos más pequeños, mientras que *Virginica* concentra los valores más altos.
 
 ---
