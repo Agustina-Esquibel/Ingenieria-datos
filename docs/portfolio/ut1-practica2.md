@@ -61,8 +61,7 @@ El caso de Netflix muestra la importancia de detectar patrones de calidad de dat
 ---
 
 ## Referencias
-- [Dataset en Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)  
-- [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/03-eda-netflix-pandas/)  
+- [Dataset en Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)    
 
 ---
 
