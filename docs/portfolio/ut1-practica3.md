@@ -65,7 +65,10 @@ Además, la elección del tipo de *join* influye directamente en el **alcance** 
 ---
 
 ## Referencias
-- Consigna oficial: <https://juanfkurucz.com/ucu-id/ut1/04-eda-multifuentes-joins/>
+- [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/04-eda-multifuentes-joins/)  
+- [NYC Taxi Dataset](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf)  
+- [NYC Taxi Zones](https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv)  
+- [Pandas merge documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html)  
 
 ---
 
