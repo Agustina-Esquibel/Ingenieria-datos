@@ -14,8 +14,12 @@ Cada práctica contiene objetivos, hallazgos principales, visualizaciones y enla
 
 ### Práctica 1 · Dataset Iris
 *Link:* [Ver práctica](ut1-practica1.md)  
-*Objetivo:* explorar el dataset Iris y aplicar un análisis exploratorio inicial.  
-*Hallazgos clave:* separación clara de la especie *Setosa*, correlaciones fuertes en pétalos, dataset balanceado.
+**Objetivo:**  
+Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.  
+**Hallazgos clave:**  
+- La especie *Setosa* se separa claramente de las demás.  
+- Correlaciones fuertes entre el largo y el ancho de los pétalos.  
+- Dataset balanceado con 50 registros por especie.  
 
 ---
 
