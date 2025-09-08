@@ -1,6 +1,6 @@
 ---
 title: "UT1 · Práctica 3 — EDA Multifuentes y Joins"
-date: 2025-09-07
+date: 2025-08-27
 ---
 
 # UT1 · Práctica 3 — EDA Multifuentes y Joins
