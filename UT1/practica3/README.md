@@ -20,7 +20,8 @@ La práctica permitió comprender cómo la integración multifuente enriquece el
 ---
 
 ## Notebook
-
+📒 [Descargar notebook completo](practico3_agustina_esquibel.ipynb)  
+▶️ [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica3/practico3_agustina_esquibel.ipynb)
 
 ---
 
