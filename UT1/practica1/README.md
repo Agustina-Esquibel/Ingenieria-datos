@@ -16,9 +16,6 @@ Se aplicaron estadísticas descriptivas, visualizaciones y chequeos básicos de 
 ---
 ## Notebook
 
-📥 **Descargar notebook completo**:  
-[practica1_agustina_esquibel.ipynb](https://github.com/Agustina-Esquibel/Ingenieria-datos/raw/main/UT1/practica1/practica1_agustina_esquibel.ipynb?dl=1)
-
 ▶️ **Abrir directamente en Google Colab**:  
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica1/practica1_agustina_esquibel.ipynb)
 
