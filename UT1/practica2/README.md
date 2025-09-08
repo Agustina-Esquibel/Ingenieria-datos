@@ -22,8 +22,8 @@ Las actividades incluyeron:
 ---
 
 ## Notebook
-
-El notebook contiene todo el código utilizado para la carga, análisis y generación de visualizaciones.  
+📒 [Descargar notebook completo](practico2_agustina_esquibel.ipynb)  
+▶️ [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/UT1/practica2/practico2_agustina_esquibel.ipynb)
 
 ---
 
