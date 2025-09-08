@@ -25,15 +25,27 @@ Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.
 
 ### Práctica 2 · Dataset Netflix
 *Link:* [Ver práctica](ut1-practica2.md)  
-*Objetivo:* analizar el catálogo de Netflix (años, tipos, países, duración).  
-*Hallazgos clave:* predominio de películas, aumento de estrenos desde 2016, concentración en pocos países.
+**Objetivo:**  
+Analizar el catálogo de Netflix considerando años, tipos de contenido, países y duración.  
+**Hallazgos clave:**  
+- Predominio de películas sobre series.  
+- Crecimiento sostenido de estrenos desde 2016.  
+- Concentración de la producción en pocos países, principalmente Estados Unidos e India.  
+Analizar el catálogo de Netflix considerando años, tipos de contenido, países y duración.  
 
 ---
 
-### Práctica 3 · Dataset Taxis de Nueva York
+### 🔹 Práctica 3 · EDA Multifuentes y Joins (NYC Taxis)
 *Link:* [Ver práctica](ut1-practica3.md)  
-*Objetivo:* explorar viajes en taxi en NYC para entender patrones de demanda y tarifas.  
-*Hallazgos clave:* picos horarios claros, relación distancia–tarifa, zonas céntricas con mayor densidad.
+
+**Objetivo:**  
+Integrar datasets de viajes, zonas y calendario para aplicar distintos *joins* y enriquecer el análisis.  
+
+**Hallazgos clave:**  
+- El `LEFT JOIN` permitió preservar todos los viajes, incluso los sin coincidencia en zonas.  
+- Se observaron diferencias en la cantidad de viajes entre días normales y especiales.  
+- Boroughs con mayores volúmenes de viajes: Manhattan, Queens y Brooklyn.  
+
 
 ---
 
