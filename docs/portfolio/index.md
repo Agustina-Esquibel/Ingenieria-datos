@@ -14,8 +14,10 @@ Cada práctica contiene objetivos, hallazgos principales, visualizaciones y enla
 
 ### Práctica 1 · Dataset Iris
 *Link:* [Ver práctica](ut1-practica1.md)  
+
 **Objetivo:**  
 Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.  
+
 **Hallazgos clave:**  
 - La especie *Setosa* se separa claramente de las demás.  
 - Correlaciones fuertes entre el largo y el ancho de los pétalos.  
@@ -25,17 +27,18 @@ Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.
 
 ### Práctica 2 · Dataset Netflix
 *Link:* [Ver práctica](ut1-practica2.md)  
+
 **Objetivo:**  
 Analizar el catálogo de Netflix considerando años, tipos de contenido, países y duración.  
+
 **Hallazgos clave:**  
 - Predominio de películas sobre series.  
 - Crecimiento sostenido de estrenos desde 2016.  
 - Concentración de la producción en pocos países, principalmente Estados Unidos e India.  
-Analizar el catálogo de Netflix considerando años, tipos de contenido, países y duración.  
 
 ---
 
-### 🔹 Práctica 3 · EDA Multifuentes y Joins (NYC Taxis)
+### Práctica 3 · EDA Multifuentes y Joins (NYC Taxis)
 *Link:* [Ver práctica](ut1-practica3.md)  
 
 **Objetivo:**  
