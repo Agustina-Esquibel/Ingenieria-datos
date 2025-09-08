@@ -95,3 +95,7 @@ Además, pude ver cómo distintas librerías ofrecen formas de cargar el dataset
 - [Volver al índice general](../index.md)
 - [Ir al portafolio completo](index.md)
 - [Ir a la Práctica 2](ut1-practica2.md)
+
+---
+## Nota
+El código completo y reproducible de esta práctica está disponible en el README de la carpeta correspondiente en GitHub.
