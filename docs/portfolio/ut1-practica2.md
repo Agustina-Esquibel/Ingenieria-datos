@@ -69,3 +69,6 @@ El caso de Netflix muestra la importancia de detectar patrones de calidad de dat
 - [Volver al índice general](../index.md)  
 - [Ir al portafolio completo](../portfolio/index.md)  
 - [Ir a la Práctica 3](ut1-practica3.md)  
+---
+## Nota
+El código completo y reproducible de esta práctica está disponible en el README de la carpeta correspondiente en GitHub.
