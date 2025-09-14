@@ -16,9 +16,11 @@ Dominar las técnicas de preparación y limpieza de datos, explorar formas de re
 ## Contenido
 
 ### Unidad Temática 1
-- [Práctica 1 · Dataset Iris](portfolio/ut1-practica1.md)  
-- [Práctica 2 · Dataset Netflix](portfolio/ut1-practica2.md)  
-- [Práctica 3 · Dataset Taxis de Nueva York](portfolio/ut1-practica3.md)
+
+**EDA inicial, limpieza y visualización básica**  
+En esta unidad se trabajan los fundamentos de análisis exploratorio de datos, partiendo desde datasets simples hasta la integración de fuentes más complejas.  
+
+👉 [Ver Unidad 1](UT1/index.md)
 
 ---
 
