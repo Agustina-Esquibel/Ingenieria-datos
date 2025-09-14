@@ -20,7 +20,7 @@ Dominar las técnicas de preparación y limpieza de datos, explorar formas de re
 **EDA inicial, limpieza y visualización básica**  
 En esta unidad se trabajan los fundamentos de análisis exploratorio de datos, partiendo desde datasets simples hasta la integración de fuentes más complejas.  
 
-👉 [Ver Unidad 1](UT1/main1.md)
+👉
 
 ---
 
