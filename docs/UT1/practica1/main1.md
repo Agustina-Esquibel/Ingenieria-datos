@@ -54,17 +54,14 @@ Referencias:
 - especie 2 : Virginica 
 
 ## Heatmap
-![Heatmap de correlaciones](heatmap.png)
 
 *El heatmap confirma una correlación muy fuerte entre el largo y el ancho de los pétalos.* 
 
 ### Pairplot
-![Pairplot](../assets/Pairplot.png)
 
 *El gráfico muestra cómo Setosa se separa claramente de las demás especies, mientras que Versicolor y Virginica presentan mayor solapamiento.*
 
 ### Boxplot
-![Boxplot de Petal Length](../assets/Box_petal_length.png)
 
 *El boxplot refleja que Setosa tiene pétalos más pequeños, mientras que Virginica concentra los valores más altos.*
 
