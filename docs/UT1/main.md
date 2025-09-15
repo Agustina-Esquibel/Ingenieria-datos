@@ -26,4 +26,4 @@ Este esquema refleja cómo cada práctica aportó a un ciclo completo de trabajo
 desde la carga de datos hasta la comunicación de resultados reproducibles.
 
 ## Conclusión final de UT1
-La Unidad Temática 1 me permitió pasar de un análisis exploratorio básico a la integración de múltiples fuentes, aplicando limpieza, normalización, visualización y documentación reproducible. Aprendí cómo decisiones técnicas como el tipo de join influyen en los resultados y reforcé el uso de herramientas como Python, Pandas y GitHub Pages. En conjunto, esta unidad sienta bases sólidas para futuros análisis más complejos, combinando técnica con reflexión crítica.
+La UT1 me permitió integrar técnica y reflexión, consolidando un flujo reproducible de análisis de datos con limpieza, visualización y documentación clara. Estas bases me preparan para avanzar hacia análisis más complejos con mayor solidez metodológica.
