@@ -25,4 +25,3 @@ Este proceso me prepara para las siguientes unidades, donde espero profundizar e
 Este esquema refleja cómo cada práctica aportó a un ciclo completo de trabajo,
 desde la carga de datos hasta la comunicación de resultados reproducibles.
 
-👉 Para más detalles, ver la [Reflexión completa de UT1](../UT1/main.md).
