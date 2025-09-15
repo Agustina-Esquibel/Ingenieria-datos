@@ -10,9 +10,10 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [Práctica 4: Dataset Taxis de Nueva York](practica4/main4.md)
 
 ## Reflexión de la unidad
-- **Iris** permitió afianzar correlaciones y visualizaciones básicas.
-- **Configuración del portafolio** sentó las bases de organización y despliegue en GitHub Pages. 
-- **Netflix** planteó limpieza y análisis de datos reales con campos faltantes.  
-- **Taxis NYC** introdujo integración de datasets, joins y métricas temporales.  
+- **Iris** permitió afianzar conceptos básicos de EDA y practicar correlaciones y visualizaciones rápidas.  
+- **Configuración del portafolio** fue clave para organizar todo el flujo de trabajo en GitHub Pages y asegurar que la documentación sea clara y accesible desde el inicio.  
+- **Netflix** enfrentó al desafío de limpiar datos reales con valores faltantes, aplicar filtros y generar visualizaciones que aporten insights concretos.  
+- **Taxis NYC** consolidó el uso de *joins* y métricas temporales, lo que ayudó a comprender la importancia de integrar fuentes distintas para enriquecer un análisis.
 
-En conjunto, esta unidad muestra la progresión desde un EDA introductorio hasta la integración de múltiples fuentes, preparando el terreno para las siguientes unidades del curso.
+En conjunto, la UT1  permitió pasar de un EDA introductorio a la integración de múltiples fuentes, conectando el análisis exploratorio con la organización de proyectos reproducibles.  
+Este proceso me prepara para las siguientes unidades, donde espero profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
