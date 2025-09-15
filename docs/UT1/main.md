@@ -20,12 +20,9 @@ Este proceso me prepara para las siguientes unidades, donde espero profundizar e
 
 ## 🚀 Flujo de trabajo de UT1
 
-Para esta primera unidad, el proceso seguido puede resumirse en el siguiente flujo, que reflja cómo cada práctica aportó un ciclo completo de trabajo, desde la carga de datos hasta la comunicación de resultados reproducibles.
+![](../assets/flujo_ut1.png)
 
-```mermaid
-flowchart LR
-    A[📂 Datos crudos] --> B[🧹 Limpieza con Pandas]
-    B --> C[🔎 EDA: análisis exploratorio]
-    C --> D[📊 Visualizaciones con Matplotlib/Seaborn]
-    D --> E[📝 Hallazgos documentados en MkDocs]
-    E --> F[🌐 Publicación en GitHub Pages]
+Este esquema refleja cómo cada práctica aportó a un ciclo completo de trabajo,
+desde la carga de datos hasta la comunicación de resultados reproducibles.
+
+👉 Para más detalles, ver la [Reflexión completa de UT1](../UT1/main.md).
