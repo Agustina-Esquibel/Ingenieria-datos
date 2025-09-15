@@ -1,5 +1,5 @@
 ---
-title: "UT1 · Práctica 2 — Exploración del dataset Netflix"
+title: "UT1 · Práctica 2 — Configuración del Portfolio en GitHub Pages"
 date: 2025-08-20
 ---
 
