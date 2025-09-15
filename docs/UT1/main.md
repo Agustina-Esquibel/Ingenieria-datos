@@ -17,3 +17,15 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 
 En conjunto, la UT1  permitió pasar de un EDA introductorio a la integración de múltiples fuentes, conectando el análisis exploratorio con la organización de proyectos reproducibles.  
 Este proceso me prepara para las siguientes unidades, donde espero profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
+
+## 🚀 Flujo de trabajo de UT1
+
+Para esta primera unidad, el proceso seguido puede resumirse en el siguiente flujo, que reflja cómo cada práctica aportó un ciclo completo de trabajo, desde la carga de datos hasta la comunicación de resultados reproducibles.
+
+```mermaid
+flowchart LR
+    A[📂 Datos crudos] --> B[🧹 Limpieza con Pandas]
+    B --> C[🔎 EDA: análisis exploratorio]
+    C --> D[📊 Visualizaciones con Matplotlib/Seaborn]
+    D --> E[📝 Hallazgos documentados en MkDocs]
+    E --> F[🌐 Publicación en GitHub Pages]
