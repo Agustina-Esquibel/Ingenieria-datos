@@ -98,6 +98,7 @@ Un aspecto crítico es que, al tratarse de un dataset pequeño y balanceado, el 
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
+[🔗 Abrir en Google Colab](https://colab.research.google.com/github/agustina-esquibel/Ingenieria-datos/blob/main/docs/UT1/practica1/practica1_agustina_esquibel.ipynb)
 
 ## Referencias
 - [Iris Dataset (UCI)](https://archive.ics.uci.edu/dataset/53/iris)  
