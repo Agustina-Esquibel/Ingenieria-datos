@@ -102,7 +102,6 @@ Un aspecto crítico es que, al tratarse de un dataset pequeño y balanceado, el 
 ## Referencias
 - [Iris Dataset (UCI)](https://archive.ics.uci.edu/dataset/53/iris)  
 - [Iris Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/iris)  
-- [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/01-exploracion-iris/)  
 
 ## Navegación
 🔙 [Volver a Unidad Temática 1](../main.md)  
