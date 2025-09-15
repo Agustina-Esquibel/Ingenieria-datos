@@ -1,3 +1,8 @@
+---
+title: "UT1 · Práctica 2 — Exploración del dataset Netflix"
+date: 2025-08-20
+---
+
 # UT1 · Práctica 2 — Configuración del portafolio en GitHub Pages
 
 ## Contexto
@@ -38,8 +43,6 @@ Finalmente, se habilitó **GitHub Pages** desde la rama `main`. Tras unos minuto
 - Captura del repositorio creado en GitHub.  
 - Estructura inicial de carpetas (`docs/`, `UT1/`, `portfolio/`).  
 - Captura de la página principal publicada en GitHub Pages.  
-
-*(acá podés insertar imágenes tipo `![](../../assets/practica2_repo.png)` y `![](../../assets/practica2_pages.png)` si las subís a `assets/`)*
 
 ## Insights clave
 1. La configuración inicial del portafolio asegura un espacio unificado para documentar y compartir todas las prácticas.  
