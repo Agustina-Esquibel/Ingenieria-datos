@@ -1,68 +1,55 @@
----
-title: "UT1 · Práctica 2 — Exploración del dataset Netflix"
-date: 2025-08-20
----
+# Práctica 2 – Portafolio con GitHub Pages
 
-# UT1 · Práctica 2 — Exploración del dataset Netflix
-
-## Contexto
-El dataset de Netflix contiene información sobre más de 6.000 títulos entre películas y series, con variables como tipo de contenido, país, director, elenco, año de lanzamiento, fecha de incorporación, duración, clasificación y géneros.  
-Este conjunto de datos es ampliamente utilizado para prácticas de análisis exploratorio de datos (EDA).
+## Objetivo  
+Configurar tu portafolio en GitHub: crear repositorio desde el template, activar GitHub Pages con GitHub Actions, y publicar una versión inicial con contenidos mínimos visibles online.
 
 ---
 
-## Objetivos
-- Explorar la estructura y calidad del dataset.  
-- Identificar valores faltantes y patrones de datos incompletos.  
-- Analizar tendencias en lanzamientos y distribución de contenido.  
-- Visualizar características clave mediante gráficos y un dashboard final.  
+## Desarrollo / Pasos realizados
+
+1. Usé el template proporcionado (`ia-portfolio-template`) para crear mi repositorio nuevo en GitHub.  
+   - Owner: @AgustinaEsquibel (tu usuario)  
+   - Nombre del repo: `Ingenieria-datos-Portfolio` (o como lo hayas llamado)  
+   - Lo hice público para permitir que se vea con GitHub Pages.
+
+2. Configuré GitHub Pages / GitHub Actions:  
+   - En Settings → Pages elegí la opción de desplegar vía Actions.  
+   - Verifiqué que el workflow automático (“deploy”) corriera sin errores.
+
+3. Estructura de contenido inicial agregada:  
+   - Página de portada / About con nombre, breve bio y vínculo a tu GitHub / contacto.  
+   - En el índice, listado de prácticas relacionadas (Práctica 1, Práctica 2, etc.).  
+   - Visualizaciones inciales del dataset Iris (pairplot, heatmap, etc.) incluidas como ejemplo.  
+   - Una sección “Próximos pasos” donde describí lo que pienso mejorar: limpieza de datos, visualizaciones adicionales, integración de más dataset, etc.
+
+4. Publicación:  
+   - Commit + push de los cambios.  
+   - Confirmé que el sitio estaba accesible en la URL de GitHub Pages correspondiente, sin errores 404.
 
 ---
 
-## Actividades
-- Carga y exploración inicial del dataset (`shape`, `head`, `info`, `describe`).  
-- Análisis de valores faltantes y creación de visualizaciones específicas.  
-- Generación de gráficos descriptivos:  
-  - Distribución de Movies vs TV Shows.  
-  - Evolución temporal de títulos lanzados.  
-  - Ratings por tipo de contenido.  
-  - Principales países productores.  
-- Creación de un **dashboard integrado** que sintetiza los hallazgos.  
+## Resultados
+
+- El repositorio quedó visible online bajo la URL: `https://agustina-esquibel.github.io/<nombre-del-repo>/` 
+- Se puede ver la portada / About / Índice / enlace a práctica Iris (EDA inicial).  
+- La visualización del pairplot / heatmap se muestra correctamente.  
+- GitHub Actions desplegó sin fallos → vida del workflow verde.
 
 ---
 
-## Desarrollo
-Los datos se cargaron desde un archivo CSV (`netflix_titles.csv`) subido a Google Colab.  
-Se realizó una limpieza básica y se generaron visualizaciones para explorar la distribución del contenido en Netflix.  
-La práctica incluyó la identificación de variables con mayor proporción de datos faltantes (`director`, `cast`, `country`), así como un análisis temporal que mostró el crecimiento acelerado en los lanzamientos después del 2010.  
+## Hallazgos clave
 
----
-
-## Evidencias
-A continuación, se presenta el dashboard final con los principales resultados del análisis:
-
-
----
-
-## Insights clave
-1. El 68% del contenido corresponde a **películas**, frente al 32% de series.  
-2. La mayor cantidad de títulos proviene de **Estados Unidos e India**.  
-3. El crecimiento en lanzamientos se intensifica después de **2010**, alcanzando un pico en 2018.  
-4. Los ratings más frecuentes son **TV-MA** y **TV-14**.  
-5. Existen variables con gran proporción de datos faltantes, especialmente **director** y **cast**.  
+- Aunque parezca “mínimo”, configurar el repo desde el template da estructura y uniformidad.  
+- Usar GitHub Pages + MkDocs + Actions requiere cuidar las rutas y nombres de archivos (un cambio mínimo puede romper todo).  
+- Tener contenido visible desde el comienzo (aunque sea poco) proyecta profesionalismo.  
+- Identifiqué mejoras fáciles: imágenes comprimidas para que carguen rápido; navegación lateral bien estructurada; enlaces correctos a notebooks etc.
 
 ---
 
 ## Reflexión
-Esta práctica permitió aplicar un flujo completo de análisis exploratorio, desde la carga y limpieza de datos hasta la generación de visualizaciones individuales y un dashboard final integrador.  
-El caso de Netflix muestra la importancia de detectar patrones de calidad de datos y de sintetizar la información en gráficos claros y reproducibles.
+
+El ejercicio de esta práctica fue más setup que análisis, pero su rol es fundamental: sin una base bien configurada, las prácticas posteriores se ven desordenadas o inaccesibles.  
+Esta experiencia me hizo valorar mucho el trabajo “por debajo del agua” (repositorio limpio, deploy automático, estructura fija), que muchas veces se subestima.  
+Estoy motivada a usar esta base para las siguientes unidades, manteniendo buenas prácticas desde el inicio.
 
 ---
-
-## Referencias
-- [Dataset en Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)    
-
----
-
-## Navegación
-
