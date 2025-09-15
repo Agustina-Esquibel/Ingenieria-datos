@@ -86,3 +86,5 @@ flowchart LR
     C --> D[📊 Visualizaciones con Matplotlib/Seaborn]
     D --> E[📝 Hallazgos documentados en MkDocs]
     E --> F[🌐 Publicación en GitHub Pages]
+
+Este esquema refleja como cada practica 
