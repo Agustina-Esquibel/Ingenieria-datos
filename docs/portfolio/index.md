@@ -13,7 +13,7 @@ Cada práctica contiene objetivos, hallazgos principales, visualizaciones y enla
 ## Unidad Temática 1
 
 ### Práctica 1 · Dataset Iris
-*Link:* [Ver práctica](ut1-practica1.md)  
+Link: [Ver práctica](../UT1/practica1/main1.md)
 
 **Objetivo:**  
 Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.  
@@ -25,8 +25,19 @@ Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.
 
 ---
 
-### Práctica 2 · Dataset Netflix
-*Link:* [Ver práctica](ut1-practica2.md)  
+### Práctica 2 – Configuración del portafolio en GitHub
+Link: [Ver práctica](../UT1/practica2/main2.md)
+
+**Objetivo:** crear un repositorio en GitHub a partir del template y publicar el portafolio con GitHub Pages.  
+**Hallazgos clave:**
+- Repositorio configurado correctamente con estructura inicial de carpetas.  
+- GitHub Actions desplegó el sitio sin errores.  
+- Portafolio visible online desde etapas tempranas.
+
+---  
+
+### Práctica 3 · Dataset Netflix
+Link: [Ver práctica](../UT1/practica3/main3.md)
 
 **Objetivo:**  
 Analizar el catálogo de Netflix considerando años, tipos de contenido, países y duración.  
@@ -38,8 +49,8 @@ Analizar el catálogo de Netflix considerando años, tipos de contenido, países
 
 ---
 
-### Práctica 3 · EDA Multifuentes y Joins (NYC Taxis)
-*Link:* [Ver práctica](ut1-practica3.md)  
+### Práctica 4 · EDA Multifuentes y Joins (NYC Taxis)
+Link: [Ver práctica](../UT1/practica4/main4.md)
 
 **Objetivo:**  
 Integrar datasets de viajes, zonas y calendario para aplicar distintos *joins* y enriquecer el análisis.  
