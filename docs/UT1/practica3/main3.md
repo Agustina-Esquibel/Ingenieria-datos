@@ -66,6 +66,11 @@ Este aprendizaje es fundamental para futuros proyectos, donde la reproducibilida
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
+[🔗 Abrir en Google Colab](https://colab.research.google.com/github/agustina-esquibel/Ingenieria-datos/blob/main/docs/UT1/practica3/Agustina_Esquibel_practico3.ipynb)
+
+## 📥 Descarga directa
+También puedes descargar el notebook desde el repositorio en el siguiente enlace:  
+[⬇️ Descargar Notebook](https://github.com/agustina-esquibel/Ingenieria-datos/raw/main/docs/UT1/practica3/Agustina_Esquibel_practico3.ipynb)
 
 ## Referencias
 - [Dataset en Kaggle](https://www.kaggle.com/shivamb/netflix-shows)  
