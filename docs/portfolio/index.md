@@ -28,7 +28,8 @@ Explorar el dataset *Iris* y aplicar un análisis exploratorio inicial.
 ### Práctica 2 – Configuración del portafolio en GitHub
 Link: [Ver práctica](../UT1/practica2/main2.md)
 
-**Objetivo:** crear un repositorio en GitHub a partir del template y publicar el portafolio con GitHub Pages.  
+**Objetivo:** 
+Crear un repositorio en GitHub a partir del template y publicar el portafolio con GitHub Pages.  
 **Hallazgos clave:**
 - Repositorio configurado correctamente con estructura inicial de carpetas.  
 - GitHub Actions desplegó el sitio sin errores.  
