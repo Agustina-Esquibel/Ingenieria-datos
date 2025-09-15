@@ -74,17 +74,3 @@ Integrar datasets de viajes, zonas y calendario para aplicar distintos *joins* y
 Esta práctica fue la más desafiante de la UT1, porque implicó integración de múltiples fuentes y análisis temporal. Me permitió valorar cómo la correcta unión de datasets cambia el nivel de los insights obtenidos.
 
 ---
-
-## Extra – Flujo de trabajo de UT1
-
-Para esta primera unidad, el proceso seguido puede resumirse en el siguiente flujo:
-
-```mermaid
-flowchart LR
-    A[📂 Datos crudos] --> B[🧹 Limpieza con Pandas]
-    B --> C[🔎 EDA: análisis exploratorio]
-    C --> D[📊 Visualizaciones con Matplotlib/Seaborn]
-    D --> E[📝 Hallazgos documentados en MkDocs]
-    E --> F[🌐 Publicación en GitHub Pages]
-
-Este esquema refleja como cada practica 
