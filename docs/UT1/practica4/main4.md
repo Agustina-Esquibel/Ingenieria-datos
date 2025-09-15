@@ -59,7 +59,6 @@ En conclusión, integrar datos y reflexionar críticamente sobre la estrategia d
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
 
 ## Referencias
-- [Consigna oficial](https://juanfkurucz.com/ucu-id/ut1/04-eda-multifuentes-joins/)  
 - [NYC Taxi Dataset](https://www1.nyc.gov)  
 - [NYC Taxi Zones](https://www1.nyc.gov)  
 - [Documentación `pandas.merge`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html)  
