@@ -57,6 +57,7 @@ En conclusión, integrar datos y reflexionar críticamente sobre la estrategia d
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
+[🔗 Abrir en Google Colab](https://colab.research.google.com/github/agustina-esquibel/Ingenieria-datos/blob/main/docs/UT1/practica4/Agustina_Esquibelpractico4.ipynb)
 
 ## Referencias
 - [NYC Taxi Dataset](https://www1.nyc.gov)  
