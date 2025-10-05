@@ -3,8 +3,6 @@ title: "Explorando el Iris Dataset: patrones florales y variables predictivas"
 date: 2025-08-13
 ---
 
-# Explorando el Iris Dataset: patrones florales y variables predictivas
-
 ## Contexto
 El dataset **Iris** es un clásico de la ciencia de datos y el aprendizaje automático.  
 Incluye 150 registros con medidas de sépalos y pétalos de tres especies: *Setosa, Versicolor y Virginica*.  
