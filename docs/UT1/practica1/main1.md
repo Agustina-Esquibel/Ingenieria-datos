@@ -1,5 +1,5 @@
 ---
-title: "UT1 · Práctica 1 — Dataset Iris"
+title: "Explorando el Iris Dataset: patrones florales y variables predictivas"
 date: 2025-08-13
 ---
 
