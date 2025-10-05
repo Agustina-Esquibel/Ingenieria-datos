@@ -3,7 +3,7 @@ title: "Explorando el Iris Dataset: patrones florales y variables predictivas"
 date: 2025-08-13
 ---
 
-# UT1 · Práctica 1 — Exploración del dataset Iris
+# Explorando el Iris Dataset: patrones florales y variables predictivas
 
 ## Contexto
 El dataset **Iris** es un clásico de la ciencia de datos y el aprendizaje automático.  
