@@ -5,7 +5,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 
 ## Prácticas realizadas
 -[**Explorando el Iris Dataset: patrones florales y variables predictivas**](practica1/main1.md)
--[**Configuración del portafolio en GitHub**](practica2/main2.md)
+- [**Configuración del portafolio en GitHub**](practica2/main2.md)
 - [Práctica 3: Dataset Netflix](practica3/main3.md)
 - [Práctica 4: Dataset Taxis de Nueva York](practica4/main4.md)
 
