@@ -9,6 +9,19 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [Práctica 3: Dataset Netflix](practica3/main3.md)
 - [Práctica 4: Dataset Taxis de Nueva York](practica4/main4.md)
 
+- [**Explorando el Iris Dataset: patrones florales y variables predictivas**](./practica1/main1.md)  
+  *Análisis exploratorio de un dataset clásico para identificar relaciones y variables con potencial predictivo.*
+
+- [**Configuración del portafolio en GitHub**](./practica2/main2.md)  
+  *Estructuración del entorno de trabajo y documentación profesional con MkDocs.*
+
+- [**Netflix Data: limpieza, filtrado y visualización de patrones de consumo**](./practica3/main3.md)  
+  *Análisis de datos reales con valores faltantes y categorizaciones aplicadas a un contexto de negocio.*
+
+- [**Taxis NYC: integración de múltiples fuentes y métricas temporales**](./practica4/main4.md)  
+  *Uso de joins y análisis temporal para estudiar comportamiento urbano en datasets abiertos.
+
+
 ## Reflexión de la unidad
 - **Iris** permitió afianzar conceptos básicos de EDA y practicar correlaciones y visualizaciones rápidas.  
 - **Configuración del portafolio** fue clave para organizar todo el flujo de trabajo en GitHub Pages y asegurar que la documentación sea clara y accesible desde el inicio.  
