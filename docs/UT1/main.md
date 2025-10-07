@@ -1,4 +1,4 @@
-# Unidad Temática 1 (UT1) – EDA & Fuentes
+# Unidad Temática 1 – Exploración de Datos y Fuentes de Información
 
 En esta primera unidad se trabajaron los fundamentos de **análisis exploratorio de datos (EDA)** y la preparación de fuentes en distintos formatos.  
 El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con Matplotlib/Seaborn y documentar hallazgos siguiendo buenas prácticas.
