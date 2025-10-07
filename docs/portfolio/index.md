@@ -9,9 +9,9 @@ Cada práctica contiene **objetivos, hallazgos principales y reflexiones**.
 
 ---
 
-## Unidad Temática 1
+## Unidad Temática 1 – Análisis Exploratorio y Fuentes
 
-### Práctica 1 – Dataset Iris
+### 🌸 Explorando el Iris Dataset: patrones florales y variables predictivas
 Link: [Ver práctica](../UT1/practica1/main1.md)
 
 **Objetivo:** 
@@ -27,7 +27,7 @@ Esta práctica me ayudó a familiarizarme con técnicas básicas de EDA y a gana
 
 ---
 
-### Práctica 2 – Configuración del portafolio en GitHub
+### ⚙️ Configuración profesional del portafolio en GitHub
 Link: [Ver práctica](../UT1/practica2/main2.md)
 
 **Objetivo:** 
@@ -43,7 +43,7 @@ Aunque no implicó análisis de datos, esta práctica fue esencial para organiza
 
 ---
 
-### Práctica 3 – Dataset Netflix
+### 🎬 Netflix Data: limpieza, filtrado y visualización de patrones de consumo
 Link: [Ver práctica](../UT1/practica3/main3.md)
 
 **Objetivo:** 
@@ -59,7 +59,7 @@ Trabajar con este dataset me permitió enfrentarme a problemas reales de datos i
 
 ---
 
-### Práctica 4 – Dataset Taxis NYC
+### 🚕 Taxis NYC: integración de múltiples fuentes y métricas temporales
 Link: [Ver práctica](../UT1/practica4/main4.md)
 
 **Objetivo:** 
