@@ -25,7 +25,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - **Taxis NYC** consolidó el uso de *joins* y métricas temporales, lo que ayudó a comprender la importancia de integrar fuentes distintas para enriquecer un análisis.
 
 En conjunto, la UT1  permitió pasar de un EDA introductorio a la integración de múltiples fuentes, conectando el análisis exploratorio con la organización de proyectos reproducibles.  
-Este proceso me prepara para las siguientes unidades, donde espero profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
+Este proceso prepara para las siguientes unidades, donde se espera profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
 
 ## 🚀 Flujo de trabajo de UT1
 
@@ -35,4 +35,4 @@ Este esquema refleja cómo cada práctica aportó a un ciclo completo de trabajo
 desde la carga de datos hasta la comunicación de resultados reproducibles.
 
 ## Conclusión final de UT1
-La UT1 me permitió integrar técnica y reflexión, consolidando un flujo reproducible de análisis de datos con limpieza, visualización y documentación clara. Estas bases me preparan para avanzar hacia análisis más complejos con mayor solidez metodológica.
+La UT1 permitió integrar técnica y reflexión, consolidando un flujo reproducible de análisis de datos con limpieza, visualización y documentación clara. Estas bases preparan para avanzar hacia análisis más complejos con mayor solidez metodológica.
