@@ -1,18 +1,17 @@
 ---
-title: "Explorando el Iris Dataset: patrones florales y variables predictivas"
+title: "Explorando el Iris Dataset: primeros patrones florales y  variables predictivas"
 date: 2025-08-13
 ---
 
 ## Contexto
-El dataset **Iris** es un clásico de la ciencia de datos y el aprendizaje automático.  
-Incluye 150 registros con medidas de sépalos y pétalos de tres especies: *Setosa, Versicolor y Virginica*.  
-Su simplicidad y limpieza lo convierten en un punto de partida ideal para aplicar técnicas de análisis exploratorio de datos (EDA), practicar visualizaciones y documentar un flujo de análisis reproducible.
+El Iris Dataset es uno de los conjuntos de datos más clásicos y utilizados en el análisis exploratorio y el aprendizaje automático. Contiene 150 observaciones correspondientes a tres especies de iris (Setosa, Versicolor y Virginica), con mediciones sobre la longitud y el ancho de los sépalos y pétalos. Por su estructura simple, balanceada y sin valores faltantes, resulta ideal para aplicar un flujo completo de EDA (Exploratory Data Analysis) y comprender cómo las variables numéricas pueden servir como predictoras en tareas de clasificación.
 
 ## Objetivos
-- Conocer la estructura y balance del dataset.  
-- Generar estadísticas descriptivas y visualizaciones iniciales.  
-- Identificar correlaciones y variables clave para clasificación.  
-- Practicar un flujo reproducible de análisis con Google Colab.  
+- Explorar la estructura y balance del dataset.  
+- Calcular estadísticas descriptivas e identificar correlaciones.
+- Generar visualizaciones que revelen patrones entre las especies.  
+- Documentar un flujo reproducible en Google Colab utilizando Pandas y Seaborn.  
+- Reflexionar sobre las variables con mayor poder predictivo.  
 
 ## Actividades
 - Configuración del entorno en **Google Colab** e instalación de librerías necesarias.  
@@ -85,12 +84,12 @@ El boxplot refleja que **Setosa** tiene pétalos consistentemente más pequeños
 5. Las variables de pétalos son más discriminantes que las de sépalos para separar especies.  
 
 ## Reflexión
-Esta práctica me permitió aplicar un flujo completo de análisis exploratorio: cargar datos, describirlos, visualizarlos y extraer insights.  
+Esta práctica permitió aplicar un flujo completo de análisis exploratorio: cargar datos, describirlos, visualizarlos y extraer insights.  
 Los resultados mostraron la importancia de identificar variables discriminantes antes de aplicar algoritmos de clasificación.  
 
 Un aprendizaje importante fue comprobar cómo distintas librerías ofrecen varias formas de cargar el mismo dataset. Esto refuerza la necesidad de documentar claramente la fuente utilizada, ya que la trazabilidad del origen de los datos es fundamental para la reproducibilidad de los proyectos.  
 
-El ejercicio me mostró la ventaja de documentar cada paso en un entorno reproducible (Colab + GitHub), reforzando la idea de que la calidad del análisis depende tanto de la limpieza del código como de la claridad en la comunicación de resultados.  
+El ejercicio mostró la ventaja de documentar cada paso en un entorno reproducible (Colab + GitHub), reforzando la idea de que la calidad del análisis depende tanto de la limpieza del código como de la claridad en la comunicación de resultados.  
 
 Un aspecto crítico es que, al tratarse de un dataset pequeño y balanceado, el análisis fue sencillo y directo. Sin embargo, esto también es una limitación: no refleja la complejidad de datos reales con outliers, ruido o desbalance severo. Este contraste lo convierte en un excelente punto de partida, pero también en un recordatorio de que los siguientes desafíos requerirán mayor profundidad analítica.  
 
@@ -103,6 +102,6 @@ Un aspecto crítico es que, al tratarse de un dataset pequeño y balanceado, el 
 - [Iris Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/iris)  
 
 ## Navegación
-🔙 [Volver a Unidad Temática 1](../main.md)  
+⬅️ [Volver a Unidad Temática 1](../main.md)  
 ➡️ [Ir a Práctica 2 – Configuración del portafolio](../practica2/main2.md)  
-🔝 [Índice del Portafolio](../../portfolio/index.md)  
+📓 [Índice del Portafolio](../../portfolio/index.md)  
