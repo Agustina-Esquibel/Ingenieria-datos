@@ -6,6 +6,7 @@ date: 2025-08-20
 ## Contexto
 El dataset de Netflix contiene información sobre más de 6.000 títulos entre películas y series, con variables como tipo de contenido, país, director, elenco, año de lanzamiento, fecha de incorporación, duración, clasificación y géneros.  
 Este conjunto de datos es ampliamente utilizado para prácticas de análisis exploratorio de datos (EDA) porque refleja un escenario **realista**: datos incompletos, categorías heterogéneas y variables que requieren limpieza antes del análisis.
+El objetivo del análisis es comprender la evolución del catálogo y los patrones de producción y consumo dentro de la plataforma.
 
 ## Objetivos
 - Explorar la estructura y calidad del dataset.  
@@ -72,8 +73,8 @@ Estos hallazgos reflejan cómo la evolución del streaming transformó el perfil
 5. Existen variables con gran proporción de datos faltantes, especialmente en *director* y *cast*, lo que limita ciertos análisis.  
 
 ## Reflexión
-Esta práctica permitió aplicar un flujo completo de análisis exploratorio: carga, limpieza, visualización y síntesis en un dashboard.  
-Lo desafiante fue trabajar con un **dataset real**, con valores faltantes y categorías inconsistentes, lo que me obligó a tomar decisiones de limpieza y a reflexionar sobre cómo estas afectan los resultados.  
+Esta práctica permitió aplicar un flujo completo de análisis exploratorio, incluyendo carga, limpieza, visualización y síntesis mediante un dashboard
+Lo desafiante fue trabajar con un **dataset real**, con valores faltantes y categorías inconsistentes, lo que  obligó a tomar decisiones de limpieza y a reflexionar sobre cómo estas afectan los resultados.  
 
 El caso de Netflix muestra la importancia de:  
 - Detectar y documentar patrones de calidad de datos.  
