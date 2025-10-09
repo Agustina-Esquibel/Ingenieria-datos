@@ -65,10 +65,11 @@ Este flujo organizado asegura trazabilidad y reproducibilidad, siguiendo buenas 
 | species         | string | -      | Especie de la flor (*Setosa, Versicolor, Virginica*) |
 
 #### Análisis de valores faltantes
+![missing](../../assets/Missing.png)
 El gráfico de valores faltantes confirma que el conjunto de datos se encuentra completo, sin registros nulos o vacíos.  
 Esto garantiza la consistencia de las observaciones y evita la necesidad de aplicar técnicas de imputación o limpieza de datos adicionales
 
-### Mapa de Correlaciones
+### Matriz de Correlaciones
 La matriz de correlaciones muestra las relaciones entre las variables numéricas.  
 Se observa una correlación muy fuerte (~0.96) entre `petal_length` y `petal_width`, lo que sugiere que ambas aportan información similar y pueden funcionar como variables predictoras redundantes en un modelo de clasificación.
 ![](../../assets/heatmap.png)
