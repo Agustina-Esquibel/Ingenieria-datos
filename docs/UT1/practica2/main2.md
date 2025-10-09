@@ -1,9 +1,7 @@
 ---
-title: "UT1 · Práctica 2 — Configuración del Portfolio en GitHub Pages"
+title: "Configuración del Portfolio en GitHub"
 date: 2025-08-20
 ---
-
-# UT1 · Práctica 2 — Configuración del portafolio en GitHub Pages
 
 ## Contexto
 Para documentar y presentar los análisis realizados en la unidad, fue necesario configurar un **portafolio en GitHub Pages**.  
