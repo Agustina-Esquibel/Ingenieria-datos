@@ -89,10 +89,10 @@ Las distribuciones no se superponen significativamente, lo que refuerza la utili
 ![hist_petal_length](../../assets/hist_petal_length.png)
 
 #### Boxplot del ancho de pétalo
-
 El análisis del ancho de pétalo complementa los resultados anteriores.  
 Se observa nuevamente una separación marcada entre *Setosa* y las demás especies, mientras que *Versicolor* y *Virginica* mantienen valores parcialmente solapados.  
 Esto sugiere que la combinación de largo y ancho de pétalo es adecuada para construir un modelo de clasificación con alto desempeño.
+![box_petal_width](../../assets/box_petal_width.png)
 
 ---
 ## Insights clave
