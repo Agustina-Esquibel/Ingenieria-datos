@@ -1,12 +1,10 @@
 ---
-title: "UT1 · Práctica 4 — EDA Multifuentes y Joins"
+title: "Analizando los viajes de Nueva York: integración de múltiples fuentes y comparación con Joins"
 date: 2025-08-27
 ---
 
-# UT1 · Práctica 4 — EDA Multi-fuentes y Joins
-
 ## Contexto
-En esta práctica se trabajó con múltiples fuentes de datos (viajes, zonas y calendario de eventos) aplicando procesos de integración.  
+En esta práctica se integraron múltiples fuentes de datos del ecosistema de transporte de Nueva York —viajes, zonas y calendario de eventos— aplicando distintas estrategias de unión (*joins*)
 El objetivo principal fue comprender cómo los distintos tipos de *joins* permiten enriquecer los datos y facilitar un análisis posterior más profundo.
 
 ## Objetivos
@@ -26,12 +24,10 @@ El objetivo principal fue comprender cómo los distintos tipos de *joins* permit
 7. Reflexión crítica sobre la utilidad de los *joins* y la integración multifuente.  
 
 ## Desarrollo
-El trabajo permitió poner en práctica técnicas de unión de datasets en *pandas*.  
-Se verificó que el uso de **LEFT JOIN** garantiza mantener la totalidad de los registros originales, incluso si faltan coincidencias en la tabla de referencia. En contraste, el **INNER JOIN** reduce el universo de análisis, preservando solo las filas con coincidencia exacta.  
-
-La incorporación de información contextual (zonas y días especiales) aportó una visión más rica que la obtenida con un dataset aislado. Esto permitió construir indicadores agregados por borough y comparar la demanda en días normales frente a días especiales.  
-
-Además, se aplicaron cálculos de eficiencia y optimización de memoria para manejar la gran cantidad de registros, demostrando la importancia de preparar los datos antes de los *joins*.  
+El trabajo permitió poner en práctica las técnicas de unión de datasets en *pandas*.  
+Se observó que el uso de *LEFT JOIN* garantiza mantener la totalidad de los registros originales, incluso si faltan coincidencias en la tabla de referencia. En cambio, *INNER JOIN* restringe el universo de análisis, priorizando solo las coincidencias exactas.  
+La integración del contexto espacial (zonas) y temporal (días especiales) aportó una visión más completa que la obtenida con un dataset aislado. Esto permitió calcular métricas agregadas por *borough* y comparar la demanda de viajes según el tipo de día, destacando el impacto de eventos y feriados en el volumen de transporte.  
+Además, se aplicaron cálculos de eficiencia y optimización de memoria para manejar grandes volúmenes de datos, reforzando la importancia de preparar correctamente las fuentes antes de ejecutar los *joins*
 
 ## Evidencias
 - ✅ Se procesaron y unificaron datos de viajes con sus zonas geográficas (asignación de boroughs).  
@@ -65,5 +61,5 @@ En conclusión, integrar datos y reflexionar críticamente sobre la estrategia d
 - [Documentación `pandas.merge`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html)  
 
 ## Navegación
-🔙 [Volver a Unidad Temática 1](../main.md)  
-🔝 [Índice del Portafolio](../../portfolio/index.md)
+⬅️ [Volver a Unidad Temática 1](../main.md)  
+📓 [Índice del Portafolio](../../portfolio/index.md)
