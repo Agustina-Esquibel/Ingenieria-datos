@@ -64,18 +64,36 @@ Este flujo organizado asegura trazabilidad y reproducibilidad, siguiendo buenas 
 | petal_width     | float  | cm     | Ancho del pétalo            |
 | species         | string | -      | Especie de la flor (*Setosa, Versicolor, Virginica*) |
 
-### Heatmap
-El heatmap confirma una correlación muy fuerte (~0.96) entre el largo y el ancho de los pétalos, lo que indica que ambas variables aportan información muy similar en un análisis predictivo.  
+#### Análisis de valores faltantes
+El gráfico de valores faltantes confirma que el conjunto de datos se encuentra completo, sin registros nulos o vacíos.  
+Esto garantiza la consistencia de las observaciones y evita la necesidad de aplicar técnicas de imputación o limpieza de datos adicionales
+
+### Mapa de Correlaciones
+La matriz de correlaciones muestra las relaciones entre las variables numéricas.  
+Se observa una correlación muy fuerte (~0.96) entre `petal_length` y `petal_width`, lo que sugiere que ambas aportan información similar y pueden funcionar como variables predictoras redundantes en un modelo de clasificación.
 ![](../../assets/heatmap.png)
 
-### Pairplot
+### Pairplot comparativo por especie 
 El pairplot muestra cómo **Setosa** se separa claramente de las demás especies en variables de pétalos, mientras que **Versicolor** y **Virginica** presentan mayor solapamiento, lo que anticipa dificultades de clasificación lineal entre ambas.  
 ![](../../assets/Pairplot.png)
 
-### Boxplot
+### Boxplot del largo de pétalo
 El boxplot refleja que **Setosa** tiene pétalos consistentemente más pequeños, mientras que **Virginica** concentra los valores más altos, confirmando que la longitud y ancho de pétalos son las variables más discriminantes.  
 ![](../../assets/Box_petal_length.png)
 
+#### Histograma del largo de pétalo
+
+El histograma permite visualizar la distribución de `petal_length` por especie.  
+*Setosa* presenta valores concentrados entre 1 y 2 cm, *Versicolor* entre 4 y 5 cm, y *Virginica* entre 5 y 6,5 cm.  
+Las distribuciones no se superponen significativamente, lo que refuerza la utilidad de esta variable para distinguir especies.
+
+#### Boxplot del ancho de pétalo
+
+El análisis del ancho de pétalo complementa los resultados anteriores.  
+Se observa nuevamente una separación marcada entre *Setosa* y las demás especies, mientras que *Versicolor* y *Virginica* mantienen valores parcialmente solapados.  
+Esto sugiere que la combinación de largo y ancho de pétalo es adecuada para construir un modelo de clasificación con alto desempeño.
+
+---
 ## Insights clave
 1. **Setosa** se diferencia netamente de las otras dos especies en las medidas de pétalos.  
 2. Existe una correlación de ~0.96 entre `petal_length` y `petal_width`.  
