@@ -36,6 +36,26 @@ Además, se aplicaron cálculos de eficiencia y optimización de memoria para ma
 - 🏙️ Se identificaron los boroughs con mayor volumen de viajes (Manhattan, Queens y Brooklyn).  
 - 📈 Se verificó el impacto de los días especiales en la demanda frente a los días normales.  
 
+### Comparación visual de estrategias de JOIN
+
+**Resumen de registros tras la integración**
+| Paso | Registros | Descripción |
+|---|---:|---|
+| Viajes (base) | 100% | Universo de viajes crudos |
+| LEFT JOIN con zonas | ~100% | Conserva viajes sin zona conocida (nulos); no pierde universo |
+| INNER JOIN con zonas | ↓ | Elimina viajes sin zona (solo coincidencias exactas) |
+
+**¿Qué cambia con cada JOIN? (ejemplo ilustrativo)**
+| id_viaje | id_zona | LEFT JOIN zona | INNER JOIN zona |
+|---:|---:|:---:|:---:|
+| 101 | 12 | ✅ | ✅ |
+| 102 | —  | ✅ *(zona = nulo)* | ❌ *(se descarta)* |
+| 103 | 07 | ✅ | ✅ |
+
+**Conclusión operativa**  
+- **LEFT JOIN** preserva el **universo completo** y permite análisis con nulos controlados.  
+- **INNER JOIN** **depura** pero **reduce alcance**; útil si se requiere consistencia estricta.
+
 ## Insights clave
 1. El **LEFT JOIN** fue clave para no perder viajes sin correspondencia en zonas, preservando el universo completo de análisis.  
 2. La integración con el calendario permitió detectar variaciones de demanda en días especiales, invisibles con un dataset aislado.  
