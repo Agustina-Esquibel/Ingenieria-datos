@@ -122,5 +122,5 @@ Un aspecto crítico es que, al tratarse de un dataset pequeño y balanceado, el 
 
 ## Navegación
 ⬅️ [Volver a Unidad Temática 1](../main.md)  
-➡️ [Ir a Práctica 2 – Configuración del portafolio](../practica2/main2.md)  
+➡️ [Ir a Práctica 2 – Configuración del portfolio](../practica2/main2.md)  
 📓 [Índice del Portafolio](../../portfolio/index.md)  
