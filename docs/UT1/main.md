@@ -11,7 +11,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [**Configuración del portfolio en GitHub**](./practica2/main2.md)  
   *Estructuración del entorno de trabajo y documentación profesional con MkDocs.*
 
-- [**Netflix Data: limpieza, filtrado y visualización de patrones de consumo**](./practica3/main3.md)  
+- [**Explorando el catálogo de Netflix: tendencias globales y patrones de contenido audiovisual**](./practica3/main3.md)  
   *Análisis de datos reales con valores faltantes y categorizaciones aplicadas a un contexto de negocio.*
 
 - [**Taxis NYC: integración de múltiples fuentes y métricas temporales**](./practica4/main4.md)  
