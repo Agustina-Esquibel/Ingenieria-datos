@@ -11,7 +11,7 @@ Cada práctica contiene **objetivos, hallazgos principales y reflexiones**.
 
 ## Unidad Temática 1 – Análisis Exploratorio y Fuentes
 
-### 🌸 Explorando el Iris Dataset: patrones florales y variables predictivas
+### 🌸 Explorando el Iris Dataset: primeros patrones florales y variables predictivas
 Link: [Ver práctica](../UT1/practica1/main1.md)
 
 **Objetivo:** 
@@ -27,7 +27,7 @@ Esta práctica me ayudó a familiarizarme con técnicas básicas de EDA y a gana
 
 ---
 
-### ⚙️ Configuración profesional del portafolio en GitHub
+### ⚙️ Configuración del portfolio en GitHub
 Link: [Ver práctica](../UT1/practica2/main2.md)
 
 **Objetivo:** 
