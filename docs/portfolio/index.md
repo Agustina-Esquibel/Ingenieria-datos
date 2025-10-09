@@ -43,7 +43,7 @@ Aunque no implicó análisis de datos, esta práctica fue esencial para organiza
 
 ---
 
-### 🎬 Netflix Data: limpieza, filtrado y visualización de patrones de consumo
+### 🎬 Explorando el catálogo de Netflix: tendencias globales y patrones de contenido audiovisual
 Link: [Ver práctica](../UT1/practica3/main3.md)
 
 **Objetivo:** 
