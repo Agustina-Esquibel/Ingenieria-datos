@@ -54,6 +54,6 @@ Además, reforzó la disciplina de trabajar con **control de versiones (Git)** y
 Este aprendizaje me prepara para futuras prácticas, donde la documentación clara será tan importante como los análisis técnicos.  
 
 ## Navegación
-🔙 [Volver a Unidad Temática 1](../main.md)  
+⬅️ [Volver a Unidad Temática 1](../main.md)  
 ➡️ [Ir a Práctica 3 – Dataset Netflix](../practica3/main3.md)  
-🔝 [Índice del Portafolio](../../portfolio/index.md)  
+📓 [Índice del Portafolio](../../portfolio/index.md)  
