@@ -65,9 +65,9 @@ Este flujo organizado asegura trazabilidad y reproducibilidad, siguiendo buenas 
 | species         | string | -      | Especie de la flor (*Setosa, Versicolor, Virginica*) |
 
 #### Análisis de valores faltantes
-![missing](../../assets/Missing.png)
 El gráfico de valores faltantes confirma que el conjunto de datos se encuentra completo, sin registros nulos o vacíos.  
-Esto garantiza la consistencia de las observaciones y evita la necesidad de aplicar técnicas de imputación o limpieza de datos adicionales
+Esto garantiza la consistencia de las observaciones y evita la necesidad de aplicar técnicas de imputación o limpieza de datos adicionales.
+![missing](../../assets/Missing.png)
 
 ### Matriz de Correlaciones
 La matriz de correlaciones muestra las relaciones entre las variables numéricas.  
@@ -83,10 +83,10 @@ El boxplot refleja que **Setosa** tiene pétalos consistentemente más pequeños
 ![](../../assets/Box_petal_length.png)
 
 #### Histograma del largo de pétalo
-
 El histograma permite visualizar la distribución de `petal_length` por especie.  
 *Setosa* presenta valores concentrados entre 1 y 2 cm, *Versicolor* entre 4 y 5 cm, y *Virginica* entre 5 y 6,5 cm.  
 Las distribuciones no se superponen significativamente, lo que refuerza la utilidad de esta variable para distinguir especies.
+![hist_petal_length](../../assets/hist_petal_length.png)
 
 #### Boxplot del ancho de pétalo
 
