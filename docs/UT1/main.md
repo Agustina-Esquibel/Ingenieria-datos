@@ -8,7 +8,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [**Explorando el Iris Dataset: patrones florales y variables predictivas**](./practica1/main1.md)  
   *Análisis exploratorio de un dataset clásico para identificar relaciones y variables con potencial predictivo.*
 
-- [**Configuración del portafolio en GitHub**](./practica2/main2.md)  
+- [**Configuración del portfolio en GitHub**](./practica2/main2.md)  
   *Estructuración del entorno de trabajo y documentación profesional con MkDocs.*
 
 - [**Netflix Data: limpieza, filtrado y visualización de patrones de consumo**](./practica3/main3.md)  
@@ -27,7 +27,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 En conjunto, la UT1  permitió pasar de un EDA introductorio a la integración de múltiples fuentes, conectando el análisis exploratorio con la organización de proyectos reproducibles.  
 Este proceso prepara para las siguientes unidades, donde se espera profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
 
-## 🚀 Flujo de trabajo de UT1
+## Flujo de trabajo de UT1
 
 ![](../assets/flujo_ut1.png)
 
