@@ -14,7 +14,7 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [**Explorando el catálogo de Netflix: tendencias globales y patrones de contenido audiovisual**](./practica3/main3.md)  
   *Análisis de datos reales con valores faltantes y categorizaciones aplicadas a un contexto de negocio.*
 
-- [**Taxis NYC: integración de múltiples fuentes y métricas temporales**](./practica4/main4.md)  
+- [**Analizando los viajes de Nueva York: integración de múltiples fuentes y comparación con Joins**](./practica4/main4.md)  
   *Uso de joins y análisis temporal para estudiar comportamiento urbano en datasets abiertos.*
 
 
