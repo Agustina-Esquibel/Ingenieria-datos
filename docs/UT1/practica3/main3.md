@@ -1,9 +1,7 @@
 ---
-title: "UT1 · Práctica 3 — Exploración del dataset Netflix"
+title: "Explorando el catálogo de Netflix: tendencias globales y patrones de contenido audiovisual"
 date: 2025-08-20
 ---
-
-# UT1 · Práctica 3 — EDA Netflix con Visualizaciones
 
 ## Contexto
 El dataset de Netflix contiene información sobre más de 6.000 títulos entre películas y series, con variables como tipo de contenido, país, director, elenco, año de lanzamiento, fecha de incorporación, duración, clasificación y géneros.  
@@ -40,11 +38,31 @@ Finalmente, los gráficos se integraron en un **dashboard único** para facilita
 ## Evidencias
 ![](../../assets/p2_dashboard.png)
 
-Este dashboard resume los principales hallazgos:  
-- Predominio de películas sobre series.  
-- Aceleración de estrenos a partir de 2010.  
-- Concentración en Estados Unidos e India.  
-- Géneros y ratings distribuidos de forma heterogénea.  
+### 🎬 Distribución de Movies vs TV Shows
+El gráfico circular evidencia el claro predominio de películas (alrededor del 68%) frente a series (32%) dentro del catálogo.  
+Esta diferencia refleja el enfoque original de Netflix como distribuidor de películas antes de su expansión hacia producciones seriadas, destacando una estrategia centrada en el contenido cinematográfico.
+
+### 📈 Evolución temporal de títulos lanzados
+La serie temporal muestra un crecimiento sostenido en la cantidad de estrenos a partir de 2010, con un pico cercano a 2018.  
+Este incremento coincide con la consolidación del streaming como formato dominante y la inversión de Netflix en producciones originales, lo que sugiere una etapa de fuerte expansión global.
+
+### 🌎 Top 10 de países productores
+El gráfico de barras confirma que Estados Unidos e India son los mayores productores dentro del catálogo, seguidos por Reino Unido y Canadá.  
+Esta concentración geográfica indica una fuerte presencia angloparlante y una diversificación incipiente hacia mercados asiáticos, en línea con la internacionalización de la plataforma.
+
+### 🎭 Ratings por tipo de contenido
+El gráfico de barras agrupadas evidencia que los ratings más frecuentes son **TV-MA** y **TV-14**, correspondientes a contenido para público adolescente y adulto.  
+Esto muestra la orientación predominante de Netflix hacia audiencias maduras, con menor proporción de títulos familiares o infantiles.
+
+### 🔥 Evolución por década y tipo de contenido (heatmap)
+El mapa de calor sintetiza la evolución histórica del catálogo: a partir de 2010 se observa un salto en la producción, sobre todo en películas.  
+Las décadas anteriores presentan menor densidad, lo que refuerza la idea de un crecimiento reciente impulsado por el modelo digital.  
+El patrón destaca cómo la disponibilidad de títulos aumenta drásticamente en los últimos años, con una expansión sostenida en diversidad temática.
+
+### Síntesis del dashboard
+El dashboard integrador permite observar de forma global las dinámicas principales del catálogo de Netflix:  
+un claro predominio de películas, una expansión sostenida de estrenos en la última década, la concentración geográfica en pocos países y una orientación hacia contenidos maduros.  
+Estos hallazgos reflejan cómo la evolución del streaming transformó el perfil de la oferta audiovisual, combinando volumen, diversidad y segmentación de audiencias.
 
 ## Insights clave
 1. El 68% del contenido corresponde a películas, frente al 32% de series.  
