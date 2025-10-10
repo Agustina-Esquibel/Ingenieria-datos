@@ -17,12 +17,15 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [**Analizando los viajes de Nueva York: integración de múltiples fuentes y comparación con Joins**](./practica4/main4.md)  
   *Uso de joins y análisis temporal para estudiar comportamiento urbano en datasets abiertos.*
 
+- [**Explorando el catálogo de moda: análisis de precios y marcas**](extraUT1.md)
+
 
 ## Reflexión de la unidad
 - **Iris** permitió afianzar conceptos básicos de EDA y practicar correlaciones y visualizaciones rápidas.  
 - **Configuración del portafolio** fue clave para organizar todo el flujo de trabajo en GitHub Pages y asegurar que la documentación sea clara y accesible desde el inicio.  
 - **Netflix** enfrentó al desafío de limpiar datos reales con valores faltantes, aplicar filtros y generar visualizaciones que aporten insights concretos.  
 - **Taxis NYC** consolidó el uso de *joins* y métricas temporales, lo que ayudó a comprender la importancia de integrar fuentes distintas para enriquecer un análisis.
+- **Moda Retail** incorporó un análisis aplicado sobre un nuevo formato de datos (JSON), reforzando la capacidad para adaptar procesos de limpieza, exploración y visualización a distintas estructuras y dominios. Además, permitió comparar precios y marcas en distintos contextos estacionales, ampliando la perspectiva analítica hacia escenarios comerciales reales.
 
 En conjunto, la UT1  permitió pasar de un EDA introductorio a la integración de múltiples fuentes, conectando el análisis exploratorio con la organización de proyectos reproducibles.  
 Este proceso prepara para las siguientes unidades, donde se espera profundizar en técnicas de modelado y análisis avanzado, aplicando lo aprendido sobre limpieza, visualización y documentación como base sólida.
