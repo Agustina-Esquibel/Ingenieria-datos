@@ -30,11 +30,34 @@ La integración del contexto espacial (zonas) y temporal (días especiales) apor
 Además, se aplicaron cálculos de eficiencia y optimización de memoria para manejar grandes volúmenes de datos, reforzando la importancia de preparar correctamente las fuentes antes de ejecutar los *joins*
 
 ## Evidencias
-- ✅ Se procesaron y unificaron datos de viajes con sus zonas geográficas (asignación de boroughs).  
-- ✅ Se integró el calendario de eventos y se creó la bandera `is_special_day` para el análisis comparativo.  
-- 📊 Se calcularon métricas consolidadas: total de registros, distancia promedio y tarifa promedio.  
-- 🏙️ Se identificaron los boroughs con mayor volumen de viajes (Manhattan, Queens y Brooklyn).  
-- 📈 Se verificó el impacto de los días especiales en la demanda frente a los días normales.  
+## Visualizaciones complementarias
+
+### 1. Número de viajes por hora del día
+
+La distribución horaria evidencia una baja actividad entre las 03:00 y las 05:00, seguida por un aumento sostenido hacia las horas laborales y un máximo de demanda entre las 17:00 y las 19:00.
+
+---
+
+### 2. Tarifa promedio por hora del día
+
+Se observa una variación horaria en las tarifas, con valores más altos en la madrugada (alrededor de las 04:00–05:00) y un segundo incremento al atardecer, coincidiendo con los picos de tránsito.
+
+---
+
+### 3. Número de viajes por *borough*
+
+El análisis geográfico confirma la concentración de viajes en Manhattan, seguido por Queens. El resto de las zonas presenta volúmenes significativamente menores, lo que refleja la centralidad del distrito de Manhattan en la actividad del transporte urbano.
+
+---
+
+### 4. Matriz de correlación entre variables numéricas
+
+La matriz de correlación muestra una relación muy alta entre `total_amount` y `fare_amount` (0.98), una correlación moderada entre `tip_amount` y `fare_amount`, y una baja asociación entre `trip_distance` y los montos, lo que sugiere que la tarifa total está más influida por recargos y componentes fijos que por la distancia recorrida.
+
+---
+
+### Conclusión general
+Las visualizaciones refuerzan el análisis del dataset mediante una comprensión más clara de los patrones temporales, geográficos y económicos del sistema de transporte. En conjunto, aportan evidencia visual que respalda los resultados obtenidos en el pipeline de integración y análisis.
 
 ## Insights clave
 1. El **LEFT JOIN** fue clave para no perder viajes sin correspondencia en zonas, preservando el universo completo de análisis.  
@@ -53,7 +76,7 @@ En conclusión, integrar datos y reflexionar críticamente sobre la estrategia d
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-[🔗 Abrir en Google Colab](https://colab.research.google.com/github/agustina-esquibel/Ingenieria-datos/blob/main/docs/UT1/practica4/Agustina_Esquibelpractico4.ipynb)
+[🔗 Abrir en Google Colab](https://colab.research.google.com/github/agustina-esquibel/Ingenieria-datos/blob/main/docs/UT1/practica4/Agustina_Esquibelpractico4final.ipynb)
 
 ## Referencias
 - [NYC Taxi Dataset](https://www1.nyc.gov)  
