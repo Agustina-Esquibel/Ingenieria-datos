@@ -73,3 +73,18 @@ Integrar datasets de viajes, zonas y calendario para aplicar distintos *joins* y
 Esta práctica fue la más desafiante de la UT1, porque implicó integración de múltiples fuentes y análisis temporal. Me permitió valorar cómo la correcta unión de datasets cambia el nivel de los insights obtenidos.
 
 ---
+
+🛍️ **Explorando el catálogo de moda: análisis de precios y marcas**
+
+**Link:** [Ver práctica](../UT1/extraUT1.md)
+
+**Objetivo:**  
+Analizar datos de ventas de moda en formato JSON para comparar precios, marcas y temporadas, aplicando técnicas de EDA y visualización.
+
+**Hallazgos clave:**  
+- Se identificaron diferencias de precios promedio entre categorías y marcas.  
+- Las marcas *Zara*, *Mango* y *Banana Republic* destacaron por tener mayor volumen en catálogo.  
+- Los precios mostraron variaciones estacionales con picos en primavera y otoño.  
+
+**Reflexión:**  
+Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y formato de datos (JSON), fortaleciendo la capacidad para limpiar, explorar y visualizar información estructurada en contextos comerciales.
