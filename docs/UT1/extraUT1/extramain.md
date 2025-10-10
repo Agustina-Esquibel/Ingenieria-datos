@@ -1,5 +1,5 @@
 ---
-title: Explorando el catálogo de moda: análisis de precios y marcas
+title: "Explorando el catálogo de moda: análisis de precios y marcas"
 date: 2025-10-10
 ---
 
