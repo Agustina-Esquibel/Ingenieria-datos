@@ -17,9 +17,8 @@ El objetivo fue aplicar técnicas básicas con Pandas, crear visualizaciones con
 - [**Analizando los viajes de Nueva York: integración de múltiples fuentes y comparación con Joins**](./practica4/main4.md)  
   *Uso de joins y análisis temporal para estudiar comportamiento urbano en datasets abiertos.*
 
-- [**Explorando el catálogo de moda: análisis de precios y marcas**](./extraUT1/extramain.md)
-  
-*Comparación de precios, marcas y temporadas en datos de retail utilizando un dataset en formato JSON.*  
+- **[Explorando el catálogo de moda: análisis de precios y marcas](./extraUT1/extramain.md)**  
+*Comparación de precios, marcas y temporadas en datos de retail utilizando un dataset en formato JSON.*
 
 ## Reflexión de la unidad
 - **Iris** permitió afianzar conceptos básicos de EDA y practicar correlaciones y visualizaciones rápidas.  
