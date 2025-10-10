@@ -29,13 +29,6 @@ Se observó que el uso de *LEFT JOIN* garantiza mantener la totalidad de los reg
 La integración del contexto espacial (zonas) y temporal (días especiales) aportó una visión más completa que la obtenida con un dataset aislado. Esto permitió calcular métricas agregadas por *borough* y comparar la demanda de viajes según el tipo de día, destacando el impacto de eventos y feriados en el volumen de transporte.  
 Además, se aplicaron cálculos de eficiencia y optimización de memoria para manejar grandes volúmenes de datos, reforzando la importancia de preparar correctamente las fuentes antes de ejecutar los *joins*
 
-## Evidencias
-- ✅ Se procesaron y unificaron datos de viajes con sus zonas geográficas (asignación de boroughs).  
-- ✅ Se integró el calendario de eventos y se creó la bandera `is_special_day` para el análisis comparativo.  
-- 📊 Se calcularon métricas consolidadas: total de registros, distancia promedio y tarifa promedio.  
-- 🏙️ Se identificaron los boroughs con mayor volumen de viajes (Manhattan, Queens y Brooklyn).  
-- 📈 Se verificó el impacto de los días especiales en la demanda frente a los días normales.  
-
 ### Comparación visual de estrategias de JOIN
 
 **Resumen de registros tras la integración**
@@ -55,6 +48,13 @@ Además, se aplicaron cálculos de eficiencia y optimización de memoria para ma
 **Conclusión operativa**  
 - **LEFT JOIN** preserva el **universo completo** y permite análisis con nulos controlados.  
 - **INNER JOIN** **depura** pero **reduce alcance**; útil si se requiere consistencia estricta.
+
+## Evidencias
+- ✅ Se procesaron y unificaron datos de viajes con sus zonas geográficas (asignación de boroughs).  
+- ✅ Se integró el calendario de eventos y se creó la bandera `is_special_day` para el análisis comparativo.  
+- 📊 Se calcularon métricas consolidadas: total de registros, distancia promedio y tarifa promedio.  
+- 🏙️ Se identificaron los boroughs con mayor volumen de viajes (Manhattan, Queens y Brooklyn).  
+- 📈 Se verificó el impacto de los días especiales en la demanda frente a los días normales.  
 
 ## Insights clave
 1. El **LEFT JOIN** fue clave para no perder viajes sin correspondencia en zonas, preservando el universo completo de análisis.  
