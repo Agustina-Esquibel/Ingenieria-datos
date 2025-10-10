@@ -29,26 +29,6 @@ Se observó que el uso de *LEFT JOIN* garantiza mantener la totalidad de los reg
 La integración del contexto espacial (zonas) y temporal (días especiales) aportó una visión más completa que la obtenida con un dataset aislado. Esto permitió calcular métricas agregadas por *borough* y comparar la demanda de viajes según el tipo de día, destacando el impacto de eventos y feriados en el volumen de transporte.  
 Además, se aplicaron cálculos de eficiencia y optimización de memoria para manejar grandes volúmenes de datos, reforzando la importancia de preparar correctamente las fuentes antes de ejecutar los *joins*
 
-### Comparación visual de estrategias de JOIN
-
-**Resumen de registros tras la integración**
-| Paso | Registros | Descripción |
-|---|---:|---|
-| Viajes (base) | 100% | Universo de viajes crudos |
-| LEFT JOIN con zonas | ~100% | Conserva viajes sin zona conocida (nulos); no pierde universo |
-| INNER JOIN con zonas | ↓ | Elimina viajes sin zona (solo coincidencias exactas) |
-
-**¿Qué cambia con cada JOIN? (ejemplo ilustrativo)**
-| id_viaje | id_zona | LEFT JOIN zona | INNER JOIN zona |
-|---:|---:|:---:|:---:|
-| 101 | 12 | ✅ | ✅ |
-| 102 | —  | ✅ *(zona = nulo)* | ❌ *(se descarta)* |
-| 103 | 07 | ✅ | ✅ |
-
-**Conclusión operativa**  
-- **LEFT JOIN** preserva el **universo completo** y permite análisis con nulos controlados.  
-- **INNER JOIN** **depura** pero **reduce alcance**; útil si se requiere consistencia estricta.
-
 ## Evidencias
 - ✅ Se procesaron y unificaron datos de viajes con sus zonas geográficas (asignación de boroughs).  
 - ✅ Se integró el calendario de eventos y se creó la bandera `is_special_day` para el análisis comparativo.  
