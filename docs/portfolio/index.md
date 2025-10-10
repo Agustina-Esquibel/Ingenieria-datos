@@ -2,7 +2,6 @@
 title: "Portafolio - Índice"
 date: 2025-09-06
 ---
-# Portfolio
 
 Prácticas del curso de Ingeniería de Datos, organizadas por unidades.  
 Cada práctica contiene **objetivos, hallazgos principales y reflexiones**.
