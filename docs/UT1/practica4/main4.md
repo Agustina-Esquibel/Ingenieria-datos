@@ -33,26 +33,26 @@ Además, se aplicaron cálculos de eficiencia y optimización de memoria para ma
 ## Visualizaciones complementarias
 
 ### 1. Número de viajes por hora del día
-
 La distribución horaria evidencia una baja actividad entre las 03:00 y las 05:00, seguida por un aumento sostenido hacia las horas laborales y un máximo de demanda entre las 17:00 y las 19:00.
+![Número de viajes por hora](../../assets/viajes_por_hora.png)
 
 ---
 
 ### 2. Tarifa promedio por hora del día
-
 Se observa una variación horaria en las tarifas, con valores más altos en la madrugada (alrededor de las 04:00–05:00) y un segundo incremento al atardecer, coincidiendo con los picos de tránsito.
+![Tarifa promedio por hora](../../assets/tarifa_por_hora.png)
 
 ---
 
 ### 3. Número de viajes por *borough*
-
 El análisis geográfico confirma la concentración de viajes en Manhattan, seguido por Queens. El resto de las zonas presenta volúmenes significativamente menores, lo que refleja la centralidad del distrito de Manhattan en la actividad del transporte urbano.
+![Número de viajes por borough](../../assets/viajes_por_borough.png)
 
 ---
 
 ### 4. Matriz de correlación entre variables numéricas
-
 La matriz de correlación muestra una relación muy alta entre `total_amount` y `fare_amount` (0.98), una correlación moderada entre `tip_amount` y `fare_amount`, y una baja asociación entre `trip_distance` y los montos, lo que sugiere que la tarifa total está más influida por recargos y componentes fijos que por la distancia recorrida.
+![Heatmap de correlaciones](../../assets/heatmap_correlaciones.png)
 
 ---
 
