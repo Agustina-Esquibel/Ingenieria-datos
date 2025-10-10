@@ -75,7 +75,7 @@ Esta práctica fue la más desafiante de la UT1, porque implicó integración de
 
 ---
 
-🛍️ **Explorando el catálogo de moda: análisis de precios y marcas**
+🛍️ **Explorando el catálogo de moda: análisis de precios y marcas**  
 Link: [Ver práctica](../UT1/extraUT1/extramain.md)
 
 **Objetivo:**  
