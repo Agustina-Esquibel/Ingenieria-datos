@@ -3,8 +3,6 @@ title: "Portafolio – Inicio"
 date: 2025-09-06
 ---
 
-# Portafolio – Inicio
-
 Bienvenido a mi portafolio académico del curso de **Ingeniería de Datos**.  
 Aquí recopilo mis avances, reflexiones y prácticas, organizadas por **Unidades Temáticas**.
 
