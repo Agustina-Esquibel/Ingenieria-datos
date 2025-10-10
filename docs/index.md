@@ -18,7 +18,15 @@ Dominar las técnicas de preparación y limpieza de datos, explorar formas de re
 **EDA inicial, limpieza y visualización básica**  
 Esta unidad aborda los fundamentos del *análisis exploratorio de datos*, partiendo desde datasets simples hasta la integración de fuentes más complejas y la comunicación de resultados visuales.  
 
-👉 [Ver Unidad 1](UT1/main.md)
+🔗[Ver Unidad 1](UT1/main.md)
+
+## Unidad Temática 2
+
+**Calidad & Ética en el ciclo de datos**  
+En esta unidad se trabajaron técnicas de *imputación de datos faltantes*, *normalización* y *detección de sesgos* en modelos predictivos.  
+Se incorporaron buenas prácticas de validación cruzada y documentación ética para asegurar procesos justos y reproducibles en proyectos de *Machine Learning*.
+
+ 🔗[Ver Unidad 2](UT2/main.md)
 
 ---
 
