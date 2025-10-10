@@ -59,6 +59,7 @@ Trabajar con este dataset me permitió enfrentarme a problemas reales de datos i
 ---
 
 ### 🚕 Analizando los viajes de Nueva York: integración de múltiples fuentes y comparación con Joins
+
 Link: [Ver práctica](../UT1/practica4/main4.md)
 
 **Objetivo:** 
