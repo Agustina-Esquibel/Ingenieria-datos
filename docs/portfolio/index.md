@@ -76,7 +76,7 @@ Esta práctica fue la más desafiante de la UT1, porque implicó integración de
 
 🛍️ **Explorando el catálogo de moda: análisis de precios y marcas**
 
-**Link:** [Ver práctica](../UT1/extraUT1.md)
+**Link:** 
 
 **Objetivo:**  
 Analizar datos de ventas de moda en formato JSON para comparar precios, marcas y temporadas, aplicando técnicas de EDA y visualización.
