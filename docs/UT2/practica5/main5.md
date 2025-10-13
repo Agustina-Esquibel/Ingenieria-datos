@@ -3,8 +3,6 @@ title: Ames Housing bajo la lupa — Reconstrucción de información faltante co
 date: 2025-09-10
 ---
 
-# Ames Housing bajo la lupa: reconstrucción de información faltante con imputación contextual
-
 ## Contexto
 
 El conjunto de datos **Ames Housing (Iowa)** contiene información detallada sobre propiedades inmobiliarias: dimensiones, materiales, ubicación, estado y precios de venta.  
