@@ -187,11 +187,11 @@ El pipeline garantiza integridad, evita errores humanos y asegura que las métri
 > *El rigor técnico sin ética es solo automatización de errores.*
 
 ---
-
 ## Notebook en Google Colab
 
 📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-[**🔗Abrir en Google Colab**](https://colab.research.google.com/drive/1UT2_Practica7_FairlearnBiasDemo)
+[**🔗Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT2/practica7/UT2_practica7.ipynb)
+
 ---
 
 ## Referencias
