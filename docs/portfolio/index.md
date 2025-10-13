@@ -88,3 +88,44 @@ Analizar datos de ventas de moda en formato JSON para comparar precios, marcas y
 
 **Reflexión:**  
 Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y formato de datos (JSON), fortaleciendo la capacidad para limpiar, explorar y visualizar información estructurada en contextos comerciales.
+
+---
+
+## Unidad Temática 2 — Limpieza, imputación y ética de datos
+
+### 🧱 Ames Housing bajo la lupa: reconstrucción de información faltante  
+*Link:* [Ver práctica](../UT2/practica5/main5.md)  
+
+**Objetivo:** Detectar y analizar valores faltantes en el dataset Ames Housing, aplicando estrategias de imputación contextual y reproducible.  
+
+**Hallazgos clave:**  
+- Los mecanismos de *missing data* varían según la variable (MCAR, MAR, MNAR).  
+- La imputación contextual mejora la consistencia sin distorsionar distribuciones clave.  
+- Documentar el proceso aumenta la trazabilidad y transparencia metodológica.  
+**Reflexión:** Aprendí a aplicar imputaciones robustas y justificar decisiones técnicas desde una mirada ética y reproducible.
+
+---
+
+### ⚙️ Escalado y Anti-Leakage Pipeline: preprocesamiento ético y reproducible  
+*Link:* [Ver práctica](../UT2/practica6/main6.md)  
+
+**Objetivo:** Implementar un pipeline que normalice, escale y transforme datos sin fuga de información entre *train* y *test*.  
+
+**Hallazgos clave:**  
+- El *feature scaling* puede alterar relaciones estadísticas si no se controla el *data leakage*.  
+- Los métodos `StandardScaler`, `MinMaxScaler` y `RobustScaler` muestran comportamientos distintos ante outliers.  
+- El *log transform* mejora la simetría de variables muy sesgadas.  
+**Reflexión:** Fortalecí el criterio para diseñar procesos de preprocesamiento reproducibles y éticamente responsables.
+
+---
+
+### ⚖️ Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn  
+*Link:* [Ver práctica](../UT2/practica7/main7.md)  
+
+**Objetivo:** Detectar, medir y mitigar sesgos en modelos predictivos mediante métricas de *fairness* aplicadas a casos reales (Boston Housing y Titanic).  
+
+**Hallazgos clave:**  
+- Los sesgos históricos influyen directamente en los modelos si no se corrigen.  
+- Fairlearn permite equilibrar *accuracy* y equidad de manera cuantificable.  
+- Las decisiones éticas requieren evaluar impacto social, no solo rendimiento.  
+**Reflexión:** Comprendí cómo la equidad y la ética son parte del ciclo técnico de un modelo, no un añadido posterior.
