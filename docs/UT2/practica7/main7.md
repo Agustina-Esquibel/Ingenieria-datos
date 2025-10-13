@@ -120,6 +120,10 @@ Por ello, la ética no es un complemento del proceso técnico, sino un requisito
 
 ## Notebook en Google Colab
 
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT2/practica7/UT2_practica7.ipynb)
+
 
 ---
 
