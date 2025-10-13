@@ -90,8 +90,6 @@ Este ejercicio consolida el aprendizaje en calidad de datos, promoviendo una mir
 
 ---
 
----
-
 ## Notebook en Google Colab
 
 📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
