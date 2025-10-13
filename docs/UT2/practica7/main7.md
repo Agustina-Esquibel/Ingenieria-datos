@@ -137,3 +137,7 @@ Por ello, la ética no es un complemento del proceso técnico, sino un requisito
 ---
 
 ## Navegación
+
+[⬅️ Volver a Práctica 6 — Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)  
+[⬅️ Volver a UT2](../main.md)  
+[📓 Índice del Portafolio](../../portfolio/index.md)
