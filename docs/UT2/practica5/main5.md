@@ -60,13 +60,17 @@ Se enfatizó la importancia de mantener trazabilidad y transparencia en las tran
 
 ## Evidencias
 
-### Mapa de calor de valores faltantes
+### Porcentaje de Missing por columna
+El gráfico muestra las diez variables con mayor proporción de datos faltantes en el dataset Ames Housing. Se observa que Pool QC, Misc Feature y Alley superan el 90 % de valores ausentes, lo que sugiere información ausente de forma estructural (MNAR) y variables poco relevantes para el modelo predictivo. Este análisis permite priorizar columnas críticas antes de decidir estrategias de imputación o eliminación.
 
-El mapa evidencia que las variables estructurales concentran la mayoría de los valores ausentes, reflejando dependencias contextuales entre las características de las viviendas.
+![Top 10: Porcentaje de Missing por Columna](Missing_columna.png)
 
-### Comparación de distribuciones antes y después de la imputación
 
-Las imputaciones mantuvieron la forma de las distribuciones y preservaron la consistencia estadística general del dataset.
+### Distribución de Missing por fila 
+El histograma refleja la cantidad de valores faltantes por observación. La mayoría de las filas presentan entre 4 y 7 campos ausentes, mientras que pocos registros superan los 10. Esto confirma que el missing data no está concentrado en pocos registros extremos, lo que justifica el uso de imputación contextual en lugar de eliminar filas completas.
+
+
+![Distribución de Missing por Fila](Missing_fila.png)
 
 ---
 
