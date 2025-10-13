@@ -190,6 +190,8 @@ El pipeline garantiza integridad, evita errores humanos y asegura que las métri
 
 ## Notebook en Google Colab
 
+📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
+[**🔗Abrir en Google Colab**](https://colab.research.google.com/drive/1UT2_Practica7_FairlearnBiasDemo)
 ---
 
 ## Referencias
