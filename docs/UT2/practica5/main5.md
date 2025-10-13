@@ -109,6 +109,6 @@ Este ejercicio consolida el aprendizaje en calidad de datos, promoviendo una mir
 
 ## Navegación
 
-⬅️[Volver a Unidad Temática 2](../main.md)  
-➡️[Ir a Práctica 6 – Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)
-📓[Índice del Portafolio](../../portfolio/index.md)
+- [⬅️ Volver a Unidad Temática 2](../main.md)
+- [➡️ Ir a Práctica 6 — Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)
+- [📓 Índice del Portafolio](../../portfolio/index.md)
