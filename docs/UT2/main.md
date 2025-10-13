@@ -28,13 +28,6 @@ En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **pro
 
 ---
 
-## Flujo de trabajo de UT2
-
-
-Este esquema refleja la evolución del proceso de análisis en la unidad: desde la detección de *missing data* hasta la evaluación ética de los resultados, consolidando un flujo de limpieza y preprocesamiento reproducible.
-
----
-
 ## Conclusión final de UT2
 
 La **Unidad Temática 2** permitió integrar técnica y reflexión, comprendiendo que la limpieza y el preprocesamiento de datos no son solo pasos previos, sino **etapas críticas para la calidad y la equidad** de los modelos.  
