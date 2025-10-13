@@ -90,7 +90,13 @@ Este ejercicio consolida el aprendizaje en calidad de datos, promoviendo una mir
 
 ---
 
+---
+
 ## Notebook en Google Colab
+
+📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗 [**Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/ingenieria-datos/blob/main/docs/UT2/practica5/UT2_practica5.ipynb)
 
 ---
 
@@ -106,4 +112,5 @@ Este ejercicio consolida el aprendizaje en calidad de datos, promoviendo una mir
 ## Navegación
 
 ⬅️[Volver a Unidad Temática 2](../main.md)  
-📓[Ir a Práctica 6 – Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)
+➡️[Ir a Práctica 6 – Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)
+📓[Índice del Portafolio](../../portfolio/index.md)
