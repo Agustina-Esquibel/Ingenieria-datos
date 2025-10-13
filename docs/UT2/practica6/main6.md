@@ -207,5 +207,6 @@ El pipeline garantiza integridad, evita errores humanos y asegura que las métri
 
 ## Navegación
 
-- [⬅️ Volver a UT2](../main.md)  
-- [➡️ Ir a Práctica 7 — Feature Engineering](../practica7/main7.md)
+[⬅️ Volver a UT2](../main.md)  
+[➡️ Ir a Práctica 7 — Fairness y Decisiones Éticas](../practica7/main7.md)  
+[📓 Índice del Portafolio](../../portfolio/index.md)
