@@ -53,43 +53,65 @@ El objetivo fue aplicar métodos de fairness mediante la librería **Fairlearn**
 
 ## Evidencias
 
-### Brecha racial en Boston Housing
 
-La visualización muestra la diferencia promedio de precios entre zonas con alta y baja proporción afroamericana.  
-Los resultados indican una **brecha de aproximadamente 8.500 dólares**, equivalente al **18 % del valor medio de las viviendas**.  
-Esto evidencia un sesgo estructural histórico en el dataset, que se traslada directamente al modelo de regresión si la variable racial es incluida.
+### Disparidad entre géneros – Antes vs Después de Fairlearn
+![Disparidad entre géneros – Antes vs Después de Fairlearn](Fairlearn.png)
 
----
+**Observación técnica:**  
+El gráfico muestra una reducción clara en la diferencia de paridad demográfica tras aplicar Fairlearn.  
+El modelo baseline presenta una disparidad cercana a 0.11, mientras que el modelo ajustado con mitigación cae a aproximadamente 0.06.
 
-### Distribución de precios por grupo racial
+**Interpretación analítica:**  
+La intervención reduce la brecha de predicción entre géneros, disminuyendo el sesgo en la tasa de supervivencia predicha para hombres y mujeres.  
 
-El histograma y boxplot comparan las distribuciones de precios de los dos grupos.  
-Se observa que las zonas con mayor proporción afroamericana presentan precios más bajos y menor variabilidad, mientras que las demás zonas exhiben precios medios y dispersiones superiores.  
-Esta desigualdad se traduce en predicciones sistemáticamente más bajas para ciertos grupos poblacionales.
-
----
-
-### Sesgo de género en el modelo Titanic (baseline)
-
-El gráfico muestra la tasa de supervivencia predicha por género en el modelo baseline.  
-Las mujeres presentan una probabilidad de supervivencia un **33 % mayor** que los hombres.  
-Aunque este resultado refleja la realidad del hecho histórico, en términos algorítmicos representa un **sesgo de clasificación injusto** que favorece a un grupo.
+**Reflexión metodológica:**  
+La mitigación de sesgos con Fairlearn logra una mejora significativa en equidad sin modificar el dataset original, demostrando que la corrección algorítmica puede ser efectiva incluso en etapas posteriores del pipeline.
 
 ---
 
-### Modelo corregido con Fairlearn
+### Tasa predicha de supervivencia por género
+![Tasa predicha de supervivencia por género](Tasa_predicha.png)
 
-Tras aplicar el método **ExponentiatedGradient**, la disparidad entre géneros se reduce considerablemente.  
-El *Demographic Parity Difference* pasa de **0.27 a 0.10**, mientras que la pérdida de rendimiento (accuracy) fue mínima, pasando de **0.79 a 0.76**.  
-La visualización comparativa confirma una distribución más balanceada de predicciones entre hombres y mujeres.
+**Observación técnica:**  
+El modelo baseline predice una mayor tasa de supervivencia para mujeres (≈0.45) que para hombres (≈0.35).  
+Tras aplicar Fairlearn, las tasas convergen hacia valores similares (≈0.27 para ambos).  
+
+**Interpretación analítica:**  
+El ajuste del modelo reduce la diferencia entre géneros sin eliminar por completo la variabilidad natural de los datos.  
+Esto sugiere que la mitigación logra balancear las probabilidades sin sacrificar el comportamiento estructural del dataset.  
+
+**Reflexión metodológica:**  
+Fairlearn no busca igualar forzosamente los resultados, sino disminuir las diferencias no justificadas por factores explicativos válidos.
 
 ---
 
 ### Trade-off entre rendimiento y equidad
+![Trade-off entre rendimiento y equidad](Rendimiento_equidad.png)
 
-El gráfico de trade-off muestra el equilibrio logrado entre precisión y justicia.  
-El modelo justo perdió un **3,8 % de rendimiento**, pero mejoró la equidad en **0.17 puntos**, logrando un compromiso óptimo.  
-El resultado respalda la idea de que es posible **reducir sesgos sin comprometer en exceso la capacidad predictiva**.
+**Observación técnica:**  
+Se observa un descenso moderado del accuracy tras aplicar Fairlearn (de ~68% a ~64%), mientras que la disparidad demográfica se reduce casi a la mitad.  
+
+**Interpretación analítica:**  
+Este comportamiento confirma el clásico compromiso entre precisión y justicia: mejorar la equidad puede implicar una leve pérdida de rendimiento global.  
+
+**Reflexión metodológica:**  
+El objetivo no es maximizar una métrica aislada, sino lograr un balance ético entre desempeño predictivo y tratamiento justo hacia los distintos grupos.
+
+---
+
+### Distribución de precios por grupo racial
+![Distribución de precios por grupo racial](Boxplot.png)
+
+**Observación técnica:**  
+Las viviendas en áreas con alta proporción de población afroamericana presentan precios promedio más bajos y mayor dispersión.  
+El boxplot y los histogramas refuerzan esta diferencia estructural.  
+
+**Interpretación analítica:**  
+La disparidad no necesariamente implica discriminación directa, pero revela desigualdad subyacente en los datos, que puede trasladarse a los modelos si no se controla.  
+
+**Reflexión metodológica:**  
+El análisis previo a la modelización permite identificar posibles fuentes de sesgo estructural.  
+Mitigar o compensar estas diferencias debe ser parte del diseño ético de cualquier pipeline de aprendizaje automático.
 
 ---
 
