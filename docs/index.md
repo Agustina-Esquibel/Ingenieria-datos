@@ -29,9 +29,10 @@ Se incorporaron buenas prácticas de validación cruzada y documentación ética
  🔗[Ver Unidad 2](UT2/main.md)
 
 ### Unidad Temática 3  
-
 **Feature Engineering**
+
 En esta unidad se trabajaron técnicas de **ingeniería de variables** aplicadas al *machine learning*, abarcando transformaciones numéricas, *encoding* categórico avanzado, reducción dimensional mediante **PCA** y selección de características.  
+
 También se introdujo la **ingeniería temporal de features**, aplicando *lags*, *rolling windows* y agregaciones sin incurrir en *data leakage*.  
 
 🔗 [Ver Unidad 3](UT3/main.md)
