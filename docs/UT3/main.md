@@ -23,12 +23,12 @@ Se abordaron enfoques para transformar, codificar, reducir y seleccionar caracte
 
 ### Reflexión de la unidad
 
-- **Codificando significado: de variables categóricas a información útil** permitió afianzar el manejo de variables categóricas y comprender cómo diferentes técnicas de *encoding* (Label, One-Hot y Target) afectan la representación de los datos y el desempeño de los modelos.  
-- **Midiendo el impacto del encoding: performance y selección de variables** profundizó en la evaluación comparativa de encoders y la selección de características relevantes, fortaleciendo la interpretación de métricas y la toma de decisiones basada en evidencia.  
-- **Reduciendo la complejidad: PCA y selección de características con Ames Housing** introdujo la reducción dimensional y la selección de *features* como herramientas para simplificar modelos sin pérdida sustantiva de información, analizando componentes principales, varianza explicada y *trade-offs* de rendimiento.  
-- **Creando tiempo: ingeniería temporal de features con Pandas** extendió el análisis hacia datos secuenciales, aplicando *lags*, *rolling windows* y *expanding windows* para capturar dinámicas temporales, evitando *data leakage* y reforzando la comprensión del tiempo como variable predictiva clave.
+- **Encoding categórico** permitió afianzar el manejo de variables categóricas y comprender cómo distintas técnicas (Label, One-Hot y Target) influyen en la representación y el desempeño de los modelos.  
+- **Selección de variables** profundizó en la evaluación comparativa de encoders y la interpretación de métricas, fortaleciendo la toma de decisiones basada en evidencia.  
+- **Reducción dimensional (PCA)** introdujo herramientas para simplificar modelos sin pérdida sustantiva de información, analizando componentes principales, varianza explicada y *trade-offs* de rendimiento.  
+- **Ingeniería temporal de features** extendió el análisis hacia datos secuenciales, aplicando *lags*, *rolling windows* y *expanding windows* para capturar dinámicas temporales y evitar *data leakage*.
 
-En conjunto, la **UT3 consolidó la ingeniería de variables** como una etapa estratégica dentro del ciclo de *machine learning*, integrando codificación categórica, selección de variables, reducción dimensional y generación de *features* temporales en un flujo de trabajo ético, escalable y reproducible.
+En conjunto, la UT3 consolidó la feature engineering como una etapa estratégica del ciclo de *machine learning*, integrando codificación categórica, selección de variables, reducción dimensional y generación de *features* temporales en un flujo de trabajo ético, escalable y reproducible.
 
 ---
 
