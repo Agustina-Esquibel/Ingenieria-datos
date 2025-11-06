@@ -86,10 +86,36 @@ Cada feature fue diseñada, testeada y evaluada de forma individual antes de inc
 ---
 
 ## Evidencias
-🕓 *(Sección pendiente de completar con las visualizaciones y análisis gráficos una vez publicados en el notebook.)*  
-> **Sugerencia:** cuando agregues los gráficos, acompañalos con una breve interpretación.  
-> Ejemplo:  
-> **Figura 1.** Distribución original vs logarítmica del precio — se observa una reducción de la asimetría y una mejora en la estabilidad de la media.  
+
+### Distribución logarítmica del precio  
+![Distribución logarítmica del precio](../practica8/IMG_4228.png)  
+La transformación logarítmica del precio reduce la asimetría de la distribución, generando una forma más cercana a la normal. Esto mejora la estabilidad de los modelos lineales y evita el sesgo hacia propiedades con precios extremos.
+
+
+### Precio por m² según vecindario  
+![Precio por m² según vecindario](../practica8/IMG_4229.png)  
+Los vecindarios muestran diferencias marcadas en el precio por metro cuadrado. “NoRidge” y “Mitchel” presentan los valores más altos, lo que refleja la influencia del contexto geográfico sobre el valor de las viviendas.
+
+
+### Distribuciones de nuevas features derivadas  
+![Distribuciones de nuevas features derivadas](../practica8/IMG_4230.png)  
+Las features derivadas como `space_efficiency`, `crowded_property` y `distance_school_interaction` presentan distribuciones asimétricas. Esto sugiere la presencia de propiedades extremas y la necesidad de escalado o transformación antes del modelado.
+
+---
+
+### Importancia de features  
+![Importancia de features](../practica8/IMG_4231.png)  
+Tanto la información mutua como el modelo Random Forest destacan `log_price` y `price_per_sqft` como las variables más influyentes. Esto valida su peso en la predicción y sugiere una relación no lineal con la variable objetivo.
+
+
+### Correlaciones entre features derivadas  
+![Correlaciones entre features derivadas](../practica8/IMG_4236.png)  
+Se observa correlación moderada negativa entre `quality_indicator` y `property_age`, lo cual indica que las propiedades más antiguas tienden a tener menor calidad percibida. Las demás variables mantienen independencia relativa, útil para evitar multicolinealidad.
+
+
+### Relación suavizada: Precio vs Distancia al centro  
+![Relación suavizada: Precio vs Distancia al centro](../practica8/IMG_4238.png)  
+Las viviendas nuevas muestran precios más altos en todas las distancias, mientras que las antiguas pierden valor conforme se alejan del centro urbano. Esta tendencia respalda la relevancia de la variable `distance_to_city` como factor de ubicación.
 
 ---
 
@@ -116,7 +142,7 @@ En síntesis, esta práctica permitió comprender que la ingeniería de atributo
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-*(agregar link real al notebook publicado en Colab o GitHub)*  
+[Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica8/UT3_Pr%C3%A1ctica_8.ipynb) 
 
 ---
 
