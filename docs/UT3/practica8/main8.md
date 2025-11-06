@@ -142,7 +142,7 @@ En síntesis, esta práctica permitió comprender que la ingeniería de atributo
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-[Abrir notebook en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica8/UT3_Práctica_8.ipynb)
+[Abrir notebook en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica8/UT3_Practica8.ipynb)
 
 ---
 
