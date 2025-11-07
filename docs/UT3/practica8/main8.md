@@ -142,7 +142,7 @@ En síntesis, esta práctica permitió comprender que la ingeniería de atributo
 
 ## Notebook en Google Colab  
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-[Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica8/UT3_Practica8.ipynb)
+[Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica8/UT3_Practica_8.ipynb)
 
 ---
 
@@ -153,6 +153,6 @@ En síntesis, esta práctica permitió comprender que la ingeniería de atributo
 ---
 
 ## Navegación
-⬅️ [Volver a Unidad Temática 2](../main.md)  
-➡️ [Ir a Práctica 9](../practica9/main9.md)  
+⬅️ [Volver a Unidad Temática 3](../main.md)  
+➡️ [Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo](../practica9/main9.md)
 📓 [Índice del Portafolio](../../portfolio/index.md)
