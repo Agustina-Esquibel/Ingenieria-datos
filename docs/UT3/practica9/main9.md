@@ -83,11 +83,52 @@ El pipeline resultante demostró la importancia de **elegir la técnica adecuada
 ---
 
 ## Evidencias  
-🕓 *(Sección pendiente de completar con las visualizaciones y resultados una vez integrados al notebook.)*  
-> **Sugerencia:** al subir los gráficos, acompañalos con una breve interpretación.  
-> Ejemplo:  
-> **Figura 1.** Comparación de precisión entre métodos de encoding — *Target Encoding* alcanza un 87% de accuracy, superando al *One-Hot* con menor costo computacional.  
-> **Figura 2.** Gráfico de importancia de variables — se observa el aumento de peso en las categorías transformadas mediante *target encoding*.  
+## 📊 Evidencias Visuales
+
+### 🔹 Cardinalidad de Variables Categóricas
+![Cardinalidad de Variables Categóricas](IMG_4254.png)  
+Se visualiza la cantidad de categorías únicas por variable, base para definir qué variables se tratan con One-Hot Encoding (baja cardinalidad) y cuáles requieren Target Encoding (alta cardinalidad).
+
+### 🔹 Distribución de Education según nivel de ingreso
+![Distribución Education](IMG_4326.png)  
+Permite observar la relación entre nivel educativo y probabilidad de superar los $50K, destacando la diferencia entre niveles secundarios y universitarios.
+
+### 🔹 Distribución de Occupation según nivel de ingreso
+![Distribución Occupation](IMG_4261.png)  
+Muestra las ocupaciones más asociadas con ingresos altos, destacando la brecha entre categorías profesionales y de servicio.
+
+### 🔹 Distribución de Relationship según nivel de ingreso
+![Distribución Relationship](IMG_4262.png)  
+Comparación de tipos de relación familiar frente al nivel de ingreso, evidenciando patrones significativos en el grupo “Husband”.
+
+### 🔹 Matriz de Correlaciones – Variables numéricas y target
+![Matriz de Correlaciones Numéricas](IMG_4258.png)  
+Correlaciones entre variables numéricas y la variable objetivo; se destacan `education-num`, `age` y `capital-gain` como las más relevantes.
+
+### 🔹 Matriz de Correlaciones (Top variables por relación con el target)
+![Matriz de Correlaciones Top](IMG_4328.png)  
+Refina el análisis mostrando solo las variables con mayor peso predictivo sobre el target, útil para priorizar en la etapa de feature selection.
+
+### 🔹 Importancia de Features – Modelo Final
+![Top 15 Features más importantes](IMG_4257.png)  
+Ranking de las 15 variables más influyentes según el modelo final (Random Forest con pipeline), señalando la relevancia de `fnlwgt`, `age` y `education-num`.
+
+### 🔹 Importancia y Distribución de Features
+![Distribución Importancia de Features](IMG_4320.png)  
+Comparación entre la importancia media y la dispersión de variables en el modelo, identificando las que aportan más valor explicativo.
+
+### 🔹 Comparación de Modelos y Codificación
+![Comparación de Modelos y Encoding](IMG_4252.png)  
+Comparación global entre Label, One-Hot, Target y Pipeline mixto en métricas de Accuracy, AUC-ROC, F1, tiempo de entrenamiento y dimensionalidad.  
+Evidencia que el enfoque mixto logra el mejor equilibrio entre precisión y eficiencia.
+
+### Interpretación General
+
+El análisis visual permite comprender cómo las variables numéricas y categóricas influyen en el nivel de ingresos de las personas según el Censo de EE.UU. (1994).  
+Se observa que **edad, educación y capital-gain** son los predictores más relevantes, mientras que las variables categóricas como **ocupación, estado civil y relación familiar** también aportan poder explicativo significativo tras aplicar técnicas de codificación adecuadas.
+
+El uso combinado de **One-Hot Encoding** para variables de baja cardinalidad y **Target Encoding** para las de alta cardinalidad permitió reducir la dimensionalidad sin perder desempeño.  
+El modelo final logró un equilibrio entre **precisión y eficiencia**, demostrando la importancia de un diseño de pipeline estratégico para datos reales con gran diversidad de categorías.
 
 ---
 
@@ -118,7 +159,7 @@ En síntesis, el *feature encoding* se consolida como una fase estratégica del 
 
 ## Notebook en Google Colab  
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-*(agregar link real al notebook publicado en Colab o GitHub)*  
+[Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica9/UT3_Practica9.ipynb)
 
 ---
 
