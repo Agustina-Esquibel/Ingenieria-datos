@@ -120,5 +120,5 @@ En síntesis, el feature engineering temporal se posiciona como una de las herra
 ---
 
 ## Navegación  
-⬅️ [Volver a Unidad Temática 3](../main.md)  
+⬅️ [Reduciendo el ruido: cómo PCA y Feature Selection revelan las variables clave del valor inmobiliario](../practica10/main10.md)  
 📓 [Índice del Portafolio](../../portfolio/index.md)
