@@ -112,6 +112,6 @@ Además, se evidenció que el mejor método depende del contexto: **los Filter M
 ---
 
 ## Navegación  
-⬅️ [Volver a Unidad Temática 3](../main.md)  
-➡️  
+⬅️ [Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo](../practica9/main9.md)  
+➡️ [Modelando el tiempo: cómo el feature engineering temporal anticipa la recompra en e-commerce](../practica11/main11.md)  
 📓 [Índice del Portafolio](../../portfolio/index.md)
