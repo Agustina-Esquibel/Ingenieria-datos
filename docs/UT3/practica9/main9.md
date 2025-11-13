@@ -172,5 +172,5 @@ En síntesis, el *feature encoding* se consolida como una fase estratégica del 
 
 ## Navegación  
 ⬅️ [Diseñando el valor oculto: cómo el feature engineering mejora la predicción de precios de vivienda](../practica8/main8.md)  
-➡️ [Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo](../practica9/main9.md)  
+➡️ [Reduciendo el ruido: cómo PCA y Feature Selection revelan las variables clave del valor inmobiliario](../practica10/main10.md)  
 📓 [Índice del Portafolio](../../portfolio/index.md)
