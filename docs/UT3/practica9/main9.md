@@ -162,7 +162,7 @@ En síntesis, el *feature encoding* se consolida como una fase estratégica del 
 
 ---
 
-## 🔗 Referencias oficiales  
+## Referencias oficiales  
 - [Category Encoders Library](https://contrib.scikit-learn.org/category_encoders/)  
 - [Scikit-learn Preprocessing Documentation](https://scikit-learn.org/stable/modules/preprocessing.html)  
 - [Feature Engineering for Machine Learning – O’Reilly, Cap. 5](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/)  
@@ -170,7 +170,7 @@ En síntesis, el *feature encoding* se consolida como una fase estratégica del 
 
 ---
 
-## 🔗 Navegación  
+## Navegación  
 ⬅️ [Diseñando el valor oculto: cómo el feature engineering mejora la predicción de precios de vivienda](../practica8/main8.md)  
-➡️ [Ir a Práctica 10](../practica10/main10.md)  
+➡️ [Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo](../practica9/main9.md)  
 📓 [Índice del Portafolio](../../portfolio/index.md)
