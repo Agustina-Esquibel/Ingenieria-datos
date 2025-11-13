@@ -129,3 +129,70 @@ Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y f
 - Fairlearn permite equilibrar *accuracy* y equidad de manera cuantificable.  
 - Las decisiones éticas requieren evaluar impacto social, no solo rendimiento.  
 **Reflexión:** Comprendí cómo la equidad y la ética son parte del ciclo técnico de un modelo, no un añadido posterior.
+
+## Unidad Temática 3 – Feature Engineering
+
+### 🏡 Diseñando el valor oculto: cómo el feature engineering mejora la predicción de precios de vivienda  
+Link: [Ver práctica](../UT3/practica8/main8.md)
+
+**Objetivo:**  
+Aplicar técnicas de *feature engineering* numérico y de interacción para mejorar la capacidad predictiva en un problema de precios de vivienda.
+
+**Hallazgos clave:**  
+- Transformaciones como `log_price` y `price_per_sqft` aportaron estabilidad y mayor señal predictiva.
+- Las features derivadas (eficiencia del espacio, densidad interna, interacción precio–antigüedad) capturaron relaciones no lineales relevantes.
+- El análisis validó la importancia de combinar transformaciones matemáticas con conocimiento del dominio inmobiliario.
+
+**Reflexión:**  
+Esta práctica permitió comprender cómo el diseño de variables puede potenciar significativamente el rendimiento del modelo, incluso más que cambios en el algoritmo. El *feature engineering* se consolidó como una herramienta estratégica cuando se aplica con criterio técnico y de negocio.
+
+---
+
+### 🧩 Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo  
+Link: [Ver práctica](../UT3/practica9/main9.md)
+
+**Objetivo:**  
+Evaluar y comparar distintos métodos de codificación categórica en un dataset con alta cardinalidad.
+
+**Hallazgos clave:**  
+- El *target encoding* obtuvo el mejor desempeño ante categorías numerosas.
+- One-Hot Encoding generó expansión dimensional significativa.
+- Label Encoding fue útil en variables con componente ordinal, pero introdujo orden artificial en categorías nominales.
+
+**Reflexión:**  
+La práctica resaltó que la correcta selección del método de codificación tiene un impacto directo en la calidad del modelo. Adaptar el encoding al tipo de variable resultó clave para mantener interpretabilidad y eficiencia.
+
+---
+
+### 🎛️ Reduciendo el ruido: cómo PCA y Feature Selection revelan las variables clave del valor inmobiliario  
+Link: [Ver práctica](../UT3/practica10/main10.md)
+
+**Objetivo:**  
+Aplicar PCA y técnicas de selección de variables para identificar las *features* más importantes en un modelo de predicción de precios.
+
+**Hallazgos clave:**  
+- PCA conservó +90% de la varianza con pocas componentes.
+- Mutual Information y SelectKBest permitieron aislar un conjunto estable de variables relevantes.
+- La combinación de reducción dimensional y selección mejoró la interpretabilidad y redujo sobreajuste.
+
+**Reflexión:**  
+Esta práctica reforzó la importancia de eliminar redundancia y ruido en datasets complejos. La reducción dimensional demostró ser fundamental para simplificar el modelo sin perder capacidad predictiva.
+
+---
+
+### ⏳ Modelando el tiempo: cómo el feature engineering temporal anticipa la recompra en e-commerce  
+Link: [Ver práctica](../UT3/practica11/main11.md)
+
+**Objetivo:**  
+Diseñar un pipeline temporal para predecir *repeat purchase* mediante lag features, rolling windows, RFM analysis y validación temporal estricta.
+
+**Hallazgos clave:**  
+- Las lag features y ventanas móviles capturaron patrones históricos esenciales.
+- RFM (Recency–Frequency–Monetary) aportó información robusta sobre comportamiento del cliente.
+- TimeSeriesSplit evitó *data leakage* y permitió evaluar el modelo en un contexto temporal realista.
+
+**Reflexión:**  
+La práctica evidenció que en modelos temporales, el manejo del tiempo y la prevención de *leakage* son tan importantes como las propias features. El enfoque temporal demostró mejorar la performance considerablemente frente a un modelo base sin ingeniería temporal.
+
+---
+  
