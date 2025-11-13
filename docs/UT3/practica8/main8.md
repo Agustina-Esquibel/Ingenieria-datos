@@ -18,32 +18,29 @@ El enfoque combina la **experimentación técnica** con el **conocimiento del do
 - Evaluar el impacto predictivo de las features mediante métricas estadísticas y modelos de *machine learning*, validando los resultados con una muestra del dataset **Ames Housing**.
 
 ---
-  
+
 ## Actividades  
 
-La práctica comenzó con la preparación del entorno en Google Colab y la carga de las librerías necesarias para el análisis (`pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`).  
-Para avanzar de forma controlada y reproducible, primero se construyó un **dataset sintético de viviendas**, incorporando atributos clave como superficie, precio, cantidad de habitaciones, año de construcción y zona geográfica. Este enfoque permitió experimentar libremente con distintas transformaciones sin la complejidad inicial de un dataset real.
+La práctica comenzó con la preparación del entorno en Google Colab y la carga de las librerías necesarias (`pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`). Para facilitar la experimentación, se construyó primero un **dataset sintético de viviendas**, incorporando variables como superficie, precio, cantidad de habitaciones, baños, tamaño del lote, año de construcción, distancia al centro, rating escolar, criminalidad y garaje. Este enfoque permitió probar transformaciones de forma controlada antes de pasar a datos reales.
 
-Posteriormente, se diseñó un conjunto de **features derivadas** a partir de las variables base. Entre ellas se generaron indicadores como `price_per_sqft`, `log_price`, `sqft_per_bedroom`, `density`, `property_age` y `bed_bath_ratio`.  
-Estas transformaciones capturaron relaciones proporcionales, efectos de escala y patrones vinculados a la antigüedad y distribución del espacio en las viviendas.
+Sobre esta base se desarrolló un conjunto amplio de **features derivadas** vinculadas a eficiencia del espacio, escalas y proporciones: `price_per_sqft`, `log_price`, `sqft_per_bedroom`, `density`, `bed_bath_ratio`, `price_per_bedroom`, `lot_coverage`, `bedrooms_per_1000sqft`, junto con variables temporales como `property_age`, `age_category`, `is_new_property` y `decade_built`. Estas transformaciones permitieron capturar patrones estructurales asociados al espacio disponible, la distribución interna y la antigüedad de las propiedades.
 
-La siguiente etapa consistió en un **análisis de distribución y correlaciones** para evaluar el comportamiento estadístico de las nuevas variables. Se utilizaron histogramas, boxplots y heatmaps para identificar patrones relevantes, destacándose relaciones como:  
+Luego se realizó un **análisis de distribución y correlaciones**, donde se identificaron relaciones clave consistentes con las visualizaciones obtenidas:  
 - una correlación negativa entre eficiencia espacial y densidad interna (`efficiency_score` vs `density` = -0.42),  
-- una correlación negativa entre calidad percibida y antigüedad (`quality_indicator` vs `property_age` = -0.56).  
+- una correlación negativa entre calidad percibida y antigüedad de la vivienda (`quality_indicator` vs `property_age` = -0.56).  
 
-También se analizaron relaciones suavizadas entre precio, superficie, antigüedad y distancia al centro urbano, permitiendo observar diferencias de comportamiento entre viviendas nuevas y antiguas.
+También se exploraron relaciones entre precio, superficie, antigüedad y distancia al centro, evidenciando diferencias esperables entre viviendas nuevas, modernas y antiguas.
 
-Luego se evaluó la **importancia predictiva de las features** mediante *Mutual Information* y *Random Forest Regressor*.  
-Variables como `log_price` y `price_per_sqft` emergieron como las más influyentes, seguidas por otras asociadas a densidad y distribución interna (`density`, `sqft_per_bedroom`).
+La contribución de cada *feature* se evaluó utilizando **Mutual Information** y **Random Forest Feature Importance**. En ambos casos, las variables más influyentes fueron `log_price` y `price_per_sqft`, seguidas por indicadores de eficiencia y distribución como `density`, `sqft_per_bedroom` y transformaciones matemáticas (`sqrt_sqft`, `sqft_squared`). Estas conclusiones coinciden con los gráficos de importancia generados.
 
-Como parte del trabajo investigativo, se desarrollaron **features de dominio inmobiliario**, incluyendo:  
-- `space_efficiency`, que mide eficiencia del terreno,  
-- `crowded_property`, indicador de densidad interna,  
-- `advanced_location_score`, que combina distancia, rating escolar y nivel de criminalidad.  
+Como parte del componente investigativo, se incorporaron **features de dominio inmobiliario** tales como:
+- `space_efficiency` (relación superficie/lote),  
+- `crowded_property` (densidad interna),  
+- `advanced_location_score` (distancia, rating escolar y criminalidad).  
 
-También se propusieron features de interacción como `price_age_interaction`, `new_large_property` y `distance_school_interaction`, las cuales demostraron aportar información adicional, especialmente en el caso de la interacción entre precio y antigüedad (correlación = 0.1633).
+También se diseñaron **features de interacción**, incluyendo `price_age_interaction`, `new_large_property` y `distance_school_interaction`. Su impacto se evaluó mediante correlaciones, destacándose el caso de `price_age_interaction` (correlación ≈ 0.163), coherente con la idea de que las propiedades nuevas sostienen mejor su precio relativo.
 
-Finalmente, se aplicó el pipeline completo a una muestra del dataset real **Ames Housing**, validando que las transformaciones creadas fueran coherentes, reproducibles y mantuvieran relevancia predictiva en un contexto real.
+Finalmente, el pipeline completo se aplicó a una muestra del dataset real **Ames Housing**, verificando que las transformaciones fueran consistentes, reproducibles y mantuvieran relevancia predictiva en un contexto más complejo, consolidando un flujo de *feature engineering* robusto y alineado con el caso de negocio.  
 
 ---
 
