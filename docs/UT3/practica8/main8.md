@@ -19,51 +19,31 @@ El enfoque combina la **experimentación técnica** con el **conocimiento del do
 
 ---
   
-## Actividades 
+## Actividades  
 
-1. **Set up y carga de datos**  
-   - Configuración del entorno en Google Colab y carga de librerías (`pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`).  
-   - Creación de un **dataset sintético de viviendas** con atributos de superficie, precio, habitaciones, año y ubicación, simulando un escenario realista.  
+La práctica comenzó con la preparación del entorno en Google Colab y la carga de las librerías necesarias para el análisis (`pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`).  
+Para avanzar de forma controlada y reproducible, primero se construyó un **dataset sintético de viviendas**, incorporando atributos clave como superficie, precio, cantidad de habitaciones, año de construcción y zona geográfica. Este enfoque permitió experimentar libremente con distintas transformaciones sin la complejidad inicial de un dataset real.
 
-2. **Creación de features derivadas**  
-   - A partir de las variables base, se generaron transformaciones numéricas y logarítmicas:  
-     - `price_per_sqft`, `log_price`, `sqft_per_bedroom`, `density`, `property_age`, `bed_bath_ratio`.  
-   - Estas variables permitieron capturar proporciones, relaciones de escala y efectos de antigüedad en el valor del inmueble.  
+Posteriormente, se diseñó un conjunto de **features derivadas** a partir de las variables base. Entre ellas se generaron indicadores como `price_per_sqft`, `log_price`, `sqft_per_bedroom`, `density`, `property_age` y `bed_bath_ratio`.  
+Estas transformaciones capturaron relaciones proporcionales, efectos de escala y patrones vinculados a la antigüedad y distribución del espacio en las viviendas.
 
-3. **Análisis de distribución y correlaciones**  
-   - Evaluación de las nuevas features mediante histogramas, boxplots y heatmaps.  
-   - Identificación de correlaciones significativas entre eficiencia, densidad y edad (`efficiency_score` vs `density` = -0.42, `quality_indicator` vs `property_age` = -0.56).  
-   - Visualización de relaciones *Precio–Superficie–Antigüedad* y *Precio–Distancia al centro*.  
+La siguiente etapa consistió en un **análisis de distribución y correlaciones** para evaluar el comportamiento estadístico de las nuevas variables. Se utilizaron histogramas, boxplots y heatmaps para identificar patrones relevantes, destacándose relaciones como:  
+- una correlación negativa entre eficiencia espacial y densidad interna (`efficiency_score` vs `density` = -0.42),  
+- una correlación negativa entre calidad percibida y antigüedad (`quality_indicator` vs `property_age` = -0.56).  
 
-4. **Evaluación de importancia de features**  
-   - Aplicación de **Mutual Information** y **Random Forest Regressor** para medir la relevancia de cada variable.  
-   - `log_price` y `price_per_sqft` se consolidaron como las más influyentes, seguidas por `density` y `sqft_per_bedroom`.  
+También se analizaron relaciones suavizadas entre precio, superficie, antigüedad y distancia al centro urbano, permitiendo observar diferencias de comportamiento entre viviendas nuevas y antiguas.
 
-5. **Investigación libre – Creación de features de dominio (Desafíos)**  
-   **Desafío 1: Features de Dominio Inmobiliario**  
-   - `space_efficiency`: relación superficie/lote → mide eficiencia del terreno.  
-   - `crowded_property`: habitaciones cada 100 sqft → mide densidad interna.  
-   - `advanced_location_score`: combina distancia, rating escolar y crimen → score de ubicación.  
+Luego se evaluó la **importancia predictiva de las features** mediante *Mutual Information* y *Random Forest Regressor*.  
+Variables como `log_price` y `price_per_sqft` emergieron como las más influyentes, seguidas por otras asociadas a densidad y distribución interna (`density`, `sqft_per_bedroom`).
 
-   **Desafío 2: Features de Interacción**  
-   - `price_age_interaction`: mide depreciación del precio por antigüedad.  
-   - `new_large_property`: 1 si la propiedad es grande y nueva.  
-   - `distance_school_interaction`: penaliza distancia y bajo rating escolar.  
+Como parte del trabajo investigativo, se desarrollaron **features de dominio inmobiliario**, incluyendo:  
+- `space_efficiency`, que mide eficiencia del terreno,  
+- `crowded_property`, indicador de densidad interna,  
+- `advanced_location_score`, que combina distancia, rating escolar y nivel de criminalidad.  
 
-   **Desafío 3: Evaluación de impacto**  
-   - Correlaciones con el precio:  
-     ```
-     price_age_interaction           0.1633
-     distance_school_interaction    -0.0489
-     advanced_location_score        -0.0382
-     space_efficiency               -0.0312
-     crowded_property                0.0259
-     new_large_property             -0.0008
-     ```
-   - Se comprobó que las features creadas aportan información adicional, especialmente las relacionadas con antigüedad y eficiencia.  
+También se propusieron features de interacción como `price_age_interaction`, `new_large_property` y `distance_school_interaction`, las cuales demostraron aportar información adicional, especialmente en el caso de la interacción entre precio y antigüedad (correlación = 0.1633).
 
-6. **Dataset de prueba – Ames Housing (validación final)**  
-   Finalmente, se aplicó el pipeline de feature engineering a una muestra reducida del dataset real **Ames Housing**, verificando que las transformaciones mantuvieran coherencia y relevancia predictiva en un entorno real.
+Finalmente, se aplicó el pipeline completo a una muestra del dataset real **Ames Housing**, validando que las transformaciones creadas fueran coherentes, reproducibles y mantuvieran relevancia predictiva en un contexto real.
 
 ---
 
