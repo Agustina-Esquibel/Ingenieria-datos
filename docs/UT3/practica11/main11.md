@@ -112,11 +112,11 @@ En síntesis, el feature engineering temporal se posiciona como una de las herra
 
 ---
 
-## 🔗 Referencias  
+## Referencias  
 - [Time Series Split – Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html)  
-- [Feature Engineering for Machine Learning – O’Reilly]  
-- [Customer Repeat Purchase Modeling – Practical Approaches]  
-
+- [Feature Engineering for Machine Learning – O’Reilly](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/)  
+- [Customer Repeat Purchase Modeling – Practical Approaches](https://medium.com/analytics-vidhya/repeat-purchase-prediction-in-e-commerce-practical-overview-7fdc9a6c2cac)
+  
 ---
 
 ## Navegación  
