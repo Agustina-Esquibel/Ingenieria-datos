@@ -199,7 +199,7 @@ La práctica evidenció que en modelos temporales, el manejo del tiempo y la pre
 ## Unidad Temática 4 – Datos Especiales
 
 ### 🗺️ Geointeligencia urbana: cobertura del SUBTE, densidad poblacional y demanda vecinal en Buenos Aires  
-Link: [Ver práctica](../UT4/main12.md)
+Link: [Ver práctica](../UT4/practica12/main12.md)
 
 **Objetivo:**  
 Analizar datos geoespaciales reales aplicando GeoPandas y Shapely para integrar capas urbanas (subte, barrios, densidad poblacional) y detectar zonas prioritarias según accesibilidad y demanda.
@@ -215,7 +215,7 @@ Esta práctica permitió entender cómo los datos geoespaciales amplían el aná
 ---
 
 ### 📸 Visión computacional aplicada: diagnóstico, contraste y extracción de descriptores con OpenCV  
-Link: [Ver práctica](../UT4/main13.md)
+Link: [Ver práctica](../UT4/practica13/main13.md)
 
 **Objetivo:**  
 Implementar un pipeline de preprocesamiento de imágenes, incluyendo conversión de espacios de color, histogramas, mejora de contraste global/local y extracción de features (SIFT/ORB).
@@ -231,7 +231,7 @@ Esta práctica mostró cómo la preparación de imágenes impacta directamente e
 ---
 
 ### 🎧 Audio para Machine Learning: limpieza, visualización y extracción de MFCC  
-Link: [Ver práctica](../UT4/main14.md)
+Link: [Ver práctica](../UT4/practica14/main14.md)
 
 **Objetivo:**  
 Diseñar un pipeline de preprocesamiento de audio: carga, inspección visual, limpieza básica, transformación a espectrogramas y extracción de MFCC listos para su uso en modelos de ML.
