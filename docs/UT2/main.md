@@ -24,6 +24,11 @@ Análisis y mitigación de sesgos en modelos predictivos, integrando métricas d
 
 En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **procesamiento responsable de datos**, donde cada decisión técnica considera su impacto en la transparencia, la reproducibilidad y la justicia algorítmica.
 
+## Flujo de Trabajo de UT2
+
+![](./IMG_4604.png)
+
+Este flujo resume el proceso central de la UT2: diagnóstico de la calidad de los datos, imputación contextual, preprocesamiento sin fuga de información y evaluación ética mediante métricas de fairness.
 
 ## Conclusión final de UT2
 
