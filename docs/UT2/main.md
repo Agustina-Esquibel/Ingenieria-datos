@@ -6,13 +6,13 @@ El objetivo fue asegurar la **integridad, trazabilidad y equidad** en el preproc
 
 ## Prácticas realizadas
 
-[**Ames Housing bajo la lupa: reconstrucción de información faltante**](../UT2/practica5/main5.md)  
+- [**Ames Housing bajo la lupa: reconstrucción de información faltante**](../UT2/practica5/main5.md)  
 Imputación contextual y análisis de *missing data* para reconstruir información faltante con trazabilidad y rigor metodológico.
 
-[**Escalado y Anti-Leakage Pipeline: preprocesamiento ético y reproducible**](../UT2/practica6/main6.md)  
+- [**Escalado y Anti-Leakage Pipeline: preprocesamiento ético y reproducible**](../UT2/practica6/main6.md)  
 Implementación de un pipeline reproducible con escalado, normalización y control de *data leakage* entre *train* y *test*.
 
-[**Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn**](../UT2/practica7/main7.md)  
+- [**Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn**](../UT2/practica7/main7.md)  
 Análisis y mitigación de sesgos en modelos predictivos, integrando métricas de equidad y reflexión ética en decisiones algorítmicas.
 
 
