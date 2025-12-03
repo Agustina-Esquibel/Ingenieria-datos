@@ -19,7 +19,6 @@ Se abordaron enfoques para transformar, codificar, reducir y seleccionar caracte
 - [**Modelando el tiempo: cómo el feature engineering temporal anticipa la recompra en e-commerce**](./practica11/main11.md)  
   *Implementación de lag features, rolling windows, expanding windows, RFM, calendar features y validación temporal con TimeSeriesSplit evitando data leakage.*
 
----
 
 ## Reflexión de la unidad
 
@@ -29,14 +28,12 @@ Se abordaron enfoques para transformar, codificar, reducir y seleccionar caracte
 - El **feature engineering temporal** reveló patrones secuenciales de comportamiento fundamentales en series de tiempo y análisis de usuarios.  
 - La unidad reforzó que el rendimiento de un modelo depende en gran medida de la calidad y diseño de sus *features*, más que del algoritmo utilizado.
 
----
 
 ## Flujo de trabajo de UT3
 
 
 Este esquema refleja cómo cada práctica aportó a un ciclo completo de transformación y análisis, desde la codificación de variables hasta la creación de *features* derivados y la documentación final.
 
----
 
 ## Conclusión final de UT3
 
@@ -46,3 +43,5 @@ A través de las distintas prácticas, se integraron técnicas de codificación 
 El aprendizaje obtenido en esta unidad refuerza que el valor real de un modelo surge de **cómo se construyen las variables**, combinando conocimiento técnico, razonamiento estadístico y comprensión del dominio del problema.
 
 ---
+
+📓 [Índice del portafolio](../portfolio/index.md)
