@@ -39,3 +39,7 @@ desde la carga de datos hasta la comunicación de resultados reproducibles.
 
 ## Conclusión final de UT1
 La UT1 permitió integrar técnica y reflexión, consolidando un flujo reproducible de análisis de datos con limpieza, visualización y documentación clara. Estas bases preparan para avanzar hacia análisis más complejos con mayor solidez metodológica.
+
+- - - 
+
+📓 [Índice del portafolio](../portfolio/index.md)
