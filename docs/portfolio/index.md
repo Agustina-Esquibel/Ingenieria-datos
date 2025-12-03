@@ -75,7 +75,7 @@ Esta práctica fue la más desafiante de la UT1, porque implicó integración de
 
 ---
 
-🛍️ **Explorando el catálogo de moda: análisis de precios y marcas**  
+###🛍️ Explorando el catálogo de moda: análisis de precios y marcas  
 Link: [Ver práctica](../UT1/extraUT1/extramain.md)
 
 **Objetivo:**  
@@ -102,7 +102,9 @@ Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y f
 - Los mecanismos de *missing data* varían según la variable (MCAR, MAR, MNAR).  
 - La imputación contextual mejora la consistencia sin distorsionar distribuciones clave.  
 - Documentar el proceso aumenta la trazabilidad y transparencia metodológica.  
-**Reflexión:** Aprendí a aplicar imputaciones robustas y justificar decisiones técnicas desde una mirada ética y reproducible.
+
+**Reflexión:** 
+Esta práctica permitió aplicar imputaciones robustas y justificar decisiones técnicas desde una mirada ética y reproducible.
 
 ---
 
@@ -115,7 +117,9 @@ Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y f
 - El *feature scaling* puede alterar relaciones estadísticas si no se controla el *data leakage*.  
 - Los métodos `StandardScaler`, `MinMaxScaler` y `RobustScaler` muestran comportamientos distintos ante outliers.  
 - El *log transform* mejora la simetría de variables muy sesgadas.  
-**Reflexión:** Fortalecí el criterio para diseñar procesos de preprocesamiento reproducibles y éticamente responsables.
+
+**Reflexión:**  
+Esta práctica reforzó la importancia de diseñar procesos de preprocesamiento que eviten *data leakage* y mantengan la separación correcta entre entrenamiento y prueba. También permitió comparar distintos tipos de escalado y entender cómo cada uno afecta la distribución y la estabilidad de los modelos.
 
 ---
 
@@ -128,7 +132,13 @@ Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y f
 - Los sesgos históricos influyen directamente en los modelos si no se corrigen.  
 - Fairlearn permite equilibrar *accuracy* y equidad de manera cuantificable.  
 - Las decisiones éticas requieren evaluar impacto social, no solo rendimiento.  
-**Reflexión:** Comprendí cómo la equidad y la ética son parte del ciclo técnico de un modelo, no un añadido posterior.
+
+**Reflexión:**  
+Esta práctica reforzó la importancia de diseñar pipelines de preprocesamiento que respeten completamente la separación entre *train* y *test*.  
+Aprendí a detectar dónde puede colarse *data leakage* y a construir transformaciones reproducibles que mantienen la integridad del modelo.  
+También permitió comparar métodos de escalado y entender cómo elegir el adecuado según la distribución y presencia de outliers.
+
+- - - 
 
 ## Unidad Temática 3 – Feature Engineering
 
