@@ -3,7 +3,6 @@
 En esta segunda unidad se trabajó sobre la **calidad y responsabilidad en el manejo de datos**, aplicando técnicas de imputación contextual, escalado reproducible y evaluación ética de sesgos.  
 El objetivo fue asegurar la **integridad, trazabilidad y equidad** en el preprocesamiento antes del modelado.
 
----
 
 ## Prácticas realizadas
 
@@ -16,7 +15,6 @@ Implementación de un pipeline reproducible con escalado, normalización y contr
 [**Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn**](../UT2/practica7/main7.md)  
 Análisis y mitigación de sesgos en modelos predictivos, integrando métricas de equidad y reflexión ética en decisiones algorítmicas.
 
----
 
 ## Reflexión de la unidad
 
@@ -26,7 +24,6 @@ Análisis y mitigación de sesgos en modelos predictivos, integrando métricas d
 
 En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **procesamiento responsable de datos**, donde cada decisión técnica considera su impacto en la transparencia, la reproducibilidad y la justicia algorítmica.
 
----
 
 ## Conclusión final de UT2
 
