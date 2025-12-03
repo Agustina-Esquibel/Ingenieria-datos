@@ -32,3 +32,7 @@ En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **pro
 
 La **Unidad Temática 2** permitió integrar técnica y reflexión, comprendiendo que la limpieza y el preprocesamiento de datos no son solo pasos previos, sino **etapas críticas para la calidad y la equidad** de los modelos.  
 Estas prácticas consolidaron la base ética y metodológica necesaria para avanzar hacia la **modelización predictiva y la evaluación de desempeño** que se desarrollarán en la UT3.
+
+- - - 
+
+📓 [Índice del portafolio](../portfolio/index.md)
