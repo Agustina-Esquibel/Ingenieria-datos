@@ -28,24 +28,22 @@ Se incorporaron buenas prácticas de validación cruzada y documentación ética
 
 🔗[Ver Unidad 2](UT2/main.md)
 
-### Unidad Temática 3  
+### Unidad Temática 3
 
-**Feature Engineering**
-
+**Feature Engineering**  
 En esta unidad se trabajaron técnicas de feature engineering aplicadas al *machine learning*, abarcando transformaciones numéricas, *encoding* categórico avanzado, reducción dimensional mediante **PCA** y selección de características.  
-
 También se introdujo la *ingeniería temporal de features*, aplicando *lags*, *rolling windows* y agregaciones sin incurrir en *data leakage*.  
 
-🔗[Ver Unidad 3](UT3/main.md)
+🔗 [Ver Unidad 3](UT3/main.md)
+
 
 ### Unidad Temática 4
 
 **Datos Especiales**  
-
 En esta unidad se trabajó con **datos no tradicionales**, incorporando técnicas de procesamiento geoespacial, imágenes y audio.  
-Se utilizaron herramientas como **GeoPandas, Shapely, OpenCV y librosa** para construir pipelines capaces de manipular datos complejos y prepararlos para sistemas de analítica avanzada.
+Se utilizaron herramientas como **GeoPandas, Shapely, OpenCV y librosa** para construir pipelines capaces de manipular datos complejos y prepararlos para sistemas de analítica avanzada.  
 
-🔗[Ver Unidad 4](UT4/main.md)
+🔗 [Ver Unidad 4](UT4/main.md)
 
 ---
 
