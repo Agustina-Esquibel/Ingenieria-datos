@@ -8,10 +8,10 @@ El objetivo fue construir pipelines capaces de manipular datos complejos, extrae
 - [**Geointeligencia urbana: cobertura del SUBTE, densidad poblacional y demanda vecinal en Buenos Aires**](./practica12/main12.md)  
   *Análisis geoespacial utilizando GeoPandas y Shapely para cruzar capas de información urbana y generar visualizaciones que revelan patrones de movilidad.*
 
-- [**Radiografías visuales: diagnóstico y detección de patrones a partir de features de imágenes**](./practica13/main13.md)  
+- [**Visión computacional aplicada: diagnóstico, contraste y extracción de descriptores con OpenCV**](./practica13/main13.md)  
   *Implementación de un pipeline de preprocesamiento de imágenes (color, contraste, suavizado) y extracción de features con OpenCV para construir descriptores visuales listos para modelado.*
 
-- [**El lenguaje del sonido: extracción de MFCC y preparación de audio para machine learning**](./practica14/main14.md)  
+- [**Audio para Machine Learning: limpieza, visualización y extracción de MFCC**](./practica14/main14.md)  
   *Preprocesamiento de señales de audio mediante espectrogramas, normalización y extracción de coeficientes MFCC con Librosa.*
 
 ## Reflexión de la unidad
