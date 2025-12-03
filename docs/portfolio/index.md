@@ -9,6 +9,7 @@ Cada práctica contiene **objetivos, hallazgos principales y reflexiones**.
 ---
 
 ## Unidad Temática 1 – Análisis Exploratorio y Fuentes
+🔗 [Ver Unidad 1](../UT1/main.md)
 
 ### 🌸 Explorando el Iris Dataset: primeros patrones florales y variables predictivas
 Link: [Ver práctica](../UT1/practica1/main1.md)
@@ -75,7 +76,7 @@ Esta práctica fue la más desafiante de la UT1, porque implicó integración de
 
 ---
 
-###🛍️ Explorando el catálogo de moda: análisis de precios y marcas  
+### 🛍️ Explorando el catálogo de moda: análisis de precios y marcas  
 Link: [Ver práctica](../UT1/extraUT1/extramain.md)
 
 **Objetivo:**  
@@ -92,6 +93,7 @@ Este análisis permitió trasladar lo aprendido en la UT1 a un nuevo dominio y f
 ---
 
 ## Unidad Temática 2 — Limpieza, imputación y ética de datos
+🔗 [Ver Unidad 2](../UT2/main.md)
 
 ### 🧱 Ames Housing bajo la lupa: reconstrucción de información faltante  
 *Link:* [Ver práctica](../UT2/practica5/main5.md)  
@@ -135,12 +137,13 @@ Esta práctica reforzó la importancia de diseñar procesos de preprocesamiento 
 
 **Reflexión:**  
 Esta práctica reforzó la importancia de diseñar pipelines de preprocesamiento que respeten completamente la separación entre *train* y *test*.  
-Aprendí a detectar dónde puede colarse *data leakage* y a construir transformaciones reproducibles que mantienen la integridad del modelo.  
+Se aprendio a detectar dónde puede colarse *data leakage* y a construir transformaciones reproducibles que mantienen la integridad del modelo.  
 También permitió comparar métodos de escalado y entender cómo elegir el adecuado según la distribución y presencia de outliers.
 
 - - - 
 
 ## Unidad Temática 3 – Feature Engineering
+🔗 [Ver Unidad 3](../UT3/main.md)
 
 ### 🏡 Diseñando el valor oculto: cómo el feature engineering mejora la predicción de precios de vivienda  
 Link: [Ver práctica](../UT3/practica8/main8.md)
@@ -207,6 +210,7 @@ La práctica evidenció que en modelos temporales, el manejo del tiempo y la pre
 ---
 
 ## Unidad Temática 4 – Datos Especiales
+🔗 [Ver Unidad 4](../UT4/main.md)
 
 ### 🗺️ Geointeligencia urbana: cobertura del SUBTE, densidad poblacional y demanda vecinal en Buenos Aires  
 Link: [Ver práctica](../UT4/practica12/main12.md)
@@ -257,6 +261,7 @@ Trabajar con audio mostró la importancia de adaptar el pipeline a cada tipo de 
 ---
 
 ## Unidad Temática 5 – Pipelines ETL
+🔗 [Ver Unidad 5](../UT5/main.md)
 
 ### ☁️ Datos en movimiento: creando un pipeline ETL en Google Cloud  
 Link: [Ver práctica](../UT5/practica15/main15.md)
