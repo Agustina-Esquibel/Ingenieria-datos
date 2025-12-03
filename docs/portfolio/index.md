@@ -245,4 +245,38 @@ Diseñar un pipeline de preprocesamiento de audio: carga, inspección visual, li
 Trabajar con audio mostró la importancia de adaptar el pipeline a cada tipo de dato. La práctica fortaleció la comprensión de cómo transformar señales crudas en información estructurada para modelos de aprendizaje.
 
 ---
+
+## Unidad Temática 5 – Pipelines ETL
+
+### ☁️ Datos en movimiento: creando un pipeline ETL en Google Cloud  
+Link: [Ver práctica](../UT5/practica15/main15.md)
+
+**Objetivo:**  
+Implementar un pipeline ETL/ELT utilizando Cloud Storage, Cloud Functions y BigQuery, con ejecución basada en eventos y transformación posterior.
+
+**Hallazgos clave:**  
+- Activación automática del pipeline mediante triggers.  
+- Flujo ELT: carga inicial en BigQuery y transformaciones posteriores.  
+- Integración fluida entre almacenamiento, funciones serverless y motor analítico.
+
+**Reflexión:**  
+Esta práctica permitió ver cómo funciona un pipeline moderno en la nube: automatizado, reproducible y sin tareas manuales.
+
+---
+
+### 🧽 DataPrep: limpieza visual de datos orientada a pipeline  
+Link: [Ver práctica](../UT5/practica16/main16.md)
+
+**Objetivo:**  
+Crear un pipeline ETL visual con Dataprep, aplicando reglas reproducibles de limpieza y transformación integradas con BigQuery.
+
+**Hallazgos clave:**  
+- Perfilado automático de calidad de datos.  
+- Transformaciones visuales versionadas como reglas.  
+- Exportación directa a sistemas analíticos.
+
+**Reflexión:**  
+Dataprep mostró cómo diseñar pipelines ETL sin código, manteniendo trazabilidad, documentación y consistencia entre ejecuciones.
+
+---
   
