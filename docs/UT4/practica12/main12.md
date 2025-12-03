@@ -159,5 +159,5 @@ Documentar estos criterios y mantener un flujo reproducible reforzó buenas prá
 📓 El enlace será agregado una vez finalizado el notebook.
 
 ## Navegación
-⬅️ [Volver a Unidad Temática 4](../main.md)  
+⬅️ Volver a Unidad Temática 4  
 📓 [Índice del Portafolio](../../portfolio/index.md)
