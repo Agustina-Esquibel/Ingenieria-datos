@@ -24,9 +24,9 @@ En conjunto, la UT4 abrió el panorama hacia **datos no estructurados**, mostran
 
 ## Flujo de trabajo de UT4
 
+![](./IMG_4606.jpeg)
 
-Este esquema resume los pasos utilizados en los tres dominios:  
-desde la carga y diagnóstico inicial, pasando por normalización y extracción de features, hasta la generación de insumos reproducibles para machine learning.
+Este flujo resume el trabajo por dominio en la UT4: cargar datos geoespaciales, de imágenes y audio, diagnosticarlos, preprocesarlos y extraer features específicos para formar un dataset final utilizable.
 
 ## Conclusión final de UT4
 
