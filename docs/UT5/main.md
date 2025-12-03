@@ -4,7 +4,6 @@ Esta unidad estuvo enfocada en el diseño e implementación de **pipelines ETL/E
 El foco estuvo en entender los flujos como procesos automatizados, reproducibles y escalables, integrando conceptos de DataOps y orquestación en la nube.
 
 ## Prácticas realizadas
-
 ---
 
 ### Datos en movimiento: creando un pipeline ETL en Google Cloud  
@@ -12,7 +11,6 @@ Link: [Ver práctica](./practica15/main15.md)
 
 *Implementación de un pipeline completo utilizando Cloud Storage, Cloud Functions y BigQuery, con ejecución basada en eventos.*
 
----
 
 ### DataPrep: limpieza visual de datos orientada a pipeline  
 Link: [Ver práctica](./practica16/main16.md)
