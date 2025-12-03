@@ -26,10 +26,9 @@ En conjunto, la UT5 consolidó la capacidad de **diseñar flujos de datos robust
 
 ## Flujo de trabajo de UT5
 
+![](./IMG_4607.jpeg)
 
-Este flujo resume el proceso aplicado:  
-desde la ingesta automatizada, pasando por transformaciones y validaciones, hasta la carga final en sistemas analíticos como BigQuery.
-
+Este flujo describe el pipeline desarrollado en la UT5: ingesta automatizada, transformaciones, validaciones, carga en BigQuery y orquestación en la nube.
 
 ## Conclusión final de UT5
 
