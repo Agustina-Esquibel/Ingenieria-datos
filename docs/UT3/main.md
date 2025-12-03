@@ -31,7 +31,7 @@ Se abordaron enfoques para transformar, codificar, reducir y seleccionar caracte
 
 ## Flujo de trabajo de UT3
 
-![](./IMG_4605.png)
+
 
 Este esquema refleja las etapas clave del feature engineering: partir de los datos base, generar transformaciones, codificar variables, aplicar reducción o selección y obtener un conjunto final de features listo para modelado.
 
