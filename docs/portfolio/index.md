@@ -195,4 +195,54 @@ Diseñar un pipeline temporal para predecir *repeat purchase* mediante lag featu
 La práctica evidenció que en modelos temporales, el manejo del tiempo y la prevención de *leakage* son tan importantes como las propias features. El enfoque temporal demostró mejorar la performance considerablemente frente a un modelo base sin ingeniería temporal.
 
 ---
+
+## Unidad Temática 4 – Datos Especiales
+
+### 🗺️ Geointeligencia urbana: cobertura del SUBTE, densidad poblacional y demanda vecinal en Buenos Aires  
+Link: [Ver práctica](../UT4/main12.md)
+
+**Objetivo:**  
+Analizar datos geoespaciales reales aplicando GeoPandas y Shapely para integrar capas urbanas (subte, barrios, densidad poblacional) y detectar zonas prioritarias según accesibilidad y demanda.
+
+**Hallazgos clave:**  
+- Identificación de barrios con menor cobertura del transporte público.  
+- Cruce exitoso de capas geográficas mediante *overlay* y *spatial join*.  
+- Variaciones en densidad poblacional permiten detectar zonas con desbalance entre oferta y demanda.
+
+**Reflexión:**  
+Esta práctica permitió entender cómo los datos geoespaciales amplían el análisis más allá de las tablas tradicionales, incorporando contexto territorial y espacial para generar insights urbanos significativos.
+
+---
+
+### 📸 Visión computacional aplicada: diagnóstico, contraste y extracción de descriptores con OpenCV  
+Link: [Ver práctica](../UT4/main13.md)
+
+**Objetivo:**  
+Implementar un pipeline de preprocesamiento de imágenes, incluyendo conversión de espacios de color, histogramas, mejora de contraste global/local y extracción de features (SIFT/ORB).
+
+**Hallazgos clave:**  
+- Comparación clara entre imágenes en RGB vs. escala de grises.  
+- El contraste adaptativo (CLAHE) mejora zonas oscuras sin saturar el resto de la imagen.  
+- Los descriptores SIFT/ORB generan puntos clave robustos para tareas posteriores de ML o matching.
+
+**Reflexión:**  
+Esta práctica mostró cómo la preparación de imágenes impacta directamente en la calidad de los features. Introdujo las bases del procesamiento visual y la importancia de preparar correctamente los datos antes de cualquier modelo.
+
+---
+
+### 🎧 Audio para Machine Learning: limpieza, visualización y extracción de MFCC  
+Link: [Ver práctica](../UT4/main14.md)
+
+**Objetivo:**  
+Diseñar un pipeline de preprocesamiento de audio: carga, inspección visual, limpieza básica, transformación a espectrogramas y extracción de MFCC listos para su uso en modelos de ML.
+
+**Hallazgos clave:**  
+- La visualización de la forma de onda y el espectrograma permite detectar ruido, silencios y patrones temporales.  
+- Los MFCC capturan características esenciales del timbre y permiten representar audio en formato numérico comparable.  
+- La estandarización del pipeline garantiza que todos los audios produzcan features consistentes.
+
+**Reflexión:**  
+Trabajar con audio mostró la importancia de adaptar el pipeline a cada tipo de dato. La práctica fortaleció la comprensión de cómo transformar señales crudas en información estructurada para modelos de aprendizaje.
+
+---
   
