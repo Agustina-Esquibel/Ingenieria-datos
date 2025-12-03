@@ -35,3 +35,7 @@ desde la ingesta automatizada, pasando por transformaciones y validaciones, hast
 
 La UT5 marcó un cierre fuerte del curso, mostrando que los datos no solo se analizan: **se orquestan**.  
 Los pipelines ETL/ELT en la nube permiten escalar, automatizar y versionar el flujo completo, preparando el terreno para proyectos reales de analítica y machine learning.
+
+- - - 
+
+📓 [Índice del portafolio](../portfolio/index.md)
