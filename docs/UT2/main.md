@@ -26,7 +26,7 @@ En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **pro
 
 ## Flujo de Trabajo de UT2
 
-![](../IMG_4604.png)
+![](./IMG_4604.jpeg)
 
 Este flujo resume el proceso central de la UT2: diagnóstico de la calidad de los datos, imputación contextual, preprocesamiento sin fuga de información y evaluación ética mediante métricas de fairness.
 
