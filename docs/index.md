@@ -45,6 +45,14 @@ Se utilizaron herramientas como **GeoPandas, Shapely, OpenCV y librosa** para co
 
 🔗 [Ver Unidad 4](UT4/main.md)
 
+### Unidad Temática 5
+
+**Pipelines ETL**  
+En esta unidad se diseñaron **arquitecturas ETL/ELT escalables** utilizando servicios de Google Cloud.  
+Se aplicaron principios de *DataOps*, orquestación de flujos y procesamiento basado en eventos para construir pipelines reproducibles y automatizados.
+
+🔗 [Ver Unidad 5](UT5/main.md)
+
 ---
 
 > Para un resumen de objetivos y hallazgos clave, consultá el [Índice del Portafolio](portfolio/index.md).
