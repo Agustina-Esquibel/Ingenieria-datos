@@ -37,6 +37,13 @@ También se introdujo la *ingeniería temporal de features*, aplicando *lags*, *
 
 🔗 [Ver Unidad 3](UT3/main.md)
 
+### Unidad Temática 4
+
+**Datos Especiales**
+En esta unidad se trabajó con **datos no tradicionales**, incorporando técnicas de procesamiento geoespacial, imágenes y audio. Se utilizaron herramientas como **GeoPandas, Shapely, OpenCV y librosa** para construir pipelines capaces de manipular datos complejos y prepararlos para sistemas de analítica avanzada.
+
+🔗 [Ver Unidad 4](UT4/main.md)
+
 ---
 
 > Para un resumen de objetivos y hallazgos clave, consultá el [Índice del Portafolio](portfolio/index.md).
