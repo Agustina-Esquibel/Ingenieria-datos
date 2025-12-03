@@ -5,12 +5,12 @@ El foco estuvo en entender los flujos como procesos automatizados, reproducibles
 
 ## Prácticas realizadas
 
-[**Datos en movimiento: creando un pipeline ETL en Google Cloud**](./practica15/main15.md)
+- [**Datos en movimiento: creando un pipeline ETL en Google Cloud**](./practica15/main15.md)
 
 *Implementación de un pipeline completo utilizando Cloud Storage, Cloud Functions y BigQuery, con ejecución basada en eventos.*
 
 
-[**DataPrep: limpieza visual de datos orientada a pipeline**](./practica16/main16.md)
+- [**DataPrep: limpieza visual de datos orientada a pipeline**](./practica16/main16.md)
 
 *Construcción de un flujo de calidad de datos con Dataprep, usando reglas reproducibles y ejecución automatizada.*
 
