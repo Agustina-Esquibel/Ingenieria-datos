@@ -4,7 +4,6 @@ Esta unidad estuvo enfocada en el diseño e implementación de **pipelines ETL/E
 El foco estuvo en entender los flujos como procesos automatizados, reproducibles y escalables, integrando conceptos de DataOps y orquestación en la nube.
 
 ## Prácticas realizadas
----
 
 ### Datos en movimiento: creando un pipeline ETL en Google Cloud  
 Link: [Ver práctica](./practica15/main15.md)
@@ -17,7 +16,6 @@ Link: [Ver práctica](./practica16/main16.md)
 
 *Construcción de un flujo de calidad de datos con Dataprep, usando reglas reproducibles y ejecución automatizada.*
 
----
 
 ## Reflexión de la unidad
 
@@ -27,7 +25,6 @@ Link: [Ver práctica](./practica16/main16.md)
 
 En conjunto, la UT5 consolidó la capacidad de **diseñar flujos de datos robustos, automatizados y mantenibles**, conectando todos los aprendizajes previos hacia una visión más completa de la ingeniería de datos en la nube.
 
----
 
 ## Flujo de trabajo de UT5
 
@@ -35,7 +32,6 @@ En conjunto, la UT5 consolidó la capacidad de **diseñar flujos de datos robust
 Este flujo resume el proceso aplicado:  
 desde la ingesta automatizada, pasando por transformaciones y validaciones, hasta la carga final en sistemas analíticos como BigQuery.
 
----
 
 ## Conclusión final de UT5
 
