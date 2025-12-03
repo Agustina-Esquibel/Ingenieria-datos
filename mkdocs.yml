@@ -24,3 +24,18 @@ markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tasklist:
       custom_checkbox: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mermaid   # ← AGREGA ESTA LÍNEA
