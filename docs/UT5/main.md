@@ -1,6 +1,6 @@
-# Unidad Temática 5 – Pipelines ETL/ELT
+# Unidad Temática 5 – Pipelines ETL
 
-La UT5 estuvo enfocada en el diseño e implementación de **pipelines ETL/ELT modernos**, aplicados directamente sobre Google Cloud.  
+Esta unidad estuvo enfocada en el diseño e implementación de **pipelines ETL/ELT modernos**, aplicados directamente sobre Google Cloud.  
 El foco estuvo en entender los flujos como procesos automatizados, reproducibles y escalables, integrando conceptos de DataOps y orquestación en la nube.
 
 ## Prácticas realizadas
