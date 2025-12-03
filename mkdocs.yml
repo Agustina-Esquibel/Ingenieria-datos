@@ -38,4 +38,3 @@ markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.mermaid   # ← AGREGA ESTA LÍNEA
