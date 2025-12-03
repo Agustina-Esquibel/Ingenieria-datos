@@ -32,3 +32,7 @@ desde la carga y diagnóstico inicial, pasando por normalización y extracción 
 
 La UT4 consolidó la capacidad de trabajar con **datos alternativos** y de diseñar pipelines robustos más allá de los tabulares.  
 Este dominio complementa el análisis tradicional y prepara el camino para integrar datos geoespaciales, visuales y sonoros dentro de proyectos de IA más complejos y multimodales.
+
+- - -
+
+📓 [Índice del portafolio](../portfolio/index.md)
