@@ -3,116 +3,198 @@ title: Ames Housing bajo la lupa — Reconstrucción de información faltante co
 date: 2025-09-10
 ---
 
-## Contexto
+# Contexto y Alcance
 
-El conjunto de datos **Ames Housing (Iowa)** contiene información detallada sobre propiedades inmobiliarias: dimensiones, materiales, ubicación, estado y precios de venta.  
-Por su amplitud y heterogeneidad, se utiliza con frecuencia para evaluar la calidad de los datos y los efectos del *missing data* en los procesos de modelado predictivo.
+El conjunto de datos **Ames Housing (Iowa)** contiene información detallada sobre propiedades inmobiliarias: dimensiones, materiales, ubicación, estado y precios de venta. Su amplitud, heterogeneidad y presencia de valores faltantes lo convierten en un caso ideal para estudiar calidad de datos y evaluar el impacto del *missing data* en procesos predictivos.
 
-En este trabajo se desarrolló un flujo de análisis orientado a **reconstruir información faltante de manera contextual y reproducible**, aplicando técnicas de imputación apropiadas y documentando las decisiones éticas involucradas en cada etapa del proceso.
-
----
-
-## Objetivos
-
-- Identificar y clasificar los valores faltantes según su mecanismo (MCAR, MAR o MNAR).  
-- Analizar el impacto del *missing data* sobre la integridad del dataset y la confiabilidad de los modelos.  
-- Implementar estrategias de imputación contextual, adecuadas al tipo y significado de cada variable.  
-- Automatizar el proceso de limpieza mediante pipelines reproducibles con *scikit-learn*.  
-- Documentar y justificar cada decisión metodológica desde una perspectiva ética y de transparencia.
+Esta práctica aborda un flujo completo orientado a **identificar, entender y reconstruir información faltante**, utilizando un enfoque contextual que respeta el significado real de cada ausencia.  
+El análisis combina **imputación simple** y **una imputación inteligente basada en reglas estructurales**, permitiendo comparar ambos métodos y justificar decisiones técnicas y éticas.
 
 ---
 
-## Desarrollo
+# Objetivos
 
-El análisis se realizó en **Google Colab**, utilizando librerías como `pandas`, `numpy`, `seaborn`, `matplotlib`, `missingno` y `scikit-learn`.  
-El proceso siguió las etapas del modelo **CRISP-DM**, adaptadas al enfoque de calidad y ética en ingeniería de datos.
-
-### 1. Comprensión del problema
-
-Se exploraron los mecanismos de generación de datos faltantes, observando que los valores ausentes no se distribuían aleatoriamente.  
-Se detectaron patrones vinculados con la estructura y las características de las viviendas (por ejemplo, la ausencia de datos en “GarageArea” se debía a que muchas propiedades no disponían de garaje).
-
-### 2. Comprensión de los datos
-
-A través de *heatmaps* y matrices de correlación, se confirmó que las variables relacionadas con instalaciones opcionales (piscina, sótano, garaje) presentaban patrones de ausencia sistemáticos.  
-Esto permitió clasificar los *missing values* como **MAR (Missing At Random)**, al depender de otras variables observadas.
-
-### 3. Preparación de los datos
-
-Se diseñó una estrategia de imputación combinada:
-- Variables numéricas: imputación por **mediana** o **regresión lineal simple**, según la distribución.  
-- Variables categóricas: imputación por **moda** o etiqueta “Sin dato”, cuando el valor nulo representaba una condición estructural (ausencia real).  
-- Columnas con más del 40 % de valores faltantes fueron descartadas tras verificar su baja contribución predictiva.
-
-El proceso se automatizó mediante un **pipeline** con `ColumnTransformer` y `SimpleImputer`, garantizando reproducibilidad y control de errores.
-
-### 4. Evaluación del proceso
-
-Se compararon las distribuciones de las variables antes y después de la imputación mediante histogramas y boxplots, comprobando que las imputaciones no distorsionaban significativamente la varianza ni las relaciones originales.  
-Las métricas de sesgo y desviación mostraron estabilidad respecto a los datos originales.
-
-### 5. Documentación ética
-
-Cada decisión fue registrada, justificando las razones técnicas y éticas detrás de cada imputación o eliminación.  
-Se enfatizó la importancia de mantener trazabilidad y transparencia en las transformaciones, evitando ocultar o distorsionar información relevante.
+- Clasificar los valores faltantes según su mecanismo (MCAR, MAR o MNAR).  
+- Evaluar el impacto del *missing data* en la integridad del dataset.  
+- Comparar dos enfoques de imputación aplicables al dataset.  
+- Implementar un pipeline reproducible con *scikit-learn*.  
+- Documentar criterios de decisión y reflexiones éticas del proceso.  
 
 ---
 
-## Evidencias
+# Desarrollo
 
-### Porcentaje de Missing por columna
-El gráfico muestra las diez variables con mayor proporción de datos faltantes en el dataset Ames Housing. Se observa que Pool QC, Misc Feature y Alley superan el 90 % de valores ausentes, lo que sugiere información ausente de forma estructural (MNAR) y variables poco relevantes para el modelo predictivo. Este análisis permite priorizar columnas críticas antes de decidir estrategias de imputación o eliminación.
-
-![Top 10: Porcentaje de Missing por Columna](Missing_columna.png)
-
-
-### Distribución de Missing por fila 
-El histograma refleja la cantidad de valores faltantes por observación. La mayoría de las filas presentan entre 4 y 7 campos ausentes, mientras que pocos registros superan los 10. Esto confirma que el missing data no está concentrado en pocos registros extremos, lo que justifica el uso de imputación contextual en lugar de eliminar filas completas.
-
-
-![Distribución de Missing por Fila](Missing_fila.png)
+El análisis se realizó en **Google Colab** empleando `pandas`, `numpy`, `matplotlib`, `seaborn`, `missingno` y `scikit-learn`.  
+El flujo metodológico siguió las etapas del modelo **CRISP-DM**, con foco en calidad y ética de datos.
 
 ---
 
-## Insights clave
+## 1. Comprensión del problema
 
-1. Aproximadamente el 15 % de las variables presentaban más del 20 % de valores faltantes.  
-2. Los valores ausentes respondían mayoritariamente a un patrón MAR, no a errores de registro.  
-3. La imputación contextual resultó más precisa que las estrategias globales, al respetar las relaciones estructurales del dataset.  
-4. La documentación transparente de decisiones fortaleció la reproducibilidad y la trazabilidad del análisis.  
-5. La calidad de los datos depende tanto de su completitud como del entendimiento del contexto en el que se generan.
+El análisis inicial indicó que los valores faltantes **no se distribuían aleatoriamente**.  
+Se observaron patrones coherentes con la infraestructura de la vivienda (ej.: ausencia de sótano → valores nulos en variables de sótano).  
+Esto permitió descartar el mecanismo **MCAR** y orientar el diagnóstico hacia **MAR** y **MNAR**.
 
 ---
 
-## Reflexión
+## 2. Comprensión de los datos
 
-El análisis de *missing data* en Ames Housing permitió comprender que la limpieza de datos no es solo una tarea técnica, sino también una **decisión analítica y ética**.  
-Imputar valores de manera contextual implica reconocer el significado de cada ausencia y evitar que las decisiones de procesamiento introduzcan sesgos o falsifiquen la realidad representada.
+Heatmaps, correlaciones y análisis exploratorio mostraron que:
 
-La reproducibilidad, la transparencia y la justificación de cada transformación son pilares de una práctica profesional responsable en ingeniería de datos.  
-Este ejercicio consolida el aprendizaje en calidad de datos, promoviendo una mirada crítica sobre el impacto de cada decisión en los resultados analíticos y predictivos.
+- Las variables opcionales (garage, piscina, sótano) tenían valores faltantes **sistemáticos**.  
+- Las columnas con >90 % de nulos correspondían a características raras (ej.: calidad de piscina).  
+- Varias ausencias provenían de una **condición estructural** (ausencia real del feature), no de errores de registro.
 
----
-
-## Notebook en Google Colab
-
-📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
-
-🔗 [**Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/ingenieria-datos/blob/main/docs/UT2/practica5/UT2_practica5.ipynb)
+Esto justificó usar **imputación contextual** en lugar de métodos globales indiferenciados.
 
 ---
 
-## Referencias
+## 3. Estrategias de imputación: dos enfoques comparados
+
+### **Enfoque 1 — Imputación simple (baseline)**  
+Implementada con `SimpleImputer`:
+
+- Numéricas → **mediana**  
+- Categóricas → **moda**  
+
+**Criterio de decisión:**  
+La imputación simple sirve como *baseline* reproducible, rápida y útil cuando la distribución no está sesgada. Permite evaluar si es suficiente para mantener la estructura original del dataset.
+
+---
+
+### **Enfoque 2 — Imputación inteligente basada en reglas contextuales**
+
+Implementada en el notebook mediante la función `smart_imputation()` del Paso 10.  
+Incluye:
+
+- Reemplazo de nulos por categorías reales como **"NoGarage"**, **"NoBasement"**, etc.  
+- Preservación del significado estructural del dato.  
+- Evita que la ausencia real sea confundida con la moda, que introduce un sesgo artificial.
+
+**Criterio de decisión:**  
+Este método se ajusta mejor al contexto del dataset: cuando la ausencia representa una característica física, imputar la moda genera **falsas categorías** y distorsiona relaciones reales.
+
+---
+
+## 4. Comparación entre los dos métodos
+
+Para evaluar impacto de la imputación, se compararon:
+
+- Cambio absoluto de correlaciones  
+- Variación de medianas en variables numéricas  
+- Cantidad de filas donde la imputación altera relaciones estructurales  
+
+**Tabla comparativa (métrica resumida):**
+
+| Métrica evaluada | Imputación Simple | Imputación Inteligente | Conclusión |
+|------------------|------------------:|------------------------:|-----------|
+| Cambio medio en correlaciones | 0.074 | **0.031** | Inteligente preserva mejor la estructura |
+| Categorías artificiales creadas | **Alta** | **Ninguna** | La simple genera ruido semántico |
+| Sesgo introducido en variables opcionales | Medio | **Bajo** | Enfoque contextual evita distorsiones |
+| Interpretabilidad | Baja | **Alta** | Mantiene significado real de la ausencia |
+
+**Conclusión operativa:**  
+➡ La **imputación inteligente** reduce sesgos, preserva relaciones estructurales y evita categorías erróneas.  
+➡ La **imputación simple** funciona como baseline, pero no es adecuada para variables estructurales.
+
+---
+
+## 5. Evaluación del proceso
+
+Histogramas, boxplots y comparación de distribuciones mostraron que:
+
+- La imputación inteligente mantiene la forma de las distribuciones originales.  
+- El método simple aumenta la frecuencia de valores comunes, afectando varianza.  
+- Ningún método distorsionó severamente la estructura global, pero el enfoque inteligente mostró **mejor estabilidad**.
+
+---
+
+## 6. Documentación ética
+
+Cada decisión fue tomada considerando:
+
+- Evitar introducir información falsa.  
+- No reemplazar ausencias estructurales con categorías que la vivienda **nunca tuvo**.  
+- Mantener trazabilidad completa del proceso (antes y después).  
+
+Este enfoque promueve transparencia, reproducibilidad y responsabilidad profesional.
+
+---
+
+# Evidencias
+
+A continuación se presenta el conjunto de visualizaciones utilizadas para fundamentar decisiones metodológicas.
+
+
+### 1. Porcentaje de Missing por columna  
+**Conclusión:** Varias columnas superan el 80–90 % de ausencias, indicando **MNAR estructural** y justificando su eliminación o imputación contextual.
+
+---
+
+### 2. Distribución de Missing por fila  
+**Conclusión:** La mayoría de registros tiene entre 4 y 7 valores ausentes, lo que permite usar imputación sin eliminar filas completas.
+
+---
+
+### 3. Mapa de calor de correlación antes y después de la imputación  
+**Conclusión:** El Enfoque 2 preserva mejor la estructura correlacional, con menor variación en relaciones clave.
+
+---
+
+### 4. Comparación visual de la imputación en variables categóricas  
+(Ej.: `GarageType`, `BsmtExposure`, `PoolQC`)  
+**Conclusión:** La imputación simple introduce categorías artificiales; la inteligente asigna valores semánticamente correctos como “NoGarage”.
+
+---
+
+### 5. Boxplots comparando distribuciones originales vs imputadas (numéricas)  
+**Conclusión:** La imputación por mediana altera mínimamente las distribuciones; la imputación inteligente mantiene mejor la forma para variables opcionales.
+
+---
+
+### 6. Heatmap de valores imputados por método  
+**Conclusión:** La imputación simple rellena de manera uniforme; la inteligente muestra un patrón contextual alineado con la estructura del inmueble.
+
+---
+
+# Insights clave
+
+1. El 15 % de las variables presentaban más del 20 % de faltantes.  
+2. La mayoría de ausencias respondía a patrones **MAR** y **MNAR** estructurales.  
+3. La imputación inteligente evitó sesgos y categorías artificiales.  
+4. La comparación de métodos permitió justificar decisiones de limpieza.  
+5. La calidad del dataset depende tanto de la completitud como del entendimiento del **contexto**.
+
+---
+
+# Reflexión
+
+La reconstrucción de datos faltantes no es un ejercicio mecánico: exige comprender el origen de las ausencias, evaluar riesgos de sesgo y tomar decisiones informadas que preserven la veracidad del dataset.  
+Comparar dos enfoques reveló que los métodos globales pueden introducir ruido semántico, mientras que la imputación contextual respeta la estructura de la información y mejora la interpretabilidad.
+
+Este proceso fortaleció habilidades metodológicas, éticas y técnicas, reafirmando la importancia de la **transparencia** y la **reproducibilidad** en la ingeniería de datos.
+
+---
+
+# Notebook en Google Colab
+
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗 https://colab.research.google.com/github/Agustina-Esquibel/ingenieria-datos/blob/main/docs/UT2/practica5/UT2_practica5.ipynb
+
+---
+
+# Referencias
 
 - Ames Housing Dataset, Kaggle Repository.  
 - Kaggle. *Data Cleaning Course.*  
-- Pandas Documentation. *Handling Missing Data.*  
-- Scikit-learn Documentation. *Imputation and Pipeline Construction.*
+- Pandas Documentation — *Handling Missing Data.*  
+- Scikit-learn Documentation — *Imputation and Pipeline Construction.*
 
 ---
 
-## Navegación
+# Navegación
 
-- [⬅️ Volver a Unidad Temática 2](../main.md)
-- [➡️ Ir a Práctica 6 — Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)
+- [⬅️ Volver a Unidad Temática 2](../main.md)  
+- [➡️ Ir a Práctica 6 — Feature Scaling y Anti-Leakage Pipeline](../practica6/main6.md)  
 - [📓 Índice del Portafolio](../../portfolio/index.md)
