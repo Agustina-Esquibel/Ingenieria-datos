@@ -4,14 +4,14 @@ date: 2025-11-18
 ---
 
 ## Contexto
-El análisis geoespacial permite comprender fenómenos clave como la accesibilidad al transporte, la concentración de población y la demanda por servicios públicos.  
-Esta práctica integra tres fuentes fundamentales para caracterizar la estructura urbana de CABA:
+El análisis geoespacial es una herramienta clave para comprender cómo funcionan las ciudades y cómo se distribuyen las oportunidades dentro del territorio.  
+En esta práctica se integran tres fuentes esenciales para caracterizar la estructura urbana de CABA:
 
-- Polígonos de **barrios** con población y superficie.  
-- Líneas y **estaciones del SUBTE**.  
-- Datos de **contactos SUACI**, como proxy de presión vecinal.
+- Polígonos de **barrios** con población y superficie.
+- Líneas y **estaciones del SUBTE** como proxy de accesibilidad.
+- Datos de **contactos SUACI** como indicador de demanda y presión vecinal.
 
-El objetivo general fue estudiar cómo interactúan **densidad urbana**, **accesibilidad al SUBTE** y **demanda ciudadana**, apoyándose en un flujo geoespacial reproducible con GeoPandas.
+El objetivo es analizar cómo interactúan **densidad urbana**, **accesibilidad al SUBTE** y **demanda ciudadana**, construyendo un flujo geoespacial reproducible con GeoPandas que permita fundamentar decisiones urbanas con evidencia territorial.
 
 ## Objetivos
 - Analizar cómo se distribuye la población y la demanda vecinal en el territorio.  
@@ -95,9 +95,10 @@ Este análisis evidenció brechas de accesibilidad en la periferia sur.
 
 ---
 
-### ✔ Conclusión comparativa
-Para exploración inicial y reproducibilidad académica, la **distancia Euclidiana** es suficiente.  
-Para análisis de movilidad o planificación urbana, la **distancia vial** sería el enfoque adecuado.
+### Conclusión comparativa
+Para exploración inicial, reproducibilidad académica y rapidez de cómputo, la **distancia Euclidiana** es suficiente y permite obtener patrones territoriales claros.  
+Sin embargo, para planificación urbana, estudios de movilidad o decisiones de infraestructura, la **distancia por red vial** es el método adecuado, ya que representa de forma realista cómo se mueven las personas en la ciudad.  
+La elección del método depende del objetivo: **velocidad y exploración** vs. **fidelidad urbana y precisión analítica**.
 
 ---
 
@@ -152,6 +153,8 @@ El aprendizaje clave fue comprender cómo las **decisiones metodológicas** (CRS
 
 La diferencia entre datos absolutos y tasas per cápita, y entre distancia recta y distancia vial, mostró cómo distintas métricas producen lecturas territoriales distintas.  
 Documentar estos criterios y mantener un flujo reproducible reforzó buenas prácticas de ingeniería de datos.
+
+En síntesis, esta práctica reafirma que en ingeniería de datos espaciales la técnica define la narrativa del territorio: **cambiar la métrica cambia la historia que contamos sobre la ciudad**, por lo que la transparencia metodológica es esencial.
 
 ---
 
