@@ -79,6 +79,25 @@ El modelo **Random Forest (Embedded)** se destacó por su estabilidad y facilida
 
 ---
 
+## Comparación entre PCA y Feature Selection
+
+| Criterio | PCA (Análisis de Componentes Principales) | Feature Selection (Filter, Wrapper, Embedded) |
+|---------|--------------------------------------------|------------------------------------------------|
+| **Propósito principal** | Reducir dimensionalidad mediante combinaciones lineales de las variables originales. | Seleccionar las variables más relevantes basándose en métricas estadísticas o información del modelo. |
+| **Interpretabilidad** | Baja: los componentes no representan variables reales sino combinaciones. | Alta: las variables seleccionadas conservan significado de negocio. |
+| **Manejo de colinealidad** | Excelente: condensa información redundante en pocos componentes. | Bueno: algunos métodos (Lasso, RF, MI) detectan redundancia, pero no siempre la resuelven completamente. |
+| **Impacto en performance del modelo** | Mejora rendimiento cuando el dataset tiene mucha correlación interna o ruido. | Mejora rendimiento al eliminar variables irrelevantes sin perder interpretabilidad. |
+| **Costo computacional** | Bajo a moderado. PCA es rápido una vez escalado el dataset. | Variable: Filter es rápido; Wrapper puede ser muy costoso; Embedded intermedio. |
+| **Requerimiento de escalado** | Obligatorio (`StandardScaler`). | No siempre necesario (depende del método). |
+| **Preservación del significado original** | No preserva significado; pierde semántica del dominio. | Sí preserva el significado; útil para explicar decisiones de negocio. |
+| **Cuándo usarlo** | Cuando hay alta colinealidad, ruido o necesidad de compresión. | Cuando se requiere interpretabilidad o cuando algunas variables tienen señal clara. |
+| **Resultado final** | Nuevos componentes sintéticos. | Subconjunto de variables originales y comprensibles. |
+
+**Conclusión operativa:**  
+PCA es ideal para *reducir ruido y colinealidad*, mientras que Feature Selection permite *mantener interpretabilidad* y concentrarse en las variables que aportan señal predictiva. En conjunto, ambos métodos permiten equilibrar eficiencia, claridad y precisión.
+
+- - - 
+
 ## Insights clave  
 
 - **Mutual Information** fue el método más eficiente, combinando bajo error y alta velocidad.  
