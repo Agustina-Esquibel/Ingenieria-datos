@@ -3,212 +3,197 @@ title: Feature Scaling y Anti-Leakage Pipeline — Escalado ético, reproducible
 date: 2025-09-17
 ---
 
-## Contexto
+# Contexto y Alcance
 
-El dataset **Ames Housing (Iowa)** incluye más de 80 variables que describen propiedades inmobiliarias (dimensiones, materiales, ubicación y precio).  
-Su riqueza y complejidad lo hacen ideal para estudiar los efectos del **escalado de variables**, la **presencia de outliers estructurales** y el **riesgo de data leakage**, un error común que ocurre al transformar datos antes del *split* entre entrenamiento y prueba.
+El dataset **Ames Housing (Iowa)** contiene más de 80 variables que describen propiedades inmobiliarias (dimensiones, materiales, calidad, ubicación y precio).  
+La heterogeneidad en magnitudes —metros cuadrados, años, calidades ordinales, precios— lo convierte en un escenario ideal para estudiar **desbalance de escalas**, **sesgos fuertes**, **outliers estructurales** y riesgos de **data leakage**.
 
-Esta práctica se centra en la **implementación de un pipeline anti-leakage**, comparando distintos métodos de escalado y evaluando cómo las transformaciones afectan la distribución de las variables y la validez del modelo.
-
----
-
-## Objetivos
-
-- Detectar variables numéricas con escalas desbalanceadas o sesgos extremos.  
-- Comparar los métodos `StandardScaler`, `MinMaxScaler` y `RobustScaler`.  
-- Evaluar el impacto del *log transform* en variables fuertemente asimétricas.  
-- Diseñar un pipeline reproducible que evite *data leakage*.  
-- Reflexionar sobre las implicancias éticas y técnicas del preprocesamiento.
+Esta práctica desarrolla un workflow completo para **escalar variables de forma ética, reproducible y libre de fuga de información**, comparando métodos clásicos (Standard, MinMax, Robust) y evaluando sus efectos en la distribución y estabilidad del dataset.
 
 ---
 
-## Desarrollo
+# Objetivos
 
-El análisis se organizó en seis etapas principales:
-
-1. **Exploración inicial:** análisis estadístico y visual de las escalas de las variables más relevantes.  
-2. **Selección de columnas:** se priorizaron `SalePrice`, `LotArea`, `GrLivArea`, `TotalBsmtSF`, `GarageArea` y `YearBuilt`.  
-3. **Transformación logarítmica:** aplicada a columnas con sesgo positivo pronunciado.  
-4. **Comparación de métodos de escalado:** `StandardScaler`, `MinMaxScaler` y `RobustScaler`.  
-5. **Pipeline anti-leakage:** implementación reproducible y libre de contaminación entre *train* y *test*.  
-6. **Evaluación de resultados y documentación:** visualizaciones, métricas y reflexiones críticas.
+- Diagnosticar variables con escalas y rangos desbalanceados.  
+- Comparar `StandardScaler`, `MinMaxScaler` y `RobustScaler`.  
+- Evaluar el impacto del `log1p` en variables con fuerte asimetría.  
+- Implementar un **pipeline anti-leakage** (fit solo en TRAIN).  
+- Analizar implicancias técnicas y éticas del preprocesamiento.
 
 ---
 
-## Evidencias 
+# Desarrollo
 
-## Evidencias
+El análisis se organizó en seis etapas, siguiendo una adaptación ética de CRISP-DM.
 
-### Distribución de variables numéricas (escala logarítmica)
+---
+
+## 1. Exploración inicial de escalas
+
+Se identificó que las variables:
+
+- **LotArea**  
+- **GrLivArea**  
+- **TotalBsmtSF**  
+- **SalePrice**
+
+presentaban **rangos amplísimos y skew pronunciado**, afectando modelos basados en distancia o gradiente.
+
+---
+
+## 2. Selección de variables relevantes
+
+Se trabajó con:
+
+- `SalePrice`  
+- `LotArea`  
+- `GrLivArea`  
+- `TotalBsmtSF`  
+- `GarageArea`  
+- `YearBuilt`
+
+Estas concentran la mayor parte de la variabilidad del dataset y son críticas para la predicción.
+
+---
+
+## 3. Transformación logarítmica (log1p)
+
+Aplicada a variables con *skewness* > 1:
+
+- `LotArea`  
+- `GrLivArea`  
+- `SalePrice`  
+
+**Justificación técnica:** reduce el impacto de valores extremos sin eliminarlos.  
+**Justificación ética:** los outliers estructurales representan viviendas reales; removerlos sería falsificar el dataset.
+
+---
+
+## 4. Comparación de métodos de escalado
+
+### **StandardScaler**
+- Media 0, varianza 1.  
+- Sensible a outliers.
+
+### **MinMaxScaler**
+- Rango [0,1].  
+- No corrige skew.  
+- Altamente sensible a extremos.
+
+### **RobustScaler**
+- Centrado en mediana y IQR.  
+- Mejor manejo de outliers estructurales.  
+
+**Conclusión:**  
+➡ **RobustScaler** produjo la distribución más estable y representativa para Ames Housing.
+
+---
+
+## 5. Pipeline Anti-Leakage
+
+**Regla fundamental:** *primero se separa el dataset; luego se procesan las transformaciones*.
+
+1. `X_train, X_valid, X_test`  
+2. `scaler.fit(X_train)`  
+3. `scaler.transform(X_valid)`  
+4. `scaler.transform(X_test)`
+
+**Motivación ética y técnica:**  
+Evita que el modelo incorpore información del futuro, garantizando métricas honestas y reproducibles.
+
+---
+
+# Evidencias
+
+Todas las visualizaciones se generaron en Colab y se incluyen aquí con sus rutas oficiales del repo.
+
+---
+
+### 📊 Distribución de variables numéricas (escala logarítmica)
 ![Distribución de variables numéricas](Distribuciones_totales.png)
 
-**Observación técnica:**  
-El gráfico muestra una diferencia de hasta tres órdenes de magnitud entre `LotArea`, `GrLivArea` y `SalePrice`, con dispersión muy superior al resto.  
-
-**Interpretación analítica:**  
-Estas variables dominan el rango numérico y pueden “arrastrar” a las demás en algoritmos basados en distancia (KNN, SVM).  
-`YearBuilt`, en cambio, mantiene una escala más compacta, sin requerir ajuste.  
-
-**Reflexión metodológica:**  
-El escalado no es opcional: sin él, las métricas de distancia se vuelven arbitrarias y las correlaciones se distorsionan.
-
 ---
 
-### Ratios max/min por variable
+### 📊 Ratios max/min por variable
 ![Ratios max/min por variable](Comparacion_ratios.png)
 
-**Observación técnica:**  
-`LotArea` alcanza un ratio de ≈165 y `SalePrice` ≈60. Estas relaciones desbalanceadas confirman la necesidad de normalizar.  
-
-**Interpretación analítica:**  
-Un rango tan amplio implica que una variación mínima en una variable pequeña podría ser ignorada por completo durante el entrenamiento.  
-
-**Reflexión metodológica:**  
-El ratio max/min es un indicador simple pero potente de inequidad de escala: si supera 50, el escalado debería ser obligatorio.
-
 ---
 
-### Distribuciones individuales de variables sesgadas
+### 📊 Distribuciones individuales de variables sesgadas
 ![Distribuciones individuales](Distribuciones_individuales.png)
 
-**Observación técnica:**  
-Las variables `LotArea`, `SalePrice` y `GrLivArea` presentan distribuciones con colas largas hacia la derecha (*right-skew*).  
-
-**Interpretación analítica:**  
-Estos sesgos indican presencia de valores atípicos, aunque probablemente estructurales (casas grandes o lujosas).  
-
-**Reflexión metodológica:**  
-Eliminar estos puntos sería una pérdida de información. La solución más ética y técnica es usar un transformador robusto o logarítmico para reducir su impacto sin censurarlos.
-
 ---
 
-### Escalas en TRAIN (log-scale)
+### 📊 Escalas en TRAIN (anti-leakage)
 ![Escalas en TRAIN](Escalas.png)
 
-**Observación técnica:**  
-El análisis se aplica solo al conjunto de entrenamiento. Las escalas mantienen su coherencia sin incluir datos de validación.  
+---
 
-**Interpretación analítica:**  
-Esto garantiza que las transformaciones no “vean” datos futuros, preservando la independencia entre train y test.  
-
-**Reflexión metodológica:**  
-Separar los conjuntos antes de transformar es esencial para evitar *data leakage*, una práctica éticamente necesaria para resultados confiables.
+### 📊 Distribuciones antes y después del escalado
+![Distribuciones antes y después del escalado](Distribucion.png)
 
 ---
 
-### Distribuciones antes y después del escalado
-![Distribuciones antes y después del escalado](Distribuciones_totales.png)
-
-**Observación técnica:**  
-El `StandardScaler` centra la media pero amplifica outliers, el `MinMaxScaler` reduce el rango pero mantiene el sesgo, y el `RobustScaler` logra la mayor estabilidad.  
-
-**Interpretación analítica:**  
-Las diferencias visuales demuestran cómo cada método responde a la presencia de colas largas.  
-
-**Reflexión metodológica:**  
-Elegir el *scaler* no es una cuestión estética: implica definir qué estadístico (media, rango o mediana) representa mejor a la población.
-
----
-
-### Efecto del Log Transform
+### 📊 Efecto del Log Transform
 ![Efecto del Log Transform](Distribucion.png)
 
-**Observación técnica:**  
-Tras aplicar `np.log1p()` sobre `LotArea`, el *skewness* bajó de 2.9 a 0.28 y la curtosis se normalizó.  
-
-**Interpretación analítica:**  
-La variable deja de concentrar la varianza en pocos valores altos, y la dispersión se vuelve más simétrica y manejable.  
-
-**Reflexión metodológica:**  
-El orden correcto de transformaciones *Log → Scale* reduce errores de redondeo y produce resultados más reproducibles en pipelines.
-
 ---
 
-### Correlación original vs escalada
-![Correlación original](Correlacion_original.png)
+### 📊 Correlación original vs escalada
+![Correlación original](Correlacion_original.png)  
 ![Correlación después del escalado](Correlacion_despues.png)
 
-**Observación técnica:**  
-Las correlaciones lineales permanecen casi inalteradas tras el escalado.  
-
-**Interpretación analítica:**  
-Los *scalers* ajustan la magnitud pero no la relación entre variables, confirmando que la estructura del dataset se preserva.  
-
-**Reflexión metodológica:**  
-Un buen escalado debe cambiar la escala, no el sentido de la información.  
-Esta evidencia valida que el pipeline respeta la integridad de los datos.
-
 ---
 
-### Relación entre área y precio (antes y después del log)
+### 📊 Relación entre área y precio, antes y después del log
 ![Relación entre área y precio](Relacion.png)
 
-**Observación técnica:**  
-El logaritmo de `GrLivArea` y `SalePrice` genera una nube más compacta y lineal.  
-
-**Interpretación analítica:**  
-La linealización mejora la capacidad de ajuste del modelo, especialmente para regresión lineal o Ridge/Lasso.  
-
-**Reflexión metodológica:**  
-El log transform reduce el peso de los valores extremos y mejora la interpretabilidad de la relación área-precio.
-
 ---
 
-### Comparación de métodos de escalado
+### 📊 Comparación final de métodos de escalado
 ![Comparación de métodos de escalado](Comparacion_escalado.png)
 
-**Observación técnica:**  
-El pipeline automatizado produce métricas coherentes y reproducibles.  
+---
 
-**Interpretación analítica:**  
-El leve descenso del R² (de 0.92 a 0.83) no representa una pérdida de calidad, sino la eliminación del sesgo inducido por *leakage*.  
+# Insights clave
 
-**Reflexión metodológica:**  
-El pipeline garantiza integridad, evita errores humanos y asegura que las métricas reflejen la verdadera capacidad predictiva del modelo.
+- `LotArea` y `GrLivArea` son las principales fuentes de distorsión numérica.  
+- `RobustScaler` ofrece la mejor estabilidad frente a outliers.  
+- El orden **Log → Scale** reduce skew y mejora la normalidad.  
+- El pipeline anti-leakage evita métricas infladas y favorece generalización real.  
+- Las métricas “más bajas” son en realidad métricas **más honestas**.
 
 ---
 
-## Insights clave
+# Reflexión
 
-- Las variables `LotArea` y `GrLivArea` fueron las principales fuentes de distorsión en las distancias numéricas.  
-- `RobustScaler` resultó el método más apropiado por su resistencia a *outliers* estructurales.  
-- El orden **Log → Scale** mejora la normalidad de las distribuciones y la estabilidad numérica.  
-- El pipeline anti-leakage asegura reproducibilidad y trazabilidad, evitando contaminación de datos.  
-- Las métricas sin leakage son más bajas, pero **honestas y generalizables**.
+El preprocesamiento no es un paso mecánico: es una **decisión analítica y ética**.  
+Un mal escalado puede amplificar outliers, ocultar patrones reales o, peor aún, introducir *leakage* que invalida cualquier conclusión del modelo.
 
- El proceso de *feature scaling* y diseño del pipeline permitió confirmar de manera empírica varios principios clave de la ingeniería de datos moderna:
+Un pipeline anti-leakage, reproducible y documentado, asegura que las métricas reflejen fidelidad con el proceso y transparencia profesional.
 
----
-
-## Reflexión 
-
-- **Limitaciones:** las conclusiones dependen del tipo de modelo. Los efectos del escalado pueden variar en árboles de decisión o redes neuronales.  
-- **Decisiones discutibles:** mantener outliers estructurales mejora la generalización, pero puede afectar métricas locales.  
-- **Mejoras futuras:** explorar `PowerTransformer` o `QuantileTransformer`, agrupar columnas por tipo y evaluar métricas no lineales.  
-- **Ética del preprocesamiento:** evitar *data leakage* no solo mejora la calidad técnica, sino que respeta los principios de transparencia y veracidad de los resultados.  
-
-> *El rigor técnico sin ética es solo automatización de errores.*
+> **El rigor técnico sin ética es solo automatización del error.**
 
 ---
 
-## Notebook en Google Colab
+# Notebook en Google Colab
 
-📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
 
-🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT2/practica6/UT2_practica6.ipynb)
-
----
-
-## Referencias
-
-- Kaggle: *Ames Housing Dataset*.  
-- Scikit-learn: *Preprocessing, Pipelines & Model Evaluation*.  
-- Pandas & Seaborn Documentation.  
-- Kurucz, J.F. (2025). *Feature Scaling & Anti-Leakage Pipeline – UCU Ingeniería de Datos*.
+🔗 [**Abrir en Google Colab**] (https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT2/practica6/UT2_practica6.ipynb)
 
 ---
 
-## Navegación
+# Referencias
+
+- Kaggle: *Ames Housing Dataset*  
+- Scikit-learn: *Preprocessing, Pipelines & Model Evaluation*  
+- Pandas & Seaborn Documentation  
+- Kurucz, J.F. (2025). *Feature Scaling & Anti-Leakage Pipeline — UCU Ingeniería de Datos*
+
+---
+
+# Navegación
 
 [⬅️ Volver a UT2](../main.md)  
 [➡️ Ir a Práctica 7 — Fairness y Decisiones Éticas](../practica7/main7.md)  
