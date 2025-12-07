@@ -160,7 +160,7 @@ Este ejercicio refuerza la importancia de:
 
 📓El notebook completo con el desarrollo de está práctica puede consultarse en el siguiente enlace:
 
-🔗[Abrir notebook en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/extraUT3/UT3extra.ipynb)
+🔗[**Abrir notebook en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/extraUT3/UT3Extra.ipynb)
 
 ---
 
