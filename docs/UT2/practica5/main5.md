@@ -180,7 +180,7 @@ Este proceso fortaleció habilidades metodológicas, éticas y técnicas, reafir
 
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
 
-🔗 https://colab.research.google.com/github/Agustina-Esquibel/ingenieria-datos/blob/main/docs/UT2/practica5/UT2_practica5.ipynb
+🔗 [**Abrir en Google Colab**] (https://colab.research.google.com/github/Agustina-Esquibel/ingenieria-datos/blob/main/docs/UT2/practica5/UT2_practica5.ipynb)
 
 ---
 
