@@ -203,7 +203,7 @@ En síntesis, esta práctica reafirma que en ingeniería de datos espaciales la 
 
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
 
-🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica12/UT4Practica12.ipynb)
+🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica12/UT4-Practica12.ipynb)
 
 ---
 
