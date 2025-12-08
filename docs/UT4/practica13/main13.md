@@ -194,7 +194,7 @@ En conjunto, esta práctica reforzó la idea de que trabajar con imágenes impli
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
 
-🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica13/UT4Práctica13.ipynb)
+🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica13/UT4Práctica13)
 
 ---
 
