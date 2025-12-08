@@ -230,5 +230,5 @@ El pipeline anti-leakage asegura transparencia, rigor y reproducibilidad, permit
 # Navegación
 
 [⬅️ Volver a UT2](../main.md)  
-[➡️ Ir a Práctica 7 — Fairness y Decisiones Éticas](../practica7/main7.md)  
+[➡️ Sesgo bajo la lupa — Detección, mitigación y decisiones éticas con Fairlearn](../practica7/main7.md)  
 [📓 Índice del Portafolio](../../portfolio/index.md)
