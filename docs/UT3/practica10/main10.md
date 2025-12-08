@@ -109,13 +109,6 @@ La asimetría extrema de la distribución indica que pocas variables concentran 
 
 ---
 
-### Validación adicional de la estructura PCA  
-![IMG_4821](IMG_4821.png)  
-El gráfico resume la distribución global de varianza en los componentes. La caída suave pero sostenida refuerza la idea de multicolinealidad y la necesidad de técnicas de reducción dimensional.  
-Este análisis permite determinar un número óptimo de componentes alineado tanto al desempeño como a la interpretabilidad del modelo.
-
----
-
 ## Comparación entre PCA y Feature Selection
 
 | Criterio | PCA (Análisis de Componentes Principales) | Feature Selection (Filter, Wrapper, Embedded) |
