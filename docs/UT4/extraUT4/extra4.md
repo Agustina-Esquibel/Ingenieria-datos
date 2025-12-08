@@ -156,7 +156,7 @@ La UT4 se consolida así como una unidad crítica para entender cómo trabajar c
 
 ## Notebook en Google Colab
 
-📓 El notebook completo co0n el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
 
 🔗 [**Abrir notebook en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/extraUT4/UT4Extra.ipynb)
 
