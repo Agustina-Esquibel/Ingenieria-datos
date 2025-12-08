@@ -111,5 +111,7 @@ Este ejercicio sienta las bases para implementar pipelines más avanzados aplica
 
 ## Navegación
 ⬅️ [Volver a Unidad Temática 5](../main.md)  
+
 ➡️ [DataPrep: limpieza visual de datos orientada a pipeline](../practica16/main16.md)
+
 📓 [Índice del Portafolio](../../portfolio/index.md)
