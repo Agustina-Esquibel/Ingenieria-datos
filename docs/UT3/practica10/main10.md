@@ -77,6 +77,43 @@ El modelo **Random Forest (Embedded)** se destacó por su estabilidad y facilida
 
 ## Evidencias  
 
+### Scree Plot y Varianza Acumulada  
+![IMG_4817](IMG_4817.png)  
+El scree plot muestra cómo se distribuye la varianza explicada entre los primeros componentes principales. El primer componente captura una proporción notable de la varianza total, lo que evidencia relaciones fuertes entre variables estructurales del dataset (principalmente superficies y calidades).  
+El gráfico de varianza acumulada confirma que con aproximadamente 25 componentes se supera el 90% de la varianza total, validando que el dataset presenta alta redundancia y que PCA permite reducir dimensionalidad sin sacrificar información significativa.
+
+---
+
+### Loadings Plot – Contribución de Features a PC1 y PC2  
+![IMG_4818](IMG_4818.png)  
+Este gráfico permite interpretar las variables más influyentes en los dos componentes principales.  
+- **PC1** se asocia fuertemente a variables de *superficie* (Gr Liv Area, Total Bsmt SF, 1st Flr SF).  
+- **PC2** captura variaciones en *calidad constructiva* (Kitchen Qual, Bsmt Qual, Garage Finish).  
+La distribución de puntos evidencia que el dataset se organiza en torno a dos ejes conceptuales dominantes: tamaño y calidad, confirmando la naturaleza multivariada del problema.
+
+---
+
+### RFE Ranking – Top 30 Features Seleccionadas  
+![IMG_4819](IMG_4819.png)  
+El ranking de RFE revela cuáles variables se mantienen más tiempo en el proceso de eliminación recursiva.  
+Las features con mejor ranking corresponden a variables estructurales del inmueble, mientras que variables menos influyentes (como Alley, Land Contour o condiciones puntuales del sótano) aparecen eliminadas antes.  
+Este enfoque es útil porque evalúa la relevancia considerando interacciones entre variables, no solo su aporte individual.
+
+---
+
+### Random Forest Feature Importances – Top 30  
+![IMG_4820](IMG_4820.png)  
+La importancia de variables del modelo Random Forest muestra una dominancia clara de **OverallQual**, que supera ampliamente al resto.  
+Le siguen superficies clave como **Gr Liv Area**, **Total Bsmt SF**, y antigüedad (**Year Built**).  
+La asimetría extrema de la distribución indica que pocas variables concentran la mayor capacidad predictiva, lo que habilita una reducción significativa del espacio de features sin pérdida de rendimiento.
+
+---
+
+### Validación adicional de la estructura PCA  
+![IMG_4821](IMG_4821.png)  
+El gráfico resume la distribución global de varianza en los componentes. La caída suave pero sostenida refuerza la idea de multicolinealidad y la necesidad de técnicas de reducción dimensional.  
+Este análisis permite determinar un número óptimo de componentes alineado tanto al desempeño como a la interpretabilidad del modelo.
+
 ---
 
 ## Comparación entre PCA y Feature Selection
@@ -118,8 +155,11 @@ Además, se evidenció que el mejor método depende del contexto: **los Filter M
 
 ---
 
-## Notebook en Google Colab  
-📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
+## Notebook en Google Colab
+
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗 **[Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica10/UT3Practica10.ipynb)**
 
 ---
 
