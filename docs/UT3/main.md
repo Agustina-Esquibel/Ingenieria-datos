@@ -19,14 +19,20 @@ Se abordaron enfoques para transformar, codificar, reducir y seleccionar caracte
 - [**Modelando el tiempo: cómo el feature engineering temporal anticipa la recompra en e-commerce**](./practica11/main11.md)  
   *Implementación de lag features, rolling windows, expanding windows, RFM, calendar features y validación temporal con TimeSeriesSplit evitando data leakage.*
 
+- [**Caso Retail Churn: cómo el feature engineering anticipa el abandono de clientes**](../UT3/extraUT3/extra3.md)  
+Caso aplicado donde se construyen features de comportamiento (RFM, engagement, codificación categórica avanzada y PCA) para identificar señales tempranas de abandono y mejorar la capacidad interpretativa del modelo.  
+
 
 ## Reflexión de la unidad
 
 - La creación de **features derivadas e interacciones** mostró cómo relaciones no evidentes pueden aportar más valor que las variables originales.  
 - La **codificación categórica** confirmó su importancia en modelos sensibles a la representación de categorías.  
+
 - La **reducción dimensional** facilitó interpretabilidad y redujo ruido en datos con alta correlación.  
 - El **feature engineering temporal** reveló patrones secuenciales de comportamiento fundamentales en series de tiempo y análisis de usuarios.  
 - La unidad reforzó que el rendimiento de un modelo depende en gran medida de la calidad y diseño de sus *features*, más que del algoritmo utilizado.
+
+- **Retail Churn** profundizó la importancia del feature engineering como núcleo del análisis predictivo: la construcción de variables basadas en comportamiento real permitió detectar patrones de abandono imposibles de observar con los datos originales.
 
 
 ## Flujo de trabajo de UT3
