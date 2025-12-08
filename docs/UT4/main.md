@@ -14,11 +14,15 @@ El objetivo fue construir pipelines capaces de manipular datos complejos, extrae
 - [**Audio para Machine Learning: limpieza, visualización y extracción de MFCC**](./practica14/main14.md)  
   *Preprocesamiento de señales de audio mediante espectrogramas, normalización y extracción de coeficientes MFCC con Librosa.*
 
+- [**Caso Chicago Crime: cómo los datos geoespaciales revelan la arquitectura oculta del delito urbano**](../UT4/extraUT4/extra4.md)  
+Análisis geoespacial aplicado con GeoPandas, Shapely y Contextily para mapear incidentes reales, identificar patrones urbanos, visualizar hotspots y comprender cómo la ubicación condiciona la dinámica delictiva.
+  
 ## Reflexión de la unidad
 
 - **Geoespacial** permitió trabajar por primera vez con datos en formato vectorial, comprendiendo conceptos de CRS, geometrías y overlays para análisis urbano real.  
 - **Imágenes** introdujo un flujo estructurado de diagnóstico visual, cambios de espacio de color y extracción automática de descriptores, reforzando la importancia del preprocesamiento antes del modelado.  
 - **Audio** presentó un dominio completamente distinto, donde la representación temporal no es suficiente y se requieren transformaciones como MFCC para capturar información perceptual relevante.
+- **Chicago Crime** amplió la perspectiva de la unidad al mostrar cómo los datos georreferenciados permiten detectar estructuras urbanas invisibles en tablas tradicionales. El uso de CRS, reproyección y mapas base consolidó la comprensión práctica del análisis espacial como herramienta clave para interpretar fenómenos reales.
 
 En conjunto, la UT4 abrió el panorama hacia **datos no estructurados**, mostrando cómo adaptar pipelines según la naturaleza del dato. Esto fue clave para entender que el análisis no depende solo de Pandas: cada dominio (mapas, imágenes, audio) requiere herramientas propias y criterios específicos de limpieza, representación y documentación.
 
