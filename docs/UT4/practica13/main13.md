@@ -102,7 +102,73 @@ La repetibilidad cercana a 0.6–0.7 confirma que CLAHE preserva la estructura, 
 ---
 
 ## Evidencias
-*(Aquí se incluirán las imágenes generadas: histogramas, ecualización, suavizados, bordes, keypoints, matching y gráficos de QA.)*
+
+### **1. Histograma de intensidades (escala de grises)**
+![IMG_4766](IMG_4766.png)
+
+El histograma revela un fuerte pico en bajas intensidades, indicando amplias zonas oscuras y uniformes. La ausencia de valores saturados permite un procesamiento confiable, especialmente para algoritmos de bordes y detección de puntos clave que dependen de variaciones tonales consistentes.
+
+---
+
+### **2. Histogramas por canal (RGB)**
+![IMG_4767](IMG_4767.png)
+
+Los tres canales presentan distribuciones similares, lo cual confirma un balance cromático adecuado y sin dominancia de color. Esto asegura que la conversión a escala de grises preserve correctamente la estructura visual y no introduzca sesgos en el contraste.
+
+---
+
+### **3. Comparación: Original vs Equalize vs CLAHE**
+![IMG_4768](IMG_4768.png)
+
+La ecualización global incrementa el contraste pero puede amplificar ruido, mientras que CLAHE mejora el detalle local sin degradar la imagen. Esta diferencia es clave para pipelines de visión donde se busca resaltar microtexturas sin perder estabilidad.
+
+---
+
+### **4. Filtros: Gaussian, Bilateral y Canny**
+![IMG_4769](IMG_4769.png)
+
+- Gaussian suaviza ruido pero sacrifica detalles finos.  
+- Bilateral mantiene bordes definidos, logrando el mejor compromiso.  
+- Canny evidencia la geometría dominante, marcando bordes relevantes para etapas posteriores de matching o segmentación.
+
+---
+
+### **5. Keypoints en Original, Gaussian y CLAHE**
+![IMG_4770](IMG_4770.png)
+
+La cantidad total de keypoints se mantiene estable, pero su distribución mejora con CLAHE, que resalta texturas sin añadir ruido significativo. Gaussian reduce suavemente el número de puntos detectados al atenuar variaciones locales.
+
+---
+
+### **6. Matching ORB vs SIFT**
+![IMG_4773](IMG_4773.png)
+
+ORB es más rápido y liviano, mientras que SIFT detecta más coincidencias y de mayor calidad. Esto ilustra el clásico trade-off entre velocidad y precisión según la aplicación (tiempo real vs análisis profundo).
+
+---
+
+### **7. Matching entre imágenes transformadas**
+![IMG_4771](IMG_4771.png)
+
+El matching se mantiene estable incluso con cambios fotométricos, lo que demuestra una buena robustez del descriptor utilizado frente a transformaciones moderadas.
+
+---
+
+### **8. Dashboard de KPIs**
+![IMG_4774](IMG_4774.png)
+
+El panel de KPIs evidencia:  
+- Suficiente conteo de features en todas las imágenes.  
+- Contraste adecuado para detección fiable.  
+- Bordes dentro del rango esperado (2–15%).  
+- Repetibilidad sólida frente a variaciones, indicando consistencia en el pipeline.
+
+---
+
+### **9. Keypoints vs CLAHE y Keypoints vs Ruido**
+![IMG_4772](IMG_4772.png)
+
+La cantidad de keypoints se mantiene prácticamente estable frente a variaciones de `clipLimit` o niveles de ruido. Esto prueba una alta robustez del detector y de las transformaciones aplicadas.
 
 ---
 
@@ -127,7 +193,8 @@ En conjunto, esta práctica reforzó la idea de que trabajar con imágenes impli
 
 ## Notebook en Google Colab
 📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:  
-🔗 [Abrir en Google Colab](URL)
+
+🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica13/UT4Práctica13.ipynb)
 
 ---
 
