@@ -95,33 +95,81 @@ El resultado se almacenó en un **archivo CSV** que resume cada audio como un ve
 
 ## Evidencias
 
-### Waveform original y estandarizado  
-La estandarización conserva la forma general de la señal pero unifica la escala, permitiendo comparar clips sin sesgos de volumen.
+### Waveform del audio original  
+![IMG_4785](IMG_4785.png)  
+Esta visualización muestra la forma de onda en dominio temporal, permitiendo observar la amplitud y la distribución de energía del audio crudo. Se identifican picos, zonas más densas y variaciones de intensidad que son clave para anticipar la calidad del preprocesamiento y analizar la dinámica del sonido antes de aplicar transformaciones.
 
 ---
 
-### Espectrograma de potencia (original vs estandarizado)  
-El contenido espectral se mantiene estable tras la estandarización, modificándose únicamente la escala en dB, lo que confirma que el preprocesamiento no altera características relevantes del sonido.
+### Waveform original vs estandarizado  
+![IMG_4786](IMG_4786.png)  
+Comparar la señal sin procesar con la versión estandarizada permite evaluar cómo la normalización modifica la escala, eliminando sesgos de amplitud que podrían afectar la extracción de features. La estandarización aporta estabilidad al pipeline al equilibrar la energía entre audios heterogéneos.
 
 ---
 
-### Espectrograma con ruido blanco (SNR = 10 dB)  
-El ruido incrementa la energía distribuida en todas las frecuencias, simulando condiciones hostiles de grabación. Aun así, las estructuras principales del sonido permanecen visibles.
+### Espectrograma original (mono)  
+![IMG_4787](IMG_4787.png)  
+El espectrograma representa la distribución de energía a través del tiempo y la frecuencia. En esta versión original se aprecia el patrón frecuencial sin modificaciones, fundamental como referencia para comparar efectos de filtros, normalizaciones y ruido.
+
+---
+
+### Espectrograma estandarizado  
+![IMG_4788](IMG_4788.png)  
+La estandarización suaviza el rango dinámico del espectrograma, aumentando la claridad de los patrones espectrales y reduciendo variaciones abruptas. Esto facilita que los modelos interpreten texturas con mayor consistencia.
+
+---
+
+### Espectrograma con ruido blanco (SNR≈10 dB)  
+![IMG_4789](IMG_4789.png)  
+La incorporación de ruido blanco permite evaluar la **robustez del pipeline** ante degradaciones reales. Se observa una textura más densa y homogénea, que desafía la detección de features y sirve como prueba de estrés para el modelo.
 
 ---
 
 ### Espectrograma tras filtro high-pass (80 Hz)  
-El filtrado elimina bajas frecuencias asociadas a vibraciones o zumbidos. El contenido informativo permanece intacto.
+![IMG_4790](IMG_4790.png)  
+Este espectrograma evidencia cómo el filtro elimina componentes de muy baja frecuencia, limpiando el espectro y haciendo más visibles los patrones relevantes. Es útil para reducir ruido de fondo y vibraciones de baja frecuencia.
 
 ---
 
 ### Métricas espectrales dinámicas  
-Las curvas de centroid, rolloff y bandwidth condensan la evolución del espectro a lo largo del tiempo y facilitan la interpretación de la señal.
+![IMG_4791](IMG_4791.png)  
+Se monitorean **centroid**, **rolloff** y **bandwidth**, tres métricas críticas para caracterizar la firma espectral del audio. Su estabilidad a lo largo del tiempo indica consistencia en la señal, lo cual es clave para tareas de clasificación o identificación.
 
 ---
 
-### Data Augmentation (pitch shift +2, time stretch 0.9x)  
-Las variantes generadas modifican frecuencia o duración sin alterar la identidad del sonido, aportando diversidad al conjunto de entrenamiento.
+### Cantidad de audios por fold  
+![IMG_4792](IMG_4792.png)  
+Este gráfico verifica que la división en folds mantiene un balance correcto. Asegurar proporciones estables evita sesgos en validación cruzada y garantiza resultados reproducibles.
+
+---
+
+### Pitch shift +2 semitonos  
+![IMG_4793](IMG_4793.png)  
+El aumento de pitch desplaza la energía hacia frecuencias más altas sin modificar la duración. Es una de las técnicas más utilizadas en **data augmentation**, particularmente en tareas de reconocimiento de voz o clasificación de audio.
+
+---
+
+### Time stretch 0.9x  
+![IMG_4794](IMG_4794.png)  
+La compresión temporal modifica la densidad de eventos en el espectrograma. Este tipo de transformación evalúa si el modelo puede generalizar ante cambios de velocidad en la señal, algo crucial en datasets con habla o sonidos variables.
+
+---
+
+### Efecto del SNR sobre el RMS  
+![IMG_4795](IMG_4795.png)  
+El gráfico muestra cómo la energía del audio disminuye al introducir más ruido blanco. Esta relación inversa confirma la sensibilidad del RMS como métrica para evaluar degradaciones y sirve para ajustar umbrales de detección.
+
+---
+
+### Comparación simple de pipelines  
+![IMG_4796](IMG_4796.png)  
+La comparación de pipelines mediante **RMS mean** y **ZCR mean** permite entender qué transformaciones preservan información relevante y cuáles introducen distorsiones. Es una herramienta esencial en la etapa de selección del preprocesamiento óptimo.
+
+---
+
+### Métricas principales del audio (Duración, RMS, ZCR)  
+![IMG_4797](IMG_4797.png)  
+Estas métricas resumen las propiedades globales del audio. La homogeneidad en duración y los valores consistentes en RMS y ZCR confirman que el dataset es adecuado para análisis comparativos y para alimentar modelos supervisados sin introducir variabilidad no deseada.
 
 ---
 
@@ -143,9 +191,11 @@ El trabajo refuerza la importancia de combinar fundamentos de procesamiento digi
 En síntesis, esta práctica demuestra que **la representación correcta del audio determina el éxito de su análisis**, y que un pipeline sólido es clave para integrar sonidos en proyectos de analítica avanzada.
 
 ---
-
 ## Notebook en Google Colab
-📓 El notebook completo puede consultarse en el siguiente enlace:  
+
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗 [Abrir en Google Colab](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT4/practica14/UT4Practica14.ipynb)
 
 ---
 
