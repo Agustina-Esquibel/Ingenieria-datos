@@ -131,5 +131,7 @@ En síntesis, esta práctica permitió comprender que la ingeniería de atributo
 
 ## Navegación  
 ⬅️ [Volver a Unidad Temática 3](../main.md)  
+
 ➡️ [Codificando la realidad: cómo el encoding categórico mejora la predicción de ingresos en datos del censo](../practica9/main9.md)  
+
 📓 [Índice del Portafolio](../../portfolio/index.md)
