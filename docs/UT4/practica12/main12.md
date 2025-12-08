@@ -103,37 +103,78 @@ La elección del método depende del objetivo: **velocidad y exploración** vs. 
 ---
 
 ## Evidencias  
-*(Las visualizaciones se agregarán posteriormente)*
+
+### 1. Distancia mínima a una estación de SUBTE (m)
+![Distancia mínima al SUBTE](IMG_4451.png)
+
+**Análisis:**  
+Este mapa cuantifica la accesibilidad física al sistema de transporte subterráneo. Las zonas más oscuras indican barrios que se encuentran a mayores distancias de una estación, revelando **brechas claras de accesibilidad** entre el centro y la periferia.  
+El trazado del SUBTE —concentrado en el corredor central— evidencia un patrón urbano histórico que condiciona la movilidad actual. Esta visualización es fundamental para comprender dónde el sistema de transporte deja vacíos territoriales.
 
 ---
 
-### 📌 **1. Densidad de población (hab/km²)**
-**Interpretación:** Los barrios del eje centro-norte (Balvanera, Recoleta, Almagro) concentran la mayor densidad.  
-**Conclusión operativa:** Estas zonas requieren infraestructura más robusta y soportan mayor presión sobre servicios.
+### 2. TOP-10 barrios por contactos SUACI per cápita
+![Top 10 SUACI](IMG_4452.png)
+
+**Análisis:**  
+El ranking muestra qué barrios presentan **mayor demanda relativa de servicios ciudadanos**. San Nicolás y Monserrat destacan con amplitud, lo que puede asociarse a:  
+- mayor actividad comercial,  
+- alta densidad laboral,  
+- problemáticas urbanas persistentes que generan interacción con el sistema SUACI.  
+
+Este indicador identifica **zonas críticas de gestión urbana**, permitiendo priorizar recursos administrativos.
 
 ---
 
-### 📌 **2. Contactos SUACI per cápita**
-**Interpretación:** Barrios con población moderada pueden presentar la mayor demanda relativa, especialmente zonas con actividad administrativa o comercial.  
-**Conclusión operativa:** La función urbana explica la demanda mejor que la población total.
+### 3. Cobertura SUBTE por barrio
+![Cobertura SUBTE](IMG_4454.png)
+
+**Análisis:**  
+La cobertura del SUBTE se concentra fuertemente en el microcentro, mostrando cómo el sistema favorece el eje histórico–administrativo de la ciudad.  
+La periferia queda prácticamente desconectada, reforzando un **gradiente centro–periferia** que influye en oportunidades laborales, acceso a servicios y tiempos de viaje. Esta visualización destaca inequidades estructurales en movilidad urbana.
 
 ---
 
-### 📌 **3. Cobertura del SUBTE (estaciones por km²)**
-**Interpretación:** La red es densa en el eje central (Palermo–Recoleta–Balvanera).  
-**Conclusión operativa:** La periferia sur evidencia brechas claras de accesibilidad.
+### 4. Contactos SUACI per cápita por barrio
+![SUACI per capita](IMG_4455.png)
+
+**Análisis:**  
+Este mapa espacializa la demanda de SUACI por habitante. La concentración extrema en ciertos polígonos señala **zonas con mayor presión cívica**, posiblemente asociadas a infraestructura envejecida, mayor exposición a problemas urbanos o mayor propensión a reportar incidentes.  
+El gráfico ayuda a detectar **puntos calientes administrativos**, clave para planificar intervenciones focalizadas.
 
 ---
 
-### 📌 **4. Distancia mínima al SUBTE**
-**Interpretación:** Lugano, Soldati y Riachuelo presentan las distancias más altas.  
-**Conclusión operativa:** Son candidatos para extensión del SUBTE o servicios alternativos (BRT, tren ligero).
+### 5. Densidad poblacional (hab/km²)
+![Densidad poblacional](IMG_4457.png)
+
+**Análisis:**  
+La densidad muestra fuertes contrastes: áreas centrales y del corredor norte-este presentan densidades muy elevadas, mientras que otras regiones son más dispersas.  
+Este indicador es crítico como variable de control, ya que permite interpretar correctamente patrones de demanda y accesibilidad.  
+Una alta densidad no siempre se correlaciona con alta demanda, lo cual se verifica más adelante.
 
 ---
 
-### 📌 **5. Accesibilidad vs demanda (scatter)**
-**Interpretación:** No existe relación lineal simple entre accesibilidad y demanda.  
-**Conclusión operativa:** La centralidad funcional es un predictor más fuerte que la distancia al SUBTE.
+### 6. Densidad poblacional (detalle por celdas)
+![Densidad por celdas](IMG_4456.png)
+
+**Análisis:**  
+A un nivel más granular, la densidad revela microzonas densamente pobladas que no coinciden necesariamente con los límites barriales.  
+Esta resolución fina permite hacer análisis más precisos de **inequidad territorial**, especialmente cuando se combinan con métricas de acceso al SUBTE o niveles de demanda ciudadana.
+
+---
+
+### 7. Accesibilidad al SUBTE vs Demanda ajustado por densidad
+![Accesibilidad vs demanda](IMG_4459.png)
+
+**Análisis:**  
+Este scatterplot sintetiza tres dimensiones clave:  
+- **Distancia al SUBTE** (accesibilidad),  
+- **Contactos SUACI per cápita** (demanda),  
+- **Densidad poblacional** (color).  
+
+La nube de puntos muestra que **no existe relación lineal evidente entre accesibilidad y demanda**, incluso después de ajustar por densidad. Barrios muy accesibles pueden tener poca demanda, y barrios lejanos pueden presentar valores elevados.  
+Esto revela que la demanda ciudadana está influenciada por variables adicionales: características socioeconómicas, antigüedad edilicia, tipo de uso del suelo, nivel de organización vecinal, entre otros.  
+Es la visualización más integradora de la práctica, ya que **conecta infraestructura, comportamiento ciudadano y estructura urbana en un único análisis comparativo**.
 
 ---
 
@@ -159,7 +200,11 @@ En síntesis, esta práctica reafirma que en ingeniería de datos espaciales la 
 ---
 
 ## Notebook en Google Colab
-📓 El enlace será agregado una vez finalizado el notebook.
+
+📓 El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+
+---
 
 ## Navegación
 ⬅️ Volver a Unidad Temática 4  
