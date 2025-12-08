@@ -1,6 +1,6 @@
 ---
 title: "DataPrep: limpieza visual de datos orientada a pipeline"
-date: 2025-12-07
+date: 2025-11-27
 ---
 
 ## Contexto
