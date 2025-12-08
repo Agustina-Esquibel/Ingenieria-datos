@@ -123,37 +123,16 @@ Este enfoque promueve transparencia, reproducibilidad y responsabilidad profesio
 
 # Evidencias
 
-A continuación se presenta el conjunto de visualizaciones utilizadas para fundamentar decisiones metodológicas.
-
-
-### 1. Porcentaje de Missing por columna  
-**Conclusión:** Varias columnas superan el 80–90 % de ausencias, indicando **MNAR estructural** y justificando su eliminación o imputación contextual.
+### Distribución de valores faltantes por fila  
+![Missing_fila](Missing_fila.png)  
+Este histograma muestra cuántos valores faltantes tiene cada fila del dataset. La mayoría de las observaciones concentran entre **4 y 6 valores faltantes**, lo que indica que el problema de *missing data* no es aislado sino estructural. Esta lectura es clave para definir una estrategia de imputación contextual que preserve la coherencia interna del dataset sin sesgar la variabilidad original.
 
 ---
 
-### 2. Distribución de Missing por fila  
-**Conclusión:** La mayoría de registros tiene entre 4 y 7 valores ausentes, lo que permite usar imputación sin eliminar filas completas.
-
----
-
-### 3. Mapa de calor de correlación antes y después de la imputación  
-**Conclusión:** El Enfoque 2 preserva mejor la estructura correlacional, con menor variación en relaciones clave.
-
----
-
-### 4. Comparación visual de la imputación en variables categóricas  
-(Ej.: `GarageType`, `BsmtExposure`, `PoolQC`)  
-**Conclusión:** La imputación simple introduce categorías artificiales; la inteligente asigna valores semánticamente correctos como “NoGarage”.
-
----
-
-### 5. Boxplots comparando distribuciones originales vs imputadas (numéricas)  
-**Conclusión:** La imputación por mediana altera mínimamente las distribuciones; la imputación inteligente mantiene mejor la forma para variables opcionales.
-
----
-
-### 6. Heatmap de valores imputados por método  
-**Conclusión:** La imputación simple rellena de manera uniforme; la inteligente muestra un patrón contextual alineado con la estructura del inmueble.
+### Top 10 de columnas con mayor porcentaje de missing  
+![Missing_columna](Missing_columna.png)  
+Este gráfico permite identificar rápidamente **las variables más afectadas por valores faltantes**, con porcentajes que superan incluso el 90%. Columnas como *Pool QC* o *Misc Feature* presentan casi ausencia total de datos, lo que obliga a un tratamiento diferenciado (imputación por categoría “None”, eliminación, o análisis de irrelevancia).  
+Este ranking es fundamental para priorizar esfuerzos y seleccionar métodos adecuados de imputación según el tipo de variable y su relevancia para el modelado.
 
 ---
 
