@@ -84,6 +84,60 @@ Finalmente, se evaluó la mejora del modelo al incorporar temporal features, ver
 
 ## Evidencias
 
+### Rolling Mean vs Actual Cart Size  
+![IMG_4826](IMG_4826.png)  
+Esta visualización compara la serie original de tamaño de carrito por orden con un *rolling mean* de 3 periodos. La línea suavizada permite captar la tendencia subyacente eliminando ruido, mientras que la banda de ±1 desviación estándar refleja la volatilidad del usuario.
+
+---
+
+### Rolling Mean (tendencias recientes) + Expanding Mean (histórico acumulado)  
+![IMG_4827](IMG_4827.png)  
+El rolling mean captura cambios recientes en el comportamiento; el expanding mean incorpora toda la historia previa y muestra una tendencia estructural más estable. Ambas métricas permiten separar señales de corto y largo plazo.
+
+---
+
+### Distribuciones RFM: Recency – Frequency – Monetary  
+![IMG_4828](IMG_4828.png)  
+Los histogramas muestran el patrón típico de RFM:  
+- Recency concentrada en valores bajos → clientes activos.  
+- Frequency altamente sesgada → pocos clientes muy frecuentes.  
+- Monetary también skewed → la mayoría gasta poco, pocos explican gran parte del revenue.
+
+---
+
+### Promedios por ventana temporal + Actividad reciente vs histórica  
+![IMG_4829](IMG_4829.png)  
+Los promedios de órdenes en ventanas de 7, 30 y 90 días muestran cómo los valores se estabilizan al aumentar la ventana. El scatter de actividad reciente vs histórica revela clusters y variaciones útiles para segmentación y predicción.
+
+---
+
+### Product Diversity  
+![IMG_4830](IMG_4830.png)  
+El scatter compara cantidad total de ítems vs diversidad de productos. La línea roja representa diversidad perfecta. El histograma confirma que la mayoría de usuarios tiene diversidad alta, lo cual impacta directamente en estrategias de recomendación.
+
+---
+
+### Codificación cíclica + Efecto fin de semana  
+![IMG_4831](IMG_4831.png)  
+Las codificaciones cíclicas preservan periodicidad en hora y día. La barra de la derecha muestra que el tamaño del carrito aumenta los fines de semana, validando la construcción de features temporales.
+
+---
+
+### Monthly Orders vs GDP Growth + Orders vs Consumer Confidence  
+![IMG_4832](IMG_4832.png)  
+Existe paralelismo entre actividad económica y volumen mensual de órdenes. El scatter con el índice de confianza del consumidor muestra una tendencia positiva, indicando sensibilidad del consumo al contexto macroeconómico.
+
+---
+
+### Impacto de features temporales en el modelo  
+![IMG_4833](IMG_4833.png)  
+El AUC mejora de ~0.66 a ~0.73 al agregar variables temporales, demostrando que aportan señal valiosa. El intervalo de error confirma que la mejora es consistente.
+
+---
+
+### Importancia de features: Top 25 + Categorías  
+![IMG_4834](IMG_4834.png)  
+Destacan product_diversity_ratio, días desde última compra y métricas RFM. Por categoría, logística, demanda y RFM explican la mayor parte del desempeño del modelo.
 
 ---
 
@@ -108,7 +162,9 @@ En síntesis, el feature engineering temporal se posiciona como una de las herra
 
 ---
 
-## Notebook en Google Colab  
+## Notebook en Google Colab
+
+🔗[**Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica11/UT3Practica11.ipynb)
 
 ---
 
