@@ -164,7 +164,9 @@ En síntesis, el feature engineering temporal se posiciona como una de las herra
 
 ## Notebook en Google Colab
 
-🔗[**Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica11/UT3Practica11.ipynb)
+📓El notebook completo con el desarrollo de esta práctica puede consultarse en el siguiente enlace:
+
+🔗[**Abrir en Google Colab**](https://colab.research.google.com/github/Agustina-Esquibel/Ingenieria-datos/blob/main/docs/UT3/practica11/UT3Practico11.ipynb)
 
 ---
 
