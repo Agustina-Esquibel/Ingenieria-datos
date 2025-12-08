@@ -15,12 +15,16 @@ Implementación de un pipeline reproducible con escalado, normalización y contr
 - [**Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn**](../UT2/practica7/main7.md)  
 Análisis y mitigación de sesgos en modelos predictivos, integrando métricas de equidad y reflexión ética en decisiones algorítmicas.
 
+- [**Caso German Credit: cómo la calidad del dato condiciona la equidad en modelos financieros**](../UT4/extraUT4/extra4.md)  
+Análisis aplicado que muestra cómo los errores, inconsistencias y sesgos presentes en datos crediticios afectan tanto la performance del modelo como su equidad al tomar decisiones sensibles en contextos financieros.
+
 
 ## Reflexión de la unidad
 
 - **Ames Housing** permitió practicar estrategias de imputación contextual aplicadas a datos reales y heterogéneos.  
 - **Anti-Leakage Pipeline** consolidó el diseño de flujos de preprocesamiento éticos y técnicamente robustos.  
-- **Fairlearn** introdujo el componente social y ético del análisis de datos, vinculando rendimiento con equidad.  
+- **Fairlearn** introdujo el componente social y ético del análisis de datos, vinculando rendimiento con equidad.
+- **German Credit** reforzó la importancia de la calidad del dato como condición previa para la equidad: pequeñas distorsiones en atributos sensibles pueden amplificar desigualdades y conducir a decisiones injustas, incluso cuando el modelo técnico parece correcto.
 
 En conjunto, la **UT2** marcó el paso del análisis exploratorio hacia el **procesamiento responsable de datos**, donde cada decisión técnica considera su impacto en la transparencia, la reproducibilidad y la justicia algorítmica.
 
