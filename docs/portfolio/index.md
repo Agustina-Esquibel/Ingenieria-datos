@@ -142,6 +142,22 @@ También permitió comparar métodos de escalado y entender cómo elegir el adec
 
 - - - 
 
+### 💰Caso German Credit: cómo la calidad del dato condiciona la equidad en modelos financieros  
+Link: [Ver práctica](../UT4/extraUT4/extra4.md)
+
+**Objetivo:**  
+Evaluar cómo la calidad del dato (faltantes, inconsistencias y sesgos estructurales) afecta la equidad y la estabilidad de modelos de riesgo crediticio.
+
+**Hallazgos clave:**  
+- El dataset presenta desbalances y estructuras que pueden inducir sesgo incluso antes del modelado.  
+- La imputación y el encoding pueden amplificar o reducir desigualdades según cómo se apliquen.  
+- El modelo mostró diferencias en métricas por género, evidenciando impacto social directo.
+
+**Reflexión:**  
+Este caso reforzó que la calidad del dato no es solo un requisito técnico: determina la justicia del sistema. Trabajar con datos sensibles exige responsabilidad metodológica y evaluaciones explícitas de fairness.
+
+---
+
 ## Unidad Temática 3 – Feature Engineering
 🔗 [Ver Unidad 3](../UT3/main.md)
 
@@ -209,6 +225,22 @@ La práctica evidenció que en modelos temporales, el manejo del tiempo y la pre
 
 ---
 
+### 🛍️Caso Retail Churn: cómo el feature engineering anticipa el abandono de clientes  
+Link: [Ver práctica](../UT3/extraUT3/extra3.md)
+
+**Objetivo:**  
+Construir features de comportamiento (RFM, engagement, codificación categórica y PCA) para identificar señales tempranas de abandono en clientes de retail.
+
+**Hallazgos clave:**  
+- *Recency* y *engagement* emergieron como los predictores más fuertes del churn.  
+- El PCA mostró estructura interna clara y redujo dimensionalidad sin perder información relevante.  
+- La ingeniería de variables superó ampliamente el valor predictivo de las features originales.
+
+**Reflexión:**  
+El caso demostró que el feature engineering es el núcleo del análisis de churn. Diseñar variables basadas en comportamiento permite detectar patrones invisibles para los modelos sin ingeniería previa.
+
+---
+
 ## Unidad Temática 4 – Datos Especiales
 🔗 [Ver Unidad 4](../UT4/main.md)
 
@@ -257,6 +289,22 @@ Diseñar un pipeline de preprocesamiento de audio: carga, inspección visual, li
 
 **Reflexión:**  
 Trabajar con audio mostró la importancia de adaptar el pipeline a cada tipo de dato. La práctica fortaleció la comprensión de cómo transformar señales crudas en información estructurada para modelos de aprendizaje.
+
+---
+
+### 🫆Caso Chicago Crime: cómo los datos geoespaciales revelan la arquitectura oculta del delito urbano  
+Link: [Ver práctica](../UT4/extraUT4/extra4.md)
+
+**Objetivo:**  
+Aplicar análisis geoespacial con GeoPandas para mapear delitos reales, detectar hotspots urbanos y comprender cómo la geografía estructura la actividad delictiva.
+
+**Hallazgos clave:**  
+- Los delitos se concentran en áreas de alta densidad poblacional y actividad comercial.  
+- Los hotspots muestran patrones territoriales muy marcados, imposibles de observar en tablas tradicionales.  
+- La reproyección adecuada (4326 → 3857) es crítica para mapas precisos y análisis espacial correcto.
+
+**Reflexión:**  
+Este caso mostró el poder del análisis geoespacial para revelar estructuras urbanas complejas. Incorporar coordenadas y mapas base permitió interpretar el delito desde una perspectiva territorial, alineada con la lógica de datos especiales de la UT4.
 
 ---
 
