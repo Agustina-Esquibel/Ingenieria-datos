@@ -15,7 +15,7 @@ Implementación de un pipeline reproducible con escalado, normalización y contr
 - [**Sesgo bajo la lupa: detección, corrección y decisiones éticas con Fairlearn**](../UT2/practica7/main7.md)  
 Análisis y mitigación de sesgos en modelos predictivos, integrando métricas de equidad y reflexión ética en decisiones algorítmicas.
 
-- [**Caso German Credit: cómo la calidad del dato condiciona la equidad en modelos financieros**](../UT4/extraUT4/extra4.md)  
+- [**Caso German Credit: cómo la calidad del dato condiciona la equidad en modelos financieros**](../UT2/extraUT2/extra2.md)  
 Análisis aplicado que muestra cómo los errores, inconsistencias y sesgos presentes en datos crediticios afectan tanto la performance del modelo como su equidad al tomar decisiones sensibles en contextos financieros.
 
 
