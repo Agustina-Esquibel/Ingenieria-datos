@@ -143,7 +143,7 @@ También permitió comparar métodos de escalado y entender cómo elegir el adec
 - - - 
 
 ### 💰Caso German Credit: cómo la calidad del dato condiciona la equidad en modelos financieros  
-Link: [Ver práctica](../UT4/extraUT4/extra4.md)
+Link: [Ver práctica](../UT2/extraUT2/extra2.md)
 
 **Objetivo:**  
 Evaluar cómo la calidad del dato (faltantes, inconsistencias y sesgos estructurales) afecta la equidad y la estabilidad de modelos de riesgo crediticio.
